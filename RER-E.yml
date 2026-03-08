@@ -1,0 +1,30 @@
+kml: RER-E.kml
+neighbours:
+  # Branche ouest (EOLE)
+  - [Nanterre - La Folie, La Défense - Grande Arche]
+  - [La Défense - Grande Arche, Neuilly - Porte Maillot]
+  - [Neuilly - Porte Maillot, Haussmann - Saint-Lazare]
+  # Tronçon central
+  - [Haussmann - Saint-Lazare, Magenta]
+  - [Magenta, Rosa Parks]
+  - [Rosa Parks, Pantin]
+  - [Pantin, Noisy-le-Sec]
+  # Branche Chelles-Gournay (E2, depuis Noisy-le-Sec)
+  - [Noisy-le-Sec, Bondy]
+  - [Bondy, Le Raincy - Villemomble - Montfermeil]
+  - [Le Raincy - Villemomble - Montfermeil, Gagny]
+  - [Gagny, Le Chénay - Gagny]
+  - [Le Chénay - Gagny, Chelles - Gournay]
+  # Branche Tournan (E4, depuis Noisy-le-Sec)
+  - [Noisy-le-Sec, Rosny - Bois-Perrier]
+  - [Rosny - Bois-Perrier, Rosny-sous-Bois]
+  - [Rosny-sous-Bois, Val de Fontenay]
+  - [Val de Fontenay, Nogent - Le Perreux]
+  - [Nogent - Le Perreux, Les Boullereaux - Champigny]
+  - [Les Boullereaux - Champigny, Villiers-sur-Marne - Le Plessis-Trévise]
+  - [Villiers-sur-Marne - Le Plessis-Trévise, Les Yvris - Noisy-le-Grand]
+  - [Les Yvris - Noisy-le-Grand, Émerainville - Pontault-Combault]
+  - [Émerainville - Pontault-Combault, Roissy-en-Brie]
+  - [Roissy-en-Brie, Ozoir-la-Ferrière]
+  - [Ozoir-la-Ferrière, Gretz-Armainvilliers]
+  - [Gretz-Armainvilliers, Tournan]

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>RER B</name>
+  <Style id="blue-icon"><IconStyle><color>ffff0000</color><Icon><href>http://maps.google.com/mapfiles/kml/shapes/rail.png</href></Icon></IconStyle></Style>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Aeroport Charles de Gaulle 2 TGV</name><Point><coordinates>2.57051,49.00529,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Aeroport Charles de Gaulle 1</name><Point><coordinates>2.56116,49.00975,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Parc des Expositions</name><Point><coordinates>2.51445,48.97339,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Villepinte - Parc du Sausset</name><Point><coordinates>2.51390,48.96250,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Sevran - Beaudottes</name><Point><coordinates>2.52472,48.94757,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Mitry - Claye</name><Point><coordinates>2.64227,48.97594,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Villeparisis - Mitry le Neuf</name><Point><coordinates>2.60312,48.95322,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Vert Galant</name><Point><coordinates>2.56639,48.94421,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Sevran - Livry</name><Point><coordinates>2.53512,48.93643,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Aulnay-sous-Bois</name><Point><coordinates>2.49677,48.93226,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Le Blanc-Mesnil</name><Point><coordinates>2.47541,48.93236,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Drancy</name><Point><coordinates>2.45474,48.93258,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Le Bourget</name><Point><coordinates>2.42530,48.93073,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>La Courneuve - Aubervilliers</name><Point><coordinates>2.38622,48.92439,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>La Plaine - Stade de France</name><Point><coordinates>2.36253,48.91816,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Gare du Nord</name><Point><coordinates>2.35745,48.88140,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Châtelet - Les Halles</name><Point><coordinates>2.34761,48.86163,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Saint-Michel Notre-Dame</name><Point><coordinates>2.34544,48.85296,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Luxembourg</name><Point><coordinates>2.33984,48.84545,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Port Royal</name><Point><coordinates>2.33707,48.84010,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Denfert-Rochereau</name><Point><coordinates>2.33309,48.83334,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Cité Universitaire</name><Point><coordinates>2.33857,48.82166,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Gentilly</name><Point><coordinates>2.34096,48.81513,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Laplace</name><Point><coordinates>2.33436,48.80838,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Arcueil - Cachan</name><Point><coordinates>2.32808,48.79857,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Bagneux</name><Point><coordinates>2.32269,48.79346,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Bourg-la-Reine</name><Point><coordinates>2.31183,48.78002,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Fontenay-aux-Roses</name><Point><coordinates>2.29297,48.78750,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Sceaux</name><Point><coordinates>2.29810,48.78134,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Robinson</name><Point><coordinates>2.28131,48.78008,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Parc de Sceaux</name><Point><coordinates>2.30988,48.76957,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>La Croix de Berny</name><Point><coordinates>2.30415,48.76150,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Antony</name><Point><coordinates>2.30074,48.75439,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Fontaine-Michalon</name><Point><coordinates>2.29590,48.74307,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Les Baconnets</name><Point><coordinates>2.28808,48.73985,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Massy - Verrières</name><Point><coordinates>2.27373,48.73480,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Massy-Palaiseau</name><Point><coordinates>2.25966,48.72575,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Palaiseau</name><Point><coordinates>2.24537,48.71657,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Palaiseau - Villebon</name><Point><coordinates>2.23736,48.70821,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Lozère</name><Point><coordinates>2.21403,48.70586,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Le Guichet</name><Point><coordinates>2.19315,48.70542,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Orsay-Ville</name><Point><coordinates>2.18066,48.69750,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Bures-sur-Yvette</name><Point><coordinates>2.16456,48.69614,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>La Hacquinière</name><Point><coordinates>2.15149,48.69530,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Gif-sur-Yvette</name><Point><coordinates>2.13655,48.69818,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Courcelle-sur-Yvette</name><Point><coordinates>2.09754,48.70134,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#blue-icon</styleUrl><name>Saint-Rémy-lès-Chevreuse</name><Point><coordinates>2.07096,48.70274,0</coordinates></Point></Placemark>
+</Document>
+</kml>

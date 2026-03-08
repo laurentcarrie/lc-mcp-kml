@@ -1,0 +1,3448 @@
+choices:
+  - !Folder
+    name: Gares RER-A
+    choices:
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Cergy-le-Haut
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Cergy - Saint-Christophe
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Cergy Préfecture
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Neuville Université
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Conflans-Fin-d'Oise
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Achères - Ville
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Poissy
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Achères Grand Cormier
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Maisons-Laffitte
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Sartrouville
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Houilles - Carrières-sur-Seine
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Saint-Germain-en-Laye
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Le Vésinet - Le Pecq
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Le Vésinet Centre
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Chatou - Croissy
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Rueil-Malmaison
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Nanterre-Ville
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Nanterre-Université
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Nanterre-Préfecture
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: La Défense - Grande Arche
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Charles de Gaulle - Étoile
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Auber
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Châtelet - Les Halles
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Gare de Lyon
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Nation
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Vincennes
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Fontenay-sous-Bois
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Nogent-sur-Marne
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Val-de-Fontenay
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Joinville-le-Pont
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Saint-Maur Créteil
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Le Parc de Saint-Maur
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Saint-Maur - Champigny
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: La Varenne - Chennevières
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Sucy - Bonneuil
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Boissy-Saint-Léger
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Neuilly-Plaisance
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Bry-sur-Marne
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Noisy-le-Grand - Mont d'Est
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Noisy-Champs
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Noisiel
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Lognes
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Torcy
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Bussy-Saint-Georges
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Val d'Europe
+      - !Point
+        kml: RER-A.kml
+        color: "ff0000ff"
+        name: Marne-la-Vallée - Chessy
+  - !Folder
+    name: Gares RER-B
+    choices:
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Aeroport Charles de Gaulle 2 TGV
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Aeroport Charles de Gaulle 1
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Parc des Expositions
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Villepinte - Parc du Sausset
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Sevran - Beaudottes
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Mitry - Claye
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Villeparisis - Mitry le Neuf
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Vert Galant
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Sevran - Livry
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Aulnay-sous-Bois
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Le Blanc-Mesnil
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Drancy
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Le Bourget
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: La Courneuve - Aubervilliers
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: La Plaine - Stade de France
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Gare du Nord
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Châtelet - Les Halles
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Saint-Michel Notre-Dame
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Luxembourg
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Port Royal
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Denfert-Rochereau
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Cité Universitaire
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Gentilly
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Laplace
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Arcueil - Cachan
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Bagneux
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Bourg-la-Reine
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Fontenay-aux-Roses
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Sceaux
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Robinson
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Parc de Sceaux
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: La Croix de Berny
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Antony
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Fontaine-Michalon
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Les Baconnets
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Massy - Verrières
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Massy-Palaiseau
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Palaiseau
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Palaiseau - Villebon
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Lozère
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Le Guichet
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Orsay-Ville
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Bures-sur-Yvette
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: La Hacquinière
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Gif-sur-Yvette
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Courcelle-sur-Yvette
+      - !Point
+        kml: RER-B.kml
+        color: "ffff0000"
+        name: Saint-Rémy-lès-Chevreuse
+  - !Folder
+    name: Gares RER-C
+    choices:
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Pontoise
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Saint-Ouen-l'Aumône
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Saint-Ouen-l'Aumône Liesse
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Pierrelaye
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Montigny-Beauchamp
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Franconville - Le Plessis-Bouchard
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Cernay
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Ermont - Eaubonne
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Saint-Gratien
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Épinay-sur-Seine
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Gennevilliers
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Les Grésillons
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Saint-Ouen
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Porte de Clichy
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Pereire - Levallois
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Neuilly - Porte Maillot
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Avenue Foch
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Avenue Henri Martin
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Boulainvilliers
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Avenue du Président Kennedy
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Champ de Mars - Tour Eiffel
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Pont de l'Alma
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Musée d'Orsay
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Saint-Michel Notre-Dame
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Paris Austerlitz
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Bibliothèque François Mitterrand
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Ivry-sur-Seine
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Vitry-sur-Seine
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Les Ardoines
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Choisy-le-Roi
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Villeneuve-le-Roi
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Ablon
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Athis-Mons
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Juvisy-sur-Orge
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Orly Ville
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Les Saules
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Savigny-sur-Orge
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Épinay-sur-Orge
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Sainte-Geneviève-des-Bois
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Saint-Michel-sur-Orge
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Brétigny
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Javel
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Pont du Garigliano
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Issy Val de Seine
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Issy
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Meudon Val Fleury
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Chaville-Vélizy
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Viroflay Rive Gauche
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Porchefontaine
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Versailles-Chantiers
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Versailles Château Rive Gauche
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Saint-Cyr
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Saint-Quentin-en-Yvelines
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Massy-Palaiseau
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Massy - Verrières
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Chemin d'Antony
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Pont de Rungis Aéroport d'Orly
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Rungis - La Fraternelle
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Arpajon
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Égly
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: La Norville - Saint-Germain-lès-Arpajon
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Breuillet - Bruyères-le-Châtel
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Breuillet - Village
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Saint-Chéron
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Sermaise
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Dourdan
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Dourdan - La Forêt
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Marolles-en-Hurepoix
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Bouray
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Lardy
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Chamarande
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Étréchy
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Étampes
+      - !Point
+        kml: RER-C.kml
+        color: "ff00ffff"
+        name: Saint-Martin d'Étampes
+  - !Folder
+    name: Gares RER-D
+    choices:
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Creil
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Chantilly - Gouvieux
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Orry-la-Ville - Coye-la-Forêt
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: La Borne Blanche
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Survilliers - Fosses
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Louvres
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Les Noues
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Goussainville
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Villiers-le-Bel - Gonesse - Arnouville
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Garges - Sarcelles
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Pierrefitte - Stains
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Saint-Denis
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Stade de France - Saint-Denis
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Gare du Nord
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Châtelet - Les Halles
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Gare de Lyon
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Maisons-Alfort - Alfortville
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Le Vert de Maisons
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Créteil - Pompadour
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Villeneuve Triage
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Villeneuve-Saint-Georges
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Montgeron - Crosne
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Yerres
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Brunoy
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Boussy-Saint-Antoine
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Combs-la-Ville - Quincy
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Lieusaint - Moissy
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Savigny-le-Temple - Nandy
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Cesson
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Le Mée
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Melun
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Vigneux-sur-Seine
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Juvisy-sur-Orge
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Viry-Châtillon
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Grigny-Centre
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Orangis - Bois de l'Épine
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Évry Courcouronnes-Centre
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Le Bras de Fer
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Corbeil-Essonnes
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Moulin Galant
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Mennecy
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Ballancourt
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: La Ferté-Alais
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Boutigny
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Maisse
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Buno - Gironville
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Boigneville
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Malesherbes
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Ris-Orangis
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Grand Bourg
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Évry Val de Seine
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Essonnes - Robinson
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Villabé
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Le Plessis-Chenet
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Le Coudray - Montceaux
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Saint-Fargeau
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Ponthierry - Pringy
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Boissise-le-Roi
+      - !Point
+        kml: RER-D.kml
+        color: "ff00ff00"
+        name: Vosves
+  - !Folder
+    name: Gares RER-E
+    choices:
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Nanterre - La Folie
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: La Défense - Grande Arche
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Neuilly - Porte Maillot
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Haussmann - Saint-Lazare
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Magenta
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Rosa Parks
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Pantin
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Noisy-le-Sec
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Bondy
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Le Raincy - Villemomble - Montfermeil
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Gagny
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Le Chénay - Gagny
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Chelles - Gournay
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Val de Fontenay
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Nogent - Le Perreux
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Rosny-sous-Bois
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Rosny - Bois-Perrier
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Les Boullereaux - Champigny
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Villiers-sur-Marne - Le Plessis-Trévise
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Les Yvris - Noisy-le-Grand
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Émerainville - Pontault-Combault
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Roissy-en-Brie
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Ozoir-la-Ferrière
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Gretz-Armainvilliers
+      - !Point
+        kml: RER-E.kml
+        color: "ffff00ff"
+        name: Tournan
+  - !Folder
+    name: "500"
+    choices:
+      - !UnionCircles
+        name: RER-A-500m
+        radius: 500
+        circle_on_top: true
+        color: "ff00ff00"
+        centers:
+          - kml: RER-A.kml
+            name: Cergy-le-Haut
+          - kml: RER-A.kml
+            name: Cergy - Saint-Christophe
+          - kml: RER-A.kml
+            name: Cergy Préfecture
+          - kml: RER-A.kml
+            name: Neuville Université
+          - kml: RER-A.kml
+            name: Conflans-Fin-d'Oise
+          - kml: RER-A.kml
+            name: Achères - Ville
+          - kml: RER-A.kml
+            name: Poissy
+          - kml: RER-A.kml
+            name: Achères Grand Cormier
+          - kml: RER-A.kml
+            name: Maisons-Laffitte
+          - kml: RER-A.kml
+            name: Sartrouville
+          - kml: RER-A.kml
+            name: Houilles - Carrières-sur-Seine
+          - kml: RER-A.kml
+            name: Saint-Germain-en-Laye
+          - kml: RER-A.kml
+            name: Le Vésinet - Le Pecq
+          - kml: RER-A.kml
+            name: Le Vésinet Centre
+          - kml: RER-A.kml
+            name: Chatou - Croissy
+          - kml: RER-A.kml
+            name: Rueil-Malmaison
+          - kml: RER-A.kml
+            name: Nanterre-Ville
+          - kml: RER-A.kml
+            name: Nanterre-Université
+          - kml: RER-A.kml
+            name: Nanterre-Préfecture
+          - kml: RER-A.kml
+            name: La Défense - Grande Arche
+          - kml: RER-A.kml
+            name: Charles de Gaulle - Étoile
+          - kml: RER-A.kml
+            name: Auber
+          - kml: RER-A.kml
+            name: Châtelet - Les Halles
+          - kml: RER-A.kml
+            name: Gare de Lyon
+          - kml: RER-A.kml
+            name: Nation
+          - kml: RER-A.kml
+            name: Vincennes
+          - kml: RER-A.kml
+            name: Fontenay-sous-Bois
+          - kml: RER-A.kml
+            name: Nogent-sur-Marne
+          - kml: RER-A.kml
+            name: Val-de-Fontenay
+          - kml: RER-A.kml
+            name: Joinville-le-Pont
+          - kml: RER-A.kml
+            name: Saint-Maur Créteil
+          - kml: RER-A.kml
+            name: Le Parc de Saint-Maur
+          - kml: RER-A.kml
+            name: Saint-Maur - Champigny
+          - kml: RER-A.kml
+            name: La Varenne - Chennevières
+          - kml: RER-A.kml
+            name: Sucy - Bonneuil
+          - kml: RER-A.kml
+            name: Boissy-Saint-Léger
+          - kml: RER-A.kml
+            name: Neuilly-Plaisance
+          - kml: RER-A.kml
+            name: Bry-sur-Marne
+          - kml: RER-A.kml
+            name: Noisy-le-Grand - Mont d'Est
+          - kml: RER-A.kml
+            name: Noisy-Champs
+          - kml: RER-A.kml
+            name: Noisiel
+          - kml: RER-A.kml
+            name: Lognes
+          - kml: RER-A.kml
+            name: Torcy
+          - kml: RER-A.kml
+            name: Bussy-Saint-Georges
+          - kml: RER-A.kml
+            name: Val d'Europe
+          - kml: RER-A.kml
+            name: Marne-la-Vallée - Chessy
+      - !UnionCircles
+        name: RER-B-500m
+        radius: 500
+        circle_on_top: true
+        color: "ff00ff00"
+        centers:
+          - kml: RER-B.kml
+            name: Aeroport Charles de Gaulle 2 TGV
+          - kml: RER-B.kml
+            name: Aeroport Charles de Gaulle 1
+          - kml: RER-B.kml
+            name: Parc des Expositions
+          - kml: RER-B.kml
+            name: Villepinte - Parc du Sausset
+          - kml: RER-B.kml
+            name: Sevran - Beaudottes
+          - kml: RER-B.kml
+            name: Mitry - Claye
+          - kml: RER-B.kml
+            name: Villeparisis - Mitry le Neuf
+          - kml: RER-B.kml
+            name: Vert Galant
+          - kml: RER-B.kml
+            name: Sevran - Livry
+          - kml: RER-B.kml
+            name: Aulnay-sous-Bois
+          - kml: RER-B.kml
+            name: Le Blanc-Mesnil
+          - kml: RER-B.kml
+            name: Drancy
+          - kml: RER-B.kml
+            name: Le Bourget
+          - kml: RER-B.kml
+            name: La Courneuve - Aubervilliers
+          - kml: RER-B.kml
+            name: La Plaine - Stade de France
+          - kml: RER-B.kml
+            name: Gare du Nord
+          - kml: RER-B.kml
+            name: Châtelet - Les Halles
+          - kml: RER-B.kml
+            name: Saint-Michel Notre-Dame
+          - kml: RER-B.kml
+            name: Luxembourg
+          - kml: RER-B.kml
+            name: Port Royal
+          - kml: RER-B.kml
+            name: Denfert-Rochereau
+          - kml: RER-B.kml
+            name: Cité Universitaire
+          - kml: RER-B.kml
+            name: Gentilly
+          - kml: RER-B.kml
+            name: Laplace
+          - kml: RER-B.kml
+            name: Arcueil - Cachan
+          - kml: RER-B.kml
+            name: Bagneux
+          - kml: RER-B.kml
+            name: Bourg-la-Reine
+          - kml: RER-B.kml
+            name: Fontenay-aux-Roses
+          - kml: RER-B.kml
+            name: Sceaux
+          - kml: RER-B.kml
+            name: Robinson
+          - kml: RER-B.kml
+            name: Parc de Sceaux
+          - kml: RER-B.kml
+            name: La Croix de Berny
+          - kml: RER-B.kml
+            name: Antony
+          - kml: RER-B.kml
+            name: Fontaine-Michalon
+          - kml: RER-B.kml
+            name: Les Baconnets
+          - kml: RER-B.kml
+            name: Massy - Verrières
+          - kml: RER-B.kml
+            name: Massy-Palaiseau
+          - kml: RER-B.kml
+            name: Palaiseau
+          - kml: RER-B.kml
+            name: Palaiseau - Villebon
+          - kml: RER-B.kml
+            name: Lozère
+          - kml: RER-B.kml
+            name: Le Guichet
+          - kml: RER-B.kml
+            name: Orsay-Ville
+          - kml: RER-B.kml
+            name: Bures-sur-Yvette
+          - kml: RER-B.kml
+            name: La Hacquinière
+          - kml: RER-B.kml
+            name: Gif-sur-Yvette
+          - kml: RER-B.kml
+            name: Courcelle-sur-Yvette
+          - kml: RER-B.kml
+            name: Saint-Rémy-lès-Chevreuse
+      - !UnionCircles
+        name: RER-C-500m
+        radius: 500
+        circle_on_top: true
+        color: "ff00ff00"
+        centers:
+          - kml: RER-C.kml
+            name: Pontoise
+          - kml: RER-C.kml
+            name: Saint-Ouen-l'Aumône
+          - kml: RER-C.kml
+            name: Saint-Ouen-l'Aumône Liesse
+          - kml: RER-C.kml
+            name: Pierrelaye
+          - kml: RER-C.kml
+            name: Montigny-Beauchamp
+          - kml: RER-C.kml
+            name: Franconville - Le Plessis-Bouchard
+          - kml: RER-C.kml
+            name: Cernay
+          - kml: RER-C.kml
+            name: Ermont - Eaubonne
+          - kml: RER-C.kml
+            name: Saint-Gratien
+          - kml: RER-C.kml
+            name: Épinay-sur-Seine
+          - kml: RER-C.kml
+            name: Gennevilliers
+          - kml: RER-C.kml
+            name: Les Grésillons
+          - kml: RER-C.kml
+            name: Saint-Ouen
+          - kml: RER-C.kml
+            name: Porte de Clichy
+          - kml: RER-C.kml
+            name: Pereire - Levallois
+          - kml: RER-C.kml
+            name: Neuilly - Porte Maillot
+          - kml: RER-C.kml
+            name: Avenue Foch
+          - kml: RER-C.kml
+            name: Avenue Henri Martin
+          - kml: RER-C.kml
+            name: Boulainvilliers
+          - kml: RER-C.kml
+            name: Avenue du Président Kennedy
+          - kml: RER-C.kml
+            name: Champ de Mars - Tour Eiffel
+          - kml: RER-C.kml
+            name: Pont de l'Alma
+          - kml: RER-C.kml
+            name: Musée d'Orsay
+          - kml: RER-C.kml
+            name: Saint-Michel Notre-Dame
+          - kml: RER-C.kml
+            name: Paris Austerlitz
+          - kml: RER-C.kml
+            name: Bibliothèque François Mitterrand
+          - kml: RER-C.kml
+            name: Ivry-sur-Seine
+          - kml: RER-C.kml
+            name: Vitry-sur-Seine
+          - kml: RER-C.kml
+            name: Les Ardoines
+          - kml: RER-C.kml
+            name: Choisy-le-Roi
+          - kml: RER-C.kml
+            name: Villeneuve-le-Roi
+          - kml: RER-C.kml
+            name: Ablon
+          - kml: RER-C.kml
+            name: Athis-Mons
+          - kml: RER-C.kml
+            name: Juvisy-sur-Orge
+          - kml: RER-C.kml
+            name: Orly Ville
+          - kml: RER-C.kml
+            name: Les Saules
+          - kml: RER-C.kml
+            name: Savigny-sur-Orge
+          - kml: RER-C.kml
+            name: Épinay-sur-Orge
+          - kml: RER-C.kml
+            name: Sainte-Geneviève-des-Bois
+          - kml: RER-C.kml
+            name: Saint-Michel-sur-Orge
+          - kml: RER-C.kml
+            name: Brétigny
+          - kml: RER-C.kml
+            name: Javel
+          - kml: RER-C.kml
+            name: Pont du Garigliano
+          - kml: RER-C.kml
+            name: Issy Val de Seine
+          - kml: RER-C.kml
+            name: Issy
+          - kml: RER-C.kml
+            name: Meudon Val Fleury
+          - kml: RER-C.kml
+            name: Chaville-Vélizy
+          - kml: RER-C.kml
+            name: Viroflay Rive Gauche
+          - kml: RER-C.kml
+            name: Porchefontaine
+          - kml: RER-C.kml
+            name: Versailles-Chantiers
+          - kml: RER-C.kml
+            name: Versailles Château Rive Gauche
+          - kml: RER-C.kml
+            name: Saint-Cyr
+          - kml: RER-C.kml
+            name: Saint-Quentin-en-Yvelines
+          - kml: RER-C.kml
+            name: Massy-Palaiseau
+          - kml: RER-C.kml
+            name: Massy - Verrières
+          - kml: RER-C.kml
+            name: Chemin d'Antony
+          - kml: RER-C.kml
+            name: Pont de Rungis Aéroport d'Orly
+          - kml: RER-C.kml
+            name: Rungis - La Fraternelle
+          - kml: RER-C.kml
+            name: Arpajon
+          - kml: RER-C.kml
+            name: Égly
+          - kml: RER-C.kml
+            name: La Norville - Saint-Germain-lès-Arpajon
+          - kml: RER-C.kml
+            name: Breuillet - Bruyères-le-Châtel
+          - kml: RER-C.kml
+            name: Breuillet - Village
+          - kml: RER-C.kml
+            name: Saint-Chéron
+          - kml: RER-C.kml
+            name: Sermaise
+          - kml: RER-C.kml
+            name: Dourdan
+          - kml: RER-C.kml
+            name: Dourdan - La Forêt
+          - kml: RER-C.kml
+            name: Marolles-en-Hurepoix
+          - kml: RER-C.kml
+            name: Bouray
+          - kml: RER-C.kml
+            name: Lardy
+          - kml: RER-C.kml
+            name: Chamarande
+          - kml: RER-C.kml
+            name: Étréchy
+          - kml: RER-C.kml
+            name: Étampes
+          - kml: RER-C.kml
+            name: Saint-Martin d'Étampes
+      - !UnionCircles
+        name: RER-D-500m
+        radius: 500
+        circle_on_top: true
+        color: "ff00ff00"
+        centers:
+          - kml: RER-D.kml
+            name: Creil
+          - kml: RER-D.kml
+            name: Chantilly - Gouvieux
+          - kml: RER-D.kml
+            name: Orry-la-Ville - Coye-la-Forêt
+          - kml: RER-D.kml
+            name: La Borne Blanche
+          - kml: RER-D.kml
+            name: Survilliers - Fosses
+          - kml: RER-D.kml
+            name: Louvres
+          - kml: RER-D.kml
+            name: Les Noues
+          - kml: RER-D.kml
+            name: Goussainville
+          - kml: RER-D.kml
+            name: Villiers-le-Bel - Gonesse - Arnouville
+          - kml: RER-D.kml
+            name: Garges - Sarcelles
+          - kml: RER-D.kml
+            name: Pierrefitte - Stains
+          - kml: RER-D.kml
+            name: Saint-Denis
+          - kml: RER-D.kml
+            name: Stade de France - Saint-Denis
+          - kml: RER-D.kml
+            name: Gare du Nord
+          - kml: RER-D.kml
+            name: Châtelet - Les Halles
+          - kml: RER-D.kml
+            name: Gare de Lyon
+          - kml: RER-D.kml
+            name: Maisons-Alfort - Alfortville
+          - kml: RER-D.kml
+            name: Le Vert de Maisons
+          - kml: RER-D.kml
+            name: Créteil - Pompadour
+          - kml: RER-D.kml
+            name: Villeneuve Triage
+          - kml: RER-D.kml
+            name: Villeneuve-Saint-Georges
+          - kml: RER-D.kml
+            name: Montgeron - Crosne
+          - kml: RER-D.kml
+            name: Yerres
+          - kml: RER-D.kml
+            name: Brunoy
+          - kml: RER-D.kml
+            name: Boussy-Saint-Antoine
+          - kml: RER-D.kml
+            name: Combs-la-Ville - Quincy
+          - kml: RER-D.kml
+            name: Lieusaint - Moissy
+          - kml: RER-D.kml
+            name: Savigny-le-Temple - Nandy
+          - kml: RER-D.kml
+            name: Cesson
+          - kml: RER-D.kml
+            name: Le Mée
+          - kml: RER-D.kml
+            name: Melun
+          - kml: RER-D.kml
+            name: Vigneux-sur-Seine
+          - kml: RER-D.kml
+            name: Juvisy-sur-Orge
+          - kml: RER-D.kml
+            name: Viry-Châtillon
+          - kml: RER-D.kml
+            name: Grigny-Centre
+          - kml: RER-D.kml
+            name: Orangis - Bois de l'Épine
+          - kml: RER-D.kml
+            name: Évry Courcouronnes-Centre
+          - kml: RER-D.kml
+            name: Le Bras de Fer
+          - kml: RER-D.kml
+            name: Corbeil-Essonnes
+          - kml: RER-D.kml
+            name: Moulin Galant
+          - kml: RER-D.kml
+            name: Mennecy
+          - kml: RER-D.kml
+            name: Ballancourt
+          - kml: RER-D.kml
+            name: La Ferté-Alais
+          - kml: RER-D.kml
+            name: Boutigny
+          - kml: RER-D.kml
+            name: Maisse
+          - kml: RER-D.kml
+            name: Buno - Gironville
+          - kml: RER-D.kml
+            name: Boigneville
+          - kml: RER-D.kml
+            name: Malesherbes
+          - kml: RER-D.kml
+            name: Ris-Orangis
+          - kml: RER-D.kml
+            name: Grand Bourg
+          - kml: RER-D.kml
+            name: Évry Val de Seine
+          - kml: RER-D.kml
+            name: Essonnes - Robinson
+          - kml: RER-D.kml
+            name: Villabé
+          - kml: RER-D.kml
+            name: Le Plessis-Chenet
+          - kml: RER-D.kml
+            name: Le Coudray - Montceaux
+          - kml: RER-D.kml
+            name: Saint-Fargeau
+          - kml: RER-D.kml
+            name: Ponthierry - Pringy
+          - kml: RER-D.kml
+            name: Boissise-le-Roi
+          - kml: RER-D.kml
+            name: Vosves
+      - !UnionCircles
+        name: RER-E-500m
+        radius: 500
+        circle_on_top: true
+        color: "ff00ff00"
+        centers:
+          - kml: RER-E.kml
+            name: Nanterre - La Folie
+          - kml: RER-E.kml
+            name: La Défense - Grande Arche
+          - kml: RER-E.kml
+            name: Neuilly - Porte Maillot
+          - kml: RER-E.kml
+            name: Haussmann - Saint-Lazare
+          - kml: RER-E.kml
+            name: Magenta
+          - kml: RER-E.kml
+            name: Rosa Parks
+          - kml: RER-E.kml
+            name: Pantin
+          - kml: RER-E.kml
+            name: Noisy-le-Sec
+          - kml: RER-E.kml
+            name: Bondy
+          - kml: RER-E.kml
+            name: Le Raincy - Villemomble - Montfermeil
+          - kml: RER-E.kml
+            name: Gagny
+          - kml: RER-E.kml
+            name: Le Chénay - Gagny
+          - kml: RER-E.kml
+            name: Chelles - Gournay
+          - kml: RER-E.kml
+            name: Val de Fontenay
+          - kml: RER-E.kml
+            name: Nogent - Le Perreux
+          - kml: RER-E.kml
+            name: Rosny-sous-Bois
+          - kml: RER-E.kml
+            name: Rosny - Bois-Perrier
+          - kml: RER-E.kml
+            name: Les Boullereaux - Champigny
+          - kml: RER-E.kml
+            name: Villiers-sur-Marne - Le Plessis-Trévise
+          - kml: RER-E.kml
+            name: Les Yvris - Noisy-le-Grand
+          - kml: RER-E.kml
+            name: Émerainville - Pontault-Combault
+          - kml: RER-E.kml
+            name: Roissy-en-Brie
+          - kml: RER-E.kml
+            name: Ozoir-la-Ferrière
+          - kml: RER-E.kml
+            name: Gretz-Armainvilliers
+          - kml: RER-E.kml
+            name: Tournan
+  - !Folder
+    name: "1000"
+    choices:
+      - !UnionCircles
+        name: RER-A-1000m
+        radius: 1000
+        circle_on_top: true
+        color: "ffff0000"
+        centers:
+          - kml: RER-A.kml
+            name: Cergy-le-Haut
+          - kml: RER-A.kml
+            name: Cergy - Saint-Christophe
+          - kml: RER-A.kml
+            name: Cergy Préfecture
+          - kml: RER-A.kml
+            name: Neuville Université
+          - kml: RER-A.kml
+            name: Conflans-Fin-d'Oise
+          - kml: RER-A.kml
+            name: Achères - Ville
+          - kml: RER-A.kml
+            name: Poissy
+          - kml: RER-A.kml
+            name: Achères Grand Cormier
+          - kml: RER-A.kml
+            name: Maisons-Laffitte
+          - kml: RER-A.kml
+            name: Sartrouville
+          - kml: RER-A.kml
+            name: Houilles - Carrières-sur-Seine
+          - kml: RER-A.kml
+            name: Saint-Germain-en-Laye
+          - kml: RER-A.kml
+            name: Le Vésinet - Le Pecq
+          - kml: RER-A.kml
+            name: Le Vésinet Centre
+          - kml: RER-A.kml
+            name: Chatou - Croissy
+          - kml: RER-A.kml
+            name: Rueil-Malmaison
+          - kml: RER-A.kml
+            name: Nanterre-Ville
+          - kml: RER-A.kml
+            name: Nanterre-Université
+          - kml: RER-A.kml
+            name: Nanterre-Préfecture
+          - kml: RER-A.kml
+            name: La Défense - Grande Arche
+          - kml: RER-A.kml
+            name: Charles de Gaulle - Étoile
+          - kml: RER-A.kml
+            name: Auber
+          - kml: RER-A.kml
+            name: Châtelet - Les Halles
+          - kml: RER-A.kml
+            name: Gare de Lyon
+          - kml: RER-A.kml
+            name: Nation
+          - kml: RER-A.kml
+            name: Vincennes
+          - kml: RER-A.kml
+            name: Fontenay-sous-Bois
+          - kml: RER-A.kml
+            name: Nogent-sur-Marne
+          - kml: RER-A.kml
+            name: Val-de-Fontenay
+          - kml: RER-A.kml
+            name: Joinville-le-Pont
+          - kml: RER-A.kml
+            name: Saint-Maur Créteil
+          - kml: RER-A.kml
+            name: Le Parc de Saint-Maur
+          - kml: RER-A.kml
+            name: Saint-Maur - Champigny
+          - kml: RER-A.kml
+            name: La Varenne - Chennevières
+          - kml: RER-A.kml
+            name: Sucy - Bonneuil
+          - kml: RER-A.kml
+            name: Boissy-Saint-Léger
+          - kml: RER-A.kml
+            name: Neuilly-Plaisance
+          - kml: RER-A.kml
+            name: Bry-sur-Marne
+          - kml: RER-A.kml
+            name: Noisy-le-Grand - Mont d'Est
+          - kml: RER-A.kml
+            name: Noisy-Champs
+          - kml: RER-A.kml
+            name: Noisiel
+          - kml: RER-A.kml
+            name: Lognes
+          - kml: RER-A.kml
+            name: Torcy
+          - kml: RER-A.kml
+            name: Bussy-Saint-Georges
+          - kml: RER-A.kml
+            name: Val d'Europe
+          - kml: RER-A.kml
+            name: Marne-la-Vallée - Chessy
+      - !UnionCircles
+        name: RER-B-1000m
+        radius: 1000
+        circle_on_top: true
+        color: "ffff0000"
+        centers:
+          - kml: RER-B.kml
+            name: Aeroport Charles de Gaulle 2 TGV
+          - kml: RER-B.kml
+            name: Aeroport Charles de Gaulle 1
+          - kml: RER-B.kml
+            name: Parc des Expositions
+          - kml: RER-B.kml
+            name: Villepinte - Parc du Sausset
+          - kml: RER-B.kml
+            name: Sevran - Beaudottes
+          - kml: RER-B.kml
+            name: Mitry - Claye
+          - kml: RER-B.kml
+            name: Villeparisis - Mitry le Neuf
+          - kml: RER-B.kml
+            name: Vert Galant
+          - kml: RER-B.kml
+            name: Sevran - Livry
+          - kml: RER-B.kml
+            name: Aulnay-sous-Bois
+          - kml: RER-B.kml
+            name: Le Blanc-Mesnil
+          - kml: RER-B.kml
+            name: Drancy
+          - kml: RER-B.kml
+            name: Le Bourget
+          - kml: RER-B.kml
+            name: La Courneuve - Aubervilliers
+          - kml: RER-B.kml
+            name: La Plaine - Stade de France
+          - kml: RER-B.kml
+            name: Gare du Nord
+          - kml: RER-B.kml
+            name: Châtelet - Les Halles
+          - kml: RER-B.kml
+            name: Saint-Michel Notre-Dame
+          - kml: RER-B.kml
+            name: Luxembourg
+          - kml: RER-B.kml
+            name: Port Royal
+          - kml: RER-B.kml
+            name: Denfert-Rochereau
+          - kml: RER-B.kml
+            name: Cité Universitaire
+          - kml: RER-B.kml
+            name: Gentilly
+          - kml: RER-B.kml
+            name: Laplace
+          - kml: RER-B.kml
+            name: Arcueil - Cachan
+          - kml: RER-B.kml
+            name: Bagneux
+          - kml: RER-B.kml
+            name: Bourg-la-Reine
+          - kml: RER-B.kml
+            name: Fontenay-aux-Roses
+          - kml: RER-B.kml
+            name: Sceaux
+          - kml: RER-B.kml
+            name: Robinson
+          - kml: RER-B.kml
+            name: Parc de Sceaux
+          - kml: RER-B.kml
+            name: La Croix de Berny
+          - kml: RER-B.kml
+            name: Antony
+          - kml: RER-B.kml
+            name: Fontaine-Michalon
+          - kml: RER-B.kml
+            name: Les Baconnets
+          - kml: RER-B.kml
+            name: Massy - Verrières
+          - kml: RER-B.kml
+            name: Massy-Palaiseau
+          - kml: RER-B.kml
+            name: Palaiseau
+          - kml: RER-B.kml
+            name: Palaiseau - Villebon
+          - kml: RER-B.kml
+            name: Lozère
+          - kml: RER-B.kml
+            name: Le Guichet
+          - kml: RER-B.kml
+            name: Orsay-Ville
+          - kml: RER-B.kml
+            name: Bures-sur-Yvette
+          - kml: RER-B.kml
+            name: La Hacquinière
+          - kml: RER-B.kml
+            name: Gif-sur-Yvette
+          - kml: RER-B.kml
+            name: Courcelle-sur-Yvette
+          - kml: RER-B.kml
+            name: Saint-Rémy-lès-Chevreuse
+      - !UnionCircles
+        name: RER-C-1000m
+        radius: 1000
+        circle_on_top: true
+        color: "ffff0000"
+        centers:
+          - kml: RER-C.kml
+            name: Pontoise
+          - kml: RER-C.kml
+            name: Saint-Ouen-l'Aumône
+          - kml: RER-C.kml
+            name: Saint-Ouen-l'Aumône Liesse
+          - kml: RER-C.kml
+            name: Pierrelaye
+          - kml: RER-C.kml
+            name: Montigny-Beauchamp
+          - kml: RER-C.kml
+            name: Franconville - Le Plessis-Bouchard
+          - kml: RER-C.kml
+            name: Cernay
+          - kml: RER-C.kml
+            name: Ermont - Eaubonne
+          - kml: RER-C.kml
+            name: Saint-Gratien
+          - kml: RER-C.kml
+            name: Épinay-sur-Seine
+          - kml: RER-C.kml
+            name: Gennevilliers
+          - kml: RER-C.kml
+            name: Les Grésillons
+          - kml: RER-C.kml
+            name: Saint-Ouen
+          - kml: RER-C.kml
+            name: Porte de Clichy
+          - kml: RER-C.kml
+            name: Pereire - Levallois
+          - kml: RER-C.kml
+            name: Neuilly - Porte Maillot
+          - kml: RER-C.kml
+            name: Avenue Foch
+          - kml: RER-C.kml
+            name: Avenue Henri Martin
+          - kml: RER-C.kml
+            name: Boulainvilliers
+          - kml: RER-C.kml
+            name: Avenue du Président Kennedy
+          - kml: RER-C.kml
+            name: Champ de Mars - Tour Eiffel
+          - kml: RER-C.kml
+            name: Pont de l'Alma
+          - kml: RER-C.kml
+            name: Musée d'Orsay
+          - kml: RER-C.kml
+            name: Saint-Michel Notre-Dame
+          - kml: RER-C.kml
+            name: Paris Austerlitz
+          - kml: RER-C.kml
+            name: Bibliothèque François Mitterrand
+          - kml: RER-C.kml
+            name: Ivry-sur-Seine
+          - kml: RER-C.kml
+            name: Vitry-sur-Seine
+          - kml: RER-C.kml
+            name: Les Ardoines
+          - kml: RER-C.kml
+            name: Choisy-le-Roi
+          - kml: RER-C.kml
+            name: Villeneuve-le-Roi
+          - kml: RER-C.kml
+            name: Ablon
+          - kml: RER-C.kml
+            name: Athis-Mons
+          - kml: RER-C.kml
+            name: Juvisy-sur-Orge
+          - kml: RER-C.kml
+            name: Orly Ville
+          - kml: RER-C.kml
+            name: Les Saules
+          - kml: RER-C.kml
+            name: Savigny-sur-Orge
+          - kml: RER-C.kml
+            name: Épinay-sur-Orge
+          - kml: RER-C.kml
+            name: Sainte-Geneviève-des-Bois
+          - kml: RER-C.kml
+            name: Saint-Michel-sur-Orge
+          - kml: RER-C.kml
+            name: Brétigny
+          - kml: RER-C.kml
+            name: Javel
+          - kml: RER-C.kml
+            name: Pont du Garigliano
+          - kml: RER-C.kml
+            name: Issy Val de Seine
+          - kml: RER-C.kml
+            name: Issy
+          - kml: RER-C.kml
+            name: Meudon Val Fleury
+          - kml: RER-C.kml
+            name: Chaville-Vélizy
+          - kml: RER-C.kml
+            name: Viroflay Rive Gauche
+          - kml: RER-C.kml
+            name: Porchefontaine
+          - kml: RER-C.kml
+            name: Versailles-Chantiers
+          - kml: RER-C.kml
+            name: Versailles Château Rive Gauche
+          - kml: RER-C.kml
+            name: Saint-Cyr
+          - kml: RER-C.kml
+            name: Saint-Quentin-en-Yvelines
+          - kml: RER-C.kml
+            name: Massy-Palaiseau
+          - kml: RER-C.kml
+            name: Massy - Verrières
+          - kml: RER-C.kml
+            name: Chemin d'Antony
+          - kml: RER-C.kml
+            name: Pont de Rungis Aéroport d'Orly
+          - kml: RER-C.kml
+            name: Rungis - La Fraternelle
+          - kml: RER-C.kml
+            name: Arpajon
+          - kml: RER-C.kml
+            name: Égly
+          - kml: RER-C.kml
+            name: La Norville - Saint-Germain-lès-Arpajon
+          - kml: RER-C.kml
+            name: Breuillet - Bruyères-le-Châtel
+          - kml: RER-C.kml
+            name: Breuillet - Village
+          - kml: RER-C.kml
+            name: Saint-Chéron
+          - kml: RER-C.kml
+            name: Sermaise
+          - kml: RER-C.kml
+            name: Dourdan
+          - kml: RER-C.kml
+            name: Dourdan - La Forêt
+          - kml: RER-C.kml
+            name: Marolles-en-Hurepoix
+          - kml: RER-C.kml
+            name: Bouray
+          - kml: RER-C.kml
+            name: Lardy
+          - kml: RER-C.kml
+            name: Chamarande
+          - kml: RER-C.kml
+            name: Étréchy
+          - kml: RER-C.kml
+            name: Étampes
+          - kml: RER-C.kml
+            name: Saint-Martin d'Étampes
+      - !UnionCircles
+        name: RER-D-1000m
+        radius: 1000
+        circle_on_top: true
+        color: "ffff0000"
+        centers:
+          - kml: RER-D.kml
+            name: Creil
+          - kml: RER-D.kml
+            name: Chantilly - Gouvieux
+          - kml: RER-D.kml
+            name: Orry-la-Ville - Coye-la-Forêt
+          - kml: RER-D.kml
+            name: La Borne Blanche
+          - kml: RER-D.kml
+            name: Survilliers - Fosses
+          - kml: RER-D.kml
+            name: Louvres
+          - kml: RER-D.kml
+            name: Les Noues
+          - kml: RER-D.kml
+            name: Goussainville
+          - kml: RER-D.kml
+            name: Villiers-le-Bel - Gonesse - Arnouville
+          - kml: RER-D.kml
+            name: Garges - Sarcelles
+          - kml: RER-D.kml
+            name: Pierrefitte - Stains
+          - kml: RER-D.kml
+            name: Saint-Denis
+          - kml: RER-D.kml
+            name: Stade de France - Saint-Denis
+          - kml: RER-D.kml
+            name: Gare du Nord
+          - kml: RER-D.kml
+            name: Châtelet - Les Halles
+          - kml: RER-D.kml
+            name: Gare de Lyon
+          - kml: RER-D.kml
+            name: Maisons-Alfort - Alfortville
+          - kml: RER-D.kml
+            name: Le Vert de Maisons
+          - kml: RER-D.kml
+            name: Créteil - Pompadour
+          - kml: RER-D.kml
+            name: Villeneuve Triage
+          - kml: RER-D.kml
+            name: Villeneuve-Saint-Georges
+          - kml: RER-D.kml
+            name: Montgeron - Crosne
+          - kml: RER-D.kml
+            name: Yerres
+          - kml: RER-D.kml
+            name: Brunoy
+          - kml: RER-D.kml
+            name: Boussy-Saint-Antoine
+          - kml: RER-D.kml
+            name: Combs-la-Ville - Quincy
+          - kml: RER-D.kml
+            name: Lieusaint - Moissy
+          - kml: RER-D.kml
+            name: Savigny-le-Temple - Nandy
+          - kml: RER-D.kml
+            name: Cesson
+          - kml: RER-D.kml
+            name: Le Mée
+          - kml: RER-D.kml
+            name: Melun
+          - kml: RER-D.kml
+            name: Vigneux-sur-Seine
+          - kml: RER-D.kml
+            name: Juvisy-sur-Orge
+          - kml: RER-D.kml
+            name: Viry-Châtillon
+          - kml: RER-D.kml
+            name: Grigny-Centre
+          - kml: RER-D.kml
+            name: Orangis - Bois de l'Épine
+          - kml: RER-D.kml
+            name: Évry Courcouronnes-Centre
+          - kml: RER-D.kml
+            name: Le Bras de Fer
+          - kml: RER-D.kml
+            name: Corbeil-Essonnes
+          - kml: RER-D.kml
+            name: Moulin Galant
+          - kml: RER-D.kml
+            name: Mennecy
+          - kml: RER-D.kml
+            name: Ballancourt
+          - kml: RER-D.kml
+            name: La Ferté-Alais
+          - kml: RER-D.kml
+            name: Boutigny
+          - kml: RER-D.kml
+            name: Maisse
+          - kml: RER-D.kml
+            name: Buno - Gironville
+          - kml: RER-D.kml
+            name: Boigneville
+          - kml: RER-D.kml
+            name: Malesherbes
+          - kml: RER-D.kml
+            name: Ris-Orangis
+          - kml: RER-D.kml
+            name: Grand Bourg
+          - kml: RER-D.kml
+            name: Évry Val de Seine
+          - kml: RER-D.kml
+            name: Essonnes - Robinson
+          - kml: RER-D.kml
+            name: Villabé
+          - kml: RER-D.kml
+            name: Le Plessis-Chenet
+          - kml: RER-D.kml
+            name: Le Coudray - Montceaux
+          - kml: RER-D.kml
+            name: Saint-Fargeau
+          - kml: RER-D.kml
+            name: Ponthierry - Pringy
+          - kml: RER-D.kml
+            name: Boissise-le-Roi
+          - kml: RER-D.kml
+            name: Vosves
+      - !UnionCircles
+        name: RER-E-1000m
+        radius: 1000
+        circle_on_top: true
+        color: "ffff0000"
+        centers:
+          - kml: RER-E.kml
+            name: Nanterre - La Folie
+          - kml: RER-E.kml
+            name: La Défense - Grande Arche
+          - kml: RER-E.kml
+            name: Neuilly - Porte Maillot
+          - kml: RER-E.kml
+            name: Haussmann - Saint-Lazare
+          - kml: RER-E.kml
+            name: Magenta
+          - kml: RER-E.kml
+            name: Rosa Parks
+          - kml: RER-E.kml
+            name: Pantin
+          - kml: RER-E.kml
+            name: Noisy-le-Sec
+          - kml: RER-E.kml
+            name: Bondy
+          - kml: RER-E.kml
+            name: Le Raincy - Villemomble - Montfermeil
+          - kml: RER-E.kml
+            name: Gagny
+          - kml: RER-E.kml
+            name: Le Chénay - Gagny
+          - kml: RER-E.kml
+            name: Chelles - Gournay
+          - kml: RER-E.kml
+            name: Val de Fontenay
+          - kml: RER-E.kml
+            name: Nogent - Le Perreux
+          - kml: RER-E.kml
+            name: Rosny-sous-Bois
+          - kml: RER-E.kml
+            name: Rosny - Bois-Perrier
+          - kml: RER-E.kml
+            name: Les Boullereaux - Champigny
+          - kml: RER-E.kml
+            name: Villiers-sur-Marne - Le Plessis-Trévise
+          - kml: RER-E.kml
+            name: Les Yvris - Noisy-le-Grand
+          - kml: RER-E.kml
+            name: Émerainville - Pontault-Combault
+          - kml: RER-E.kml
+            name: Roissy-en-Brie
+          - kml: RER-E.kml
+            name: Ozoir-la-Ferrière
+          - kml: RER-E.kml
+            name: Gretz-Armainvilliers
+          - kml: RER-E.kml
+            name: Tournan
+  - !Folder
+    name: "1500"
+    choices:
+      - !UnionCircles
+        name: RER-A-1500m
+        radius: 1500
+        circle_on_top: true
+        color: "ffffff00"
+        centers:
+          - kml: RER-A.kml
+            name: Cergy-le-Haut
+          - kml: RER-A.kml
+            name: Cergy - Saint-Christophe
+          - kml: RER-A.kml
+            name: Cergy Préfecture
+          - kml: RER-A.kml
+            name: Neuville Université
+          - kml: RER-A.kml
+            name: Conflans-Fin-d'Oise
+          - kml: RER-A.kml
+            name: Achères - Ville
+          - kml: RER-A.kml
+            name: Poissy
+          - kml: RER-A.kml
+            name: Achères Grand Cormier
+          - kml: RER-A.kml
+            name: Maisons-Laffitte
+          - kml: RER-A.kml
+            name: Sartrouville
+          - kml: RER-A.kml
+            name: Houilles - Carrières-sur-Seine
+          - kml: RER-A.kml
+            name: Saint-Germain-en-Laye
+          - kml: RER-A.kml
+            name: Le Vésinet - Le Pecq
+          - kml: RER-A.kml
+            name: Le Vésinet Centre
+          - kml: RER-A.kml
+            name: Chatou - Croissy
+          - kml: RER-A.kml
+            name: Rueil-Malmaison
+          - kml: RER-A.kml
+            name: Nanterre-Ville
+          - kml: RER-A.kml
+            name: Nanterre-Université
+          - kml: RER-A.kml
+            name: Nanterre-Préfecture
+          - kml: RER-A.kml
+            name: La Défense - Grande Arche
+          - kml: RER-A.kml
+            name: Charles de Gaulle - Étoile
+          - kml: RER-A.kml
+            name: Auber
+          - kml: RER-A.kml
+            name: Châtelet - Les Halles
+          - kml: RER-A.kml
+            name: Gare de Lyon
+          - kml: RER-A.kml
+            name: Nation
+          - kml: RER-A.kml
+            name: Vincennes
+          - kml: RER-A.kml
+            name: Fontenay-sous-Bois
+          - kml: RER-A.kml
+            name: Nogent-sur-Marne
+          - kml: RER-A.kml
+            name: Val-de-Fontenay
+          - kml: RER-A.kml
+            name: Joinville-le-Pont
+          - kml: RER-A.kml
+            name: Saint-Maur Créteil
+          - kml: RER-A.kml
+            name: Le Parc de Saint-Maur
+          - kml: RER-A.kml
+            name: Saint-Maur - Champigny
+          - kml: RER-A.kml
+            name: La Varenne - Chennevières
+          - kml: RER-A.kml
+            name: Sucy - Bonneuil
+          - kml: RER-A.kml
+            name: Boissy-Saint-Léger
+          - kml: RER-A.kml
+            name: Neuilly-Plaisance
+          - kml: RER-A.kml
+            name: Bry-sur-Marne
+          - kml: RER-A.kml
+            name: Noisy-le-Grand - Mont d'Est
+          - kml: RER-A.kml
+            name: Noisy-Champs
+          - kml: RER-A.kml
+            name: Noisiel
+          - kml: RER-A.kml
+            name: Lognes
+          - kml: RER-A.kml
+            name: Torcy
+          - kml: RER-A.kml
+            name: Bussy-Saint-Georges
+          - kml: RER-A.kml
+            name: Val d'Europe
+          - kml: RER-A.kml
+            name: Marne-la-Vallée - Chessy
+      - !UnionCircles
+        name: RER-B-1500m
+        radius: 1500
+        circle_on_top: true
+        color: "ffffff00"
+        centers:
+          - kml: RER-B.kml
+            name: Aeroport Charles de Gaulle 2 TGV
+          - kml: RER-B.kml
+            name: Aeroport Charles de Gaulle 1
+          - kml: RER-B.kml
+            name: Parc des Expositions
+          - kml: RER-B.kml
+            name: Villepinte - Parc du Sausset
+          - kml: RER-B.kml
+            name: Sevran - Beaudottes
+          - kml: RER-B.kml
+            name: Mitry - Claye
+          - kml: RER-B.kml
+            name: Villeparisis - Mitry le Neuf
+          - kml: RER-B.kml
+            name: Vert Galant
+          - kml: RER-B.kml
+            name: Sevran - Livry
+          - kml: RER-B.kml
+            name: Aulnay-sous-Bois
+          - kml: RER-B.kml
+            name: Le Blanc-Mesnil
+          - kml: RER-B.kml
+            name: Drancy
+          - kml: RER-B.kml
+            name: Le Bourget
+          - kml: RER-B.kml
+            name: La Courneuve - Aubervilliers
+          - kml: RER-B.kml
+            name: La Plaine - Stade de France
+          - kml: RER-B.kml
+            name: Gare du Nord
+          - kml: RER-B.kml
+            name: Châtelet - Les Halles
+          - kml: RER-B.kml
+            name: Saint-Michel Notre-Dame
+          - kml: RER-B.kml
+            name: Luxembourg
+          - kml: RER-B.kml
+            name: Port Royal
+          - kml: RER-B.kml
+            name: Denfert-Rochereau
+          - kml: RER-B.kml
+            name: Cité Universitaire
+          - kml: RER-B.kml
+            name: Gentilly
+          - kml: RER-B.kml
+            name: Laplace
+          - kml: RER-B.kml
+            name: Arcueil - Cachan
+          - kml: RER-B.kml
+            name: Bagneux
+          - kml: RER-B.kml
+            name: Bourg-la-Reine
+          - kml: RER-B.kml
+            name: Fontenay-aux-Roses
+          - kml: RER-B.kml
+            name: Sceaux
+          - kml: RER-B.kml
+            name: Robinson
+          - kml: RER-B.kml
+            name: Parc de Sceaux
+          - kml: RER-B.kml
+            name: La Croix de Berny
+          - kml: RER-B.kml
+            name: Antony
+          - kml: RER-B.kml
+            name: Fontaine-Michalon
+          - kml: RER-B.kml
+            name: Les Baconnets
+          - kml: RER-B.kml
+            name: Massy - Verrières
+          - kml: RER-B.kml
+            name: Massy-Palaiseau
+          - kml: RER-B.kml
+            name: Palaiseau
+          - kml: RER-B.kml
+            name: Palaiseau - Villebon
+          - kml: RER-B.kml
+            name: Lozère
+          - kml: RER-B.kml
+            name: Le Guichet
+          - kml: RER-B.kml
+            name: Orsay-Ville
+          - kml: RER-B.kml
+            name: Bures-sur-Yvette
+          - kml: RER-B.kml
+            name: La Hacquinière
+          - kml: RER-B.kml
+            name: Gif-sur-Yvette
+          - kml: RER-B.kml
+            name: Courcelle-sur-Yvette
+          - kml: RER-B.kml
+            name: Saint-Rémy-lès-Chevreuse
+      - !UnionCircles
+        name: RER-C-1500m
+        radius: 1500
+        circle_on_top: true
+        color: "ffffff00"
+        centers:
+          - kml: RER-C.kml
+            name: Pontoise
+          - kml: RER-C.kml
+            name: Saint-Ouen-l'Aumône
+          - kml: RER-C.kml
+            name: Saint-Ouen-l'Aumône Liesse
+          - kml: RER-C.kml
+            name: Pierrelaye
+          - kml: RER-C.kml
+            name: Montigny-Beauchamp
+          - kml: RER-C.kml
+            name: Franconville - Le Plessis-Bouchard
+          - kml: RER-C.kml
+            name: Cernay
+          - kml: RER-C.kml
+            name: Ermont - Eaubonne
+          - kml: RER-C.kml
+            name: Saint-Gratien
+          - kml: RER-C.kml
+            name: Épinay-sur-Seine
+          - kml: RER-C.kml
+            name: Gennevilliers
+          - kml: RER-C.kml
+            name: Les Grésillons
+          - kml: RER-C.kml
+            name: Saint-Ouen
+          - kml: RER-C.kml
+            name: Porte de Clichy
+          - kml: RER-C.kml
+            name: Pereire - Levallois
+          - kml: RER-C.kml
+            name: Neuilly - Porte Maillot
+          - kml: RER-C.kml
+            name: Avenue Foch
+          - kml: RER-C.kml
+            name: Avenue Henri Martin
+          - kml: RER-C.kml
+            name: Boulainvilliers
+          - kml: RER-C.kml
+            name: Avenue du Président Kennedy
+          - kml: RER-C.kml
+            name: Champ de Mars - Tour Eiffel
+          - kml: RER-C.kml
+            name: Pont de l'Alma
+          - kml: RER-C.kml
+            name: Musée d'Orsay
+          - kml: RER-C.kml
+            name: Saint-Michel Notre-Dame
+          - kml: RER-C.kml
+            name: Paris Austerlitz
+          - kml: RER-C.kml
+            name: Bibliothèque François Mitterrand
+          - kml: RER-C.kml
+            name: Ivry-sur-Seine
+          - kml: RER-C.kml
+            name: Vitry-sur-Seine
+          - kml: RER-C.kml
+            name: Les Ardoines
+          - kml: RER-C.kml
+            name: Choisy-le-Roi
+          - kml: RER-C.kml
+            name: Villeneuve-le-Roi
+          - kml: RER-C.kml
+            name: Ablon
+          - kml: RER-C.kml
+            name: Athis-Mons
+          - kml: RER-C.kml
+            name: Juvisy-sur-Orge
+          - kml: RER-C.kml
+            name: Orly Ville
+          - kml: RER-C.kml
+            name: Les Saules
+          - kml: RER-C.kml
+            name: Savigny-sur-Orge
+          - kml: RER-C.kml
+            name: Épinay-sur-Orge
+          - kml: RER-C.kml
+            name: Sainte-Geneviève-des-Bois
+          - kml: RER-C.kml
+            name: Saint-Michel-sur-Orge
+          - kml: RER-C.kml
+            name: Brétigny
+          - kml: RER-C.kml
+            name: Javel
+          - kml: RER-C.kml
+            name: Pont du Garigliano
+          - kml: RER-C.kml
+            name: Issy Val de Seine
+          - kml: RER-C.kml
+            name: Issy
+          - kml: RER-C.kml
+            name: Meudon Val Fleury
+          - kml: RER-C.kml
+            name: Chaville-Vélizy
+          - kml: RER-C.kml
+            name: Viroflay Rive Gauche
+          - kml: RER-C.kml
+            name: Porchefontaine
+          - kml: RER-C.kml
+            name: Versailles-Chantiers
+          - kml: RER-C.kml
+            name: Versailles Château Rive Gauche
+          - kml: RER-C.kml
+            name: Saint-Cyr
+          - kml: RER-C.kml
+            name: Saint-Quentin-en-Yvelines
+          - kml: RER-C.kml
+            name: Massy-Palaiseau
+          - kml: RER-C.kml
+            name: Massy - Verrières
+          - kml: RER-C.kml
+            name: Chemin d'Antony
+          - kml: RER-C.kml
+            name: Pont de Rungis Aéroport d'Orly
+          - kml: RER-C.kml
+            name: Rungis - La Fraternelle
+          - kml: RER-C.kml
+            name: Arpajon
+          - kml: RER-C.kml
+            name: Égly
+          - kml: RER-C.kml
+            name: La Norville - Saint-Germain-lès-Arpajon
+          - kml: RER-C.kml
+            name: Breuillet - Bruyères-le-Châtel
+          - kml: RER-C.kml
+            name: Breuillet - Village
+          - kml: RER-C.kml
+            name: Saint-Chéron
+          - kml: RER-C.kml
+            name: Sermaise
+          - kml: RER-C.kml
+            name: Dourdan
+          - kml: RER-C.kml
+            name: Dourdan - La Forêt
+          - kml: RER-C.kml
+            name: Marolles-en-Hurepoix
+          - kml: RER-C.kml
+            name: Bouray
+          - kml: RER-C.kml
+            name: Lardy
+          - kml: RER-C.kml
+            name: Chamarande
+          - kml: RER-C.kml
+            name: Étréchy
+          - kml: RER-C.kml
+            name: Étampes
+          - kml: RER-C.kml
+            name: Saint-Martin d'Étampes
+      - !UnionCircles
+        name: RER-D-1500m
+        radius: 1500
+        circle_on_top: true
+        color: "ffffff00"
+        centers:
+          - kml: RER-D.kml
+            name: Creil
+          - kml: RER-D.kml
+            name: Chantilly - Gouvieux
+          - kml: RER-D.kml
+            name: Orry-la-Ville - Coye-la-Forêt
+          - kml: RER-D.kml
+            name: La Borne Blanche
+          - kml: RER-D.kml
+            name: Survilliers - Fosses
+          - kml: RER-D.kml
+            name: Louvres
+          - kml: RER-D.kml
+            name: Les Noues
+          - kml: RER-D.kml
+            name: Goussainville
+          - kml: RER-D.kml
+            name: Villiers-le-Bel - Gonesse - Arnouville
+          - kml: RER-D.kml
+            name: Garges - Sarcelles
+          - kml: RER-D.kml
+            name: Pierrefitte - Stains
+          - kml: RER-D.kml
+            name: Saint-Denis
+          - kml: RER-D.kml
+            name: Stade de France - Saint-Denis
+          - kml: RER-D.kml
+            name: Gare du Nord
+          - kml: RER-D.kml
+            name: Châtelet - Les Halles
+          - kml: RER-D.kml
+            name: Gare de Lyon
+          - kml: RER-D.kml
+            name: Maisons-Alfort - Alfortville
+          - kml: RER-D.kml
+            name: Le Vert de Maisons
+          - kml: RER-D.kml
+            name: Créteil - Pompadour
+          - kml: RER-D.kml
+            name: Villeneuve Triage
+          - kml: RER-D.kml
+            name: Villeneuve-Saint-Georges
+          - kml: RER-D.kml
+            name: Montgeron - Crosne
+          - kml: RER-D.kml
+            name: Yerres
+          - kml: RER-D.kml
+            name: Brunoy
+          - kml: RER-D.kml
+            name: Boussy-Saint-Antoine
+          - kml: RER-D.kml
+            name: Combs-la-Ville - Quincy
+          - kml: RER-D.kml
+            name: Lieusaint - Moissy
+          - kml: RER-D.kml
+            name: Savigny-le-Temple - Nandy
+          - kml: RER-D.kml
+            name: Cesson
+          - kml: RER-D.kml
+            name: Le Mée
+          - kml: RER-D.kml
+            name: Melun
+          - kml: RER-D.kml
+            name: Vigneux-sur-Seine
+          - kml: RER-D.kml
+            name: Juvisy-sur-Orge
+          - kml: RER-D.kml
+            name: Viry-Châtillon
+          - kml: RER-D.kml
+            name: Grigny-Centre
+          - kml: RER-D.kml
+            name: Orangis - Bois de l'Épine
+          - kml: RER-D.kml
+            name: Évry Courcouronnes-Centre
+          - kml: RER-D.kml
+            name: Le Bras de Fer
+          - kml: RER-D.kml
+            name: Corbeil-Essonnes
+          - kml: RER-D.kml
+            name: Moulin Galant
+          - kml: RER-D.kml
+            name: Mennecy
+          - kml: RER-D.kml
+            name: Ballancourt
+          - kml: RER-D.kml
+            name: La Ferté-Alais
+          - kml: RER-D.kml
+            name: Boutigny
+          - kml: RER-D.kml
+            name: Maisse
+          - kml: RER-D.kml
+            name: Buno - Gironville
+          - kml: RER-D.kml
+            name: Boigneville
+          - kml: RER-D.kml
+            name: Malesherbes
+          - kml: RER-D.kml
+            name: Ris-Orangis
+          - kml: RER-D.kml
+            name: Grand Bourg
+          - kml: RER-D.kml
+            name: Évry Val de Seine
+          - kml: RER-D.kml
+            name: Essonnes - Robinson
+          - kml: RER-D.kml
+            name: Villabé
+          - kml: RER-D.kml
+            name: Le Plessis-Chenet
+          - kml: RER-D.kml
+            name: Le Coudray - Montceaux
+          - kml: RER-D.kml
+            name: Saint-Fargeau
+          - kml: RER-D.kml
+            name: Ponthierry - Pringy
+          - kml: RER-D.kml
+            name: Boissise-le-Roi
+          - kml: RER-D.kml
+            name: Vosves
+      - !UnionCircles
+        name: RER-E-1500m
+        radius: 1500
+        circle_on_top: true
+        color: "ffffff00"
+        centers:
+          - kml: RER-E.kml
+            name: Nanterre - La Folie
+          - kml: RER-E.kml
+            name: La Défense - Grande Arche
+          - kml: RER-E.kml
+            name: Neuilly - Porte Maillot
+          - kml: RER-E.kml
+            name: Haussmann - Saint-Lazare
+          - kml: RER-E.kml
+            name: Magenta
+          - kml: RER-E.kml
+            name: Rosa Parks
+          - kml: RER-E.kml
+            name: Pantin
+          - kml: RER-E.kml
+            name: Noisy-le-Sec
+          - kml: RER-E.kml
+            name: Bondy
+          - kml: RER-E.kml
+            name: Le Raincy - Villemomble - Montfermeil
+          - kml: RER-E.kml
+            name: Gagny
+          - kml: RER-E.kml
+            name: Le Chénay - Gagny
+          - kml: RER-E.kml
+            name: Chelles - Gournay
+          - kml: RER-E.kml
+            name: Val de Fontenay
+          - kml: RER-E.kml
+            name: Nogent - Le Perreux
+          - kml: RER-E.kml
+            name: Rosny-sous-Bois
+          - kml: RER-E.kml
+            name: Rosny - Bois-Perrier
+          - kml: RER-E.kml
+            name: Les Boullereaux - Champigny
+          - kml: RER-E.kml
+            name: Villiers-sur-Marne - Le Plessis-Trévise
+          - kml: RER-E.kml
+            name: Les Yvris - Noisy-le-Grand
+          - kml: RER-E.kml
+            name: Émerainville - Pontault-Combault
+          - kml: RER-E.kml
+            name: Roissy-en-Brie
+          - kml: RER-E.kml
+            name: Ozoir-la-Ferrière
+          - kml: RER-E.kml
+            name: Gretz-Armainvilliers
+          - kml: RER-E.kml
+            name: Tournan
+  - !Folder
+    name: "2000"
+    choices:
+      - !UnionCircles
+        name: RER-A-2000m
+        radius: 2000
+        circle_on_top: true
+        color: "ff0000ff"
+        centers:
+          - kml: RER-A.kml
+            name: Cergy-le-Haut
+          - kml: RER-A.kml
+            name: Cergy - Saint-Christophe
+          - kml: RER-A.kml
+            name: Cergy Préfecture
+          - kml: RER-A.kml
+            name: Neuville Université
+          - kml: RER-A.kml
+            name: Conflans-Fin-d'Oise
+          - kml: RER-A.kml
+            name: Achères - Ville
+          - kml: RER-A.kml
+            name: Poissy
+          - kml: RER-A.kml
+            name: Achères Grand Cormier
+          - kml: RER-A.kml
+            name: Maisons-Laffitte
+          - kml: RER-A.kml
+            name: Sartrouville
+          - kml: RER-A.kml
+            name: Houilles - Carrières-sur-Seine
+          - kml: RER-A.kml
+            name: Saint-Germain-en-Laye
+          - kml: RER-A.kml
+            name: Le Vésinet - Le Pecq
+          - kml: RER-A.kml
+            name: Le Vésinet Centre
+          - kml: RER-A.kml
+            name: Chatou - Croissy
+          - kml: RER-A.kml
+            name: Rueil-Malmaison
+          - kml: RER-A.kml
+            name: Nanterre-Ville
+          - kml: RER-A.kml
+            name: Nanterre-Université
+          - kml: RER-A.kml
+            name: Nanterre-Préfecture
+          - kml: RER-A.kml
+            name: La Défense - Grande Arche
+          - kml: RER-A.kml
+            name: Charles de Gaulle - Étoile
+          - kml: RER-A.kml
+            name: Auber
+          - kml: RER-A.kml
+            name: Châtelet - Les Halles
+          - kml: RER-A.kml
+            name: Gare de Lyon
+          - kml: RER-A.kml
+            name: Nation
+          - kml: RER-A.kml
+            name: Vincennes
+          - kml: RER-A.kml
+            name: Fontenay-sous-Bois
+          - kml: RER-A.kml
+            name: Nogent-sur-Marne
+          - kml: RER-A.kml
+            name: Val-de-Fontenay
+          - kml: RER-A.kml
+            name: Joinville-le-Pont
+          - kml: RER-A.kml
+            name: Saint-Maur Créteil
+          - kml: RER-A.kml
+            name: Le Parc de Saint-Maur
+          - kml: RER-A.kml
+            name: Saint-Maur - Champigny
+          - kml: RER-A.kml
+            name: La Varenne - Chennevières
+          - kml: RER-A.kml
+            name: Sucy - Bonneuil
+          - kml: RER-A.kml
+            name: Boissy-Saint-Léger
+          - kml: RER-A.kml
+            name: Neuilly-Plaisance
+          - kml: RER-A.kml
+            name: Bry-sur-Marne
+          - kml: RER-A.kml
+            name: Noisy-le-Grand - Mont d'Est
+          - kml: RER-A.kml
+            name: Noisy-Champs
+          - kml: RER-A.kml
+            name: Noisiel
+          - kml: RER-A.kml
+            name: Lognes
+          - kml: RER-A.kml
+            name: Torcy
+          - kml: RER-A.kml
+            name: Bussy-Saint-Georges
+          - kml: RER-A.kml
+            name: Val d'Europe
+          - kml: RER-A.kml
+            name: Marne-la-Vallée - Chessy
+      - !UnionCircles
+        name: RER-B-2000m
+        radius: 2000
+        circle_on_top: true
+        color: "ff0000ff"
+        centers:
+          - kml: RER-B.kml
+            name: Aeroport Charles de Gaulle 2 TGV
+          - kml: RER-B.kml
+            name: Aeroport Charles de Gaulle 1
+          - kml: RER-B.kml
+            name: Parc des Expositions
+          - kml: RER-B.kml
+            name: Villepinte - Parc du Sausset
+          - kml: RER-B.kml
+            name: Sevran - Beaudottes
+          - kml: RER-B.kml
+            name: Mitry - Claye
+          - kml: RER-B.kml
+            name: Villeparisis - Mitry le Neuf
+          - kml: RER-B.kml
+            name: Vert Galant
+          - kml: RER-B.kml
+            name: Sevran - Livry
+          - kml: RER-B.kml
+            name: Aulnay-sous-Bois
+          - kml: RER-B.kml
+            name: Le Blanc-Mesnil
+          - kml: RER-B.kml
+            name: Drancy
+          - kml: RER-B.kml
+            name: Le Bourget
+          - kml: RER-B.kml
+            name: La Courneuve - Aubervilliers
+          - kml: RER-B.kml
+            name: La Plaine - Stade de France
+          - kml: RER-B.kml
+            name: Gare du Nord
+          - kml: RER-B.kml
+            name: Châtelet - Les Halles
+          - kml: RER-B.kml
+            name: Saint-Michel Notre-Dame
+          - kml: RER-B.kml
+            name: Luxembourg
+          - kml: RER-B.kml
+            name: Port Royal
+          - kml: RER-B.kml
+            name: Denfert-Rochereau
+          - kml: RER-B.kml
+            name: Cité Universitaire
+          - kml: RER-B.kml
+            name: Gentilly
+          - kml: RER-B.kml
+            name: Laplace
+          - kml: RER-B.kml
+            name: Arcueil - Cachan
+          - kml: RER-B.kml
+            name: Bagneux
+          - kml: RER-B.kml
+            name: Bourg-la-Reine
+          - kml: RER-B.kml
+            name: Fontenay-aux-Roses
+          - kml: RER-B.kml
+            name: Sceaux
+          - kml: RER-B.kml
+            name: Robinson
+          - kml: RER-B.kml
+            name: Parc de Sceaux
+          - kml: RER-B.kml
+            name: La Croix de Berny
+          - kml: RER-B.kml
+            name: Antony
+          - kml: RER-B.kml
+            name: Fontaine-Michalon
+          - kml: RER-B.kml
+            name: Les Baconnets
+          - kml: RER-B.kml
+            name: Massy - Verrières
+          - kml: RER-B.kml
+            name: Massy-Palaiseau
+          - kml: RER-B.kml
+            name: Palaiseau
+          - kml: RER-B.kml
+            name: Palaiseau - Villebon
+          - kml: RER-B.kml
+            name: Lozère
+          - kml: RER-B.kml
+            name: Le Guichet
+          - kml: RER-B.kml
+            name: Orsay-Ville
+          - kml: RER-B.kml
+            name: Bures-sur-Yvette
+          - kml: RER-B.kml
+            name: La Hacquinière
+          - kml: RER-B.kml
+            name: Gif-sur-Yvette
+          - kml: RER-B.kml
+            name: Courcelle-sur-Yvette
+          - kml: RER-B.kml
+            name: Saint-Rémy-lès-Chevreuse
+      - !UnionCircles
+        name: RER-C-2000m
+        radius: 2000
+        circle_on_top: true
+        color: "ff0000ff"
+        centers:
+          - kml: RER-C.kml
+            name: Pontoise
+          - kml: RER-C.kml
+            name: Saint-Ouen-l'Aumône
+          - kml: RER-C.kml
+            name: Saint-Ouen-l'Aumône Liesse
+          - kml: RER-C.kml
+            name: Pierrelaye
+          - kml: RER-C.kml
+            name: Montigny-Beauchamp
+          - kml: RER-C.kml
+            name: Franconville - Le Plessis-Bouchard
+          - kml: RER-C.kml
+            name: Cernay
+          - kml: RER-C.kml
+            name: Ermont - Eaubonne
+          - kml: RER-C.kml
+            name: Saint-Gratien
+          - kml: RER-C.kml
+            name: Épinay-sur-Seine
+          - kml: RER-C.kml
+            name: Gennevilliers
+          - kml: RER-C.kml
+            name: Les Grésillons
+          - kml: RER-C.kml
+            name: Saint-Ouen
+          - kml: RER-C.kml
+            name: Porte de Clichy
+          - kml: RER-C.kml
+            name: Pereire - Levallois
+          - kml: RER-C.kml
+            name: Neuilly - Porte Maillot
+          - kml: RER-C.kml
+            name: Avenue Foch
+          - kml: RER-C.kml
+            name: Avenue Henri Martin
+          - kml: RER-C.kml
+            name: Boulainvilliers
+          - kml: RER-C.kml
+            name: Avenue du Président Kennedy
+          - kml: RER-C.kml
+            name: Champ de Mars - Tour Eiffel
+          - kml: RER-C.kml
+            name: Pont de l'Alma
+          - kml: RER-C.kml
+            name: Musée d'Orsay
+          - kml: RER-C.kml
+            name: Saint-Michel Notre-Dame
+          - kml: RER-C.kml
+            name: Paris Austerlitz
+          - kml: RER-C.kml
+            name: Bibliothèque François Mitterrand
+          - kml: RER-C.kml
+            name: Ivry-sur-Seine
+          - kml: RER-C.kml
+            name: Vitry-sur-Seine
+          - kml: RER-C.kml
+            name: Les Ardoines
+          - kml: RER-C.kml
+            name: Choisy-le-Roi
+          - kml: RER-C.kml
+            name: Villeneuve-le-Roi
+          - kml: RER-C.kml
+            name: Ablon
+          - kml: RER-C.kml
+            name: Athis-Mons
+          - kml: RER-C.kml
+            name: Juvisy-sur-Orge
+          - kml: RER-C.kml
+            name: Orly Ville
+          - kml: RER-C.kml
+            name: Les Saules
+          - kml: RER-C.kml
+            name: Savigny-sur-Orge
+          - kml: RER-C.kml
+            name: Épinay-sur-Orge
+          - kml: RER-C.kml
+            name: Sainte-Geneviève-des-Bois
+          - kml: RER-C.kml
+            name: Saint-Michel-sur-Orge
+          - kml: RER-C.kml
+            name: Brétigny
+          - kml: RER-C.kml
+            name: Javel
+          - kml: RER-C.kml
+            name: Pont du Garigliano
+          - kml: RER-C.kml
+            name: Issy Val de Seine
+          - kml: RER-C.kml
+            name: Issy
+          - kml: RER-C.kml
+            name: Meudon Val Fleury
+          - kml: RER-C.kml
+            name: Chaville-Vélizy
+          - kml: RER-C.kml
+            name: Viroflay Rive Gauche
+          - kml: RER-C.kml
+            name: Porchefontaine
+          - kml: RER-C.kml
+            name: Versailles-Chantiers
+          - kml: RER-C.kml
+            name: Versailles Château Rive Gauche
+          - kml: RER-C.kml
+            name: Saint-Cyr
+          - kml: RER-C.kml
+            name: Saint-Quentin-en-Yvelines
+          - kml: RER-C.kml
+            name: Massy-Palaiseau
+          - kml: RER-C.kml
+            name: Massy - Verrières
+          - kml: RER-C.kml
+            name: Chemin d'Antony
+          - kml: RER-C.kml
+            name: Pont de Rungis Aéroport d'Orly
+          - kml: RER-C.kml
+            name: Rungis - La Fraternelle
+          - kml: RER-C.kml
+            name: Arpajon
+          - kml: RER-C.kml
+            name: Égly
+          - kml: RER-C.kml
+            name: La Norville - Saint-Germain-lès-Arpajon
+          - kml: RER-C.kml
+            name: Breuillet - Bruyères-le-Châtel
+          - kml: RER-C.kml
+            name: Breuillet - Village
+          - kml: RER-C.kml
+            name: Saint-Chéron
+          - kml: RER-C.kml
+            name: Sermaise
+          - kml: RER-C.kml
+            name: Dourdan
+          - kml: RER-C.kml
+            name: Dourdan - La Forêt
+          - kml: RER-C.kml
+            name: Marolles-en-Hurepoix
+          - kml: RER-C.kml
+            name: Bouray
+          - kml: RER-C.kml
+            name: Lardy
+          - kml: RER-C.kml
+            name: Chamarande
+          - kml: RER-C.kml
+            name: Étréchy
+          - kml: RER-C.kml
+            name: Étampes
+          - kml: RER-C.kml
+            name: Saint-Martin d'Étampes
+      - !UnionCircles
+        name: RER-D-2000m
+        radius: 2000
+        circle_on_top: true
+        color: "ff0000ff"
+        centers:
+          - kml: RER-D.kml
+            name: Creil
+          - kml: RER-D.kml
+            name: Chantilly - Gouvieux
+          - kml: RER-D.kml
+            name: Orry-la-Ville - Coye-la-Forêt
+          - kml: RER-D.kml
+            name: La Borne Blanche
+          - kml: RER-D.kml
+            name: Survilliers - Fosses
+          - kml: RER-D.kml
+            name: Louvres
+          - kml: RER-D.kml
+            name: Les Noues
+          - kml: RER-D.kml
+            name: Goussainville
+          - kml: RER-D.kml
+            name: Villiers-le-Bel - Gonesse - Arnouville
+          - kml: RER-D.kml
+            name: Garges - Sarcelles
+          - kml: RER-D.kml
+            name: Pierrefitte - Stains
+          - kml: RER-D.kml
+            name: Saint-Denis
+          - kml: RER-D.kml
+            name: Stade de France - Saint-Denis
+          - kml: RER-D.kml
+            name: Gare du Nord
+          - kml: RER-D.kml
+            name: Châtelet - Les Halles
+          - kml: RER-D.kml
+            name: Gare de Lyon
+          - kml: RER-D.kml
+            name: Maisons-Alfort - Alfortville
+          - kml: RER-D.kml
+            name: Le Vert de Maisons
+          - kml: RER-D.kml
+            name: Créteil - Pompadour
+          - kml: RER-D.kml
+            name: Villeneuve Triage
+          - kml: RER-D.kml
+            name: Villeneuve-Saint-Georges
+          - kml: RER-D.kml
+            name: Montgeron - Crosne
+          - kml: RER-D.kml
+            name: Yerres
+          - kml: RER-D.kml
+            name: Brunoy
+          - kml: RER-D.kml
+            name: Boussy-Saint-Antoine
+          - kml: RER-D.kml
+            name: Combs-la-Ville - Quincy
+          - kml: RER-D.kml
+            name: Lieusaint - Moissy
+          - kml: RER-D.kml
+            name: Savigny-le-Temple - Nandy
+          - kml: RER-D.kml
+            name: Cesson
+          - kml: RER-D.kml
+            name: Le Mée
+          - kml: RER-D.kml
+            name: Melun
+          - kml: RER-D.kml
+            name: Vigneux-sur-Seine
+          - kml: RER-D.kml
+            name: Juvisy-sur-Orge
+          - kml: RER-D.kml
+            name: Viry-Châtillon
+          - kml: RER-D.kml
+            name: Grigny-Centre
+          - kml: RER-D.kml
+            name: Orangis - Bois de l'Épine
+          - kml: RER-D.kml
+            name: Évry Courcouronnes-Centre
+          - kml: RER-D.kml
+            name: Le Bras de Fer
+          - kml: RER-D.kml
+            name: Corbeil-Essonnes
+          - kml: RER-D.kml
+            name: Moulin Galant
+          - kml: RER-D.kml
+            name: Mennecy
+          - kml: RER-D.kml
+            name: Ballancourt
+          - kml: RER-D.kml
+            name: La Ferté-Alais
+          - kml: RER-D.kml
+            name: Boutigny
+          - kml: RER-D.kml
+            name: Maisse
+          - kml: RER-D.kml
+            name: Buno - Gironville
+          - kml: RER-D.kml
+            name: Boigneville
+          - kml: RER-D.kml
+            name: Malesherbes
+          - kml: RER-D.kml
+            name: Ris-Orangis
+          - kml: RER-D.kml
+            name: Grand Bourg
+          - kml: RER-D.kml
+            name: Évry Val de Seine
+          - kml: RER-D.kml
+            name: Essonnes - Robinson
+          - kml: RER-D.kml
+            name: Villabé
+          - kml: RER-D.kml
+            name: Le Plessis-Chenet
+          - kml: RER-D.kml
+            name: Le Coudray - Montceaux
+          - kml: RER-D.kml
+            name: Saint-Fargeau
+          - kml: RER-D.kml
+            name: Ponthierry - Pringy
+          - kml: RER-D.kml
+            name: Boissise-le-Roi
+          - kml: RER-D.kml
+            name: Vosves
+      - !UnionCircles
+        name: RER-E-2000m
+        radius: 2000
+        circle_on_top: true
+        color: "ff0000ff"
+        centers:
+          - kml: RER-E.kml
+            name: Nanterre - La Folie
+          - kml: RER-E.kml
+            name: La Défense - Grande Arche
+          - kml: RER-E.kml
+            name: Neuilly - Porte Maillot
+          - kml: RER-E.kml
+            name: Haussmann - Saint-Lazare
+          - kml: RER-E.kml
+            name: Magenta
+          - kml: RER-E.kml
+            name: Rosa Parks
+          - kml: RER-E.kml
+            name: Pantin
+          - kml: RER-E.kml
+            name: Noisy-le-Sec
+          - kml: RER-E.kml
+            name: Bondy
+          - kml: RER-E.kml
+            name: Le Raincy - Villemomble - Montfermeil
+          - kml: RER-E.kml
+            name: Gagny
+          - kml: RER-E.kml
+            name: Le Chénay - Gagny
+          - kml: RER-E.kml
+            name: Chelles - Gournay
+          - kml: RER-E.kml
+            name: Val de Fontenay
+          - kml: RER-E.kml
+            name: Nogent - Le Perreux
+          - kml: RER-E.kml
+            name: Rosny-sous-Bois
+          - kml: RER-E.kml
+            name: Rosny - Bois-Perrier
+          - kml: RER-E.kml
+            name: Les Boullereaux - Champigny
+          - kml: RER-E.kml
+            name: Villiers-sur-Marne - Le Plessis-Trévise
+          - kml: RER-E.kml
+            name: Les Yvris - Noisy-le-Grand
+          - kml: RER-E.kml
+            name: Émerainville - Pontault-Combault
+          - kml: RER-E.kml
+            name: Roissy-en-Brie
+          - kml: RER-E.kml
+            name: Ozoir-la-Ferrière
+          - kml: RER-E.kml
+            name: Gretz-Armainvilliers
+          - kml: RER-E.kml
+            name: Tournan
+  - !Folder
+    name: Lignes RER-A
+    choices:
+      - !Segments
+        name: RER-A
+        kml: RER-A.kml
+        color: "ff0000ff"
+        neighbours:
+          - [Cergy-le-Haut, Cergy - Saint-Christophe]
+          - [Cergy - Saint-Christophe, Cergy Préfecture]
+          - [Cergy Préfecture, Neuville Université]
+          - [Neuville Université, Conflans-Fin-d'Oise]
+          - [Conflans-Fin-d'Oise, Achères - Ville]
+          - [Achères - Ville, Poissy]
+          - [Achères - Ville, Achères Grand Cormier]
+          - [Achères Grand Cormier, Maisons-Laffitte]
+          - [Maisons-Laffitte, Sartrouville]
+          - [Sartrouville, Houilles - Carrières-sur-Seine]
+          - [Saint-Germain-en-Laye, Le Vésinet - Le Pecq]
+          - [Le Vésinet - Le Pecq, Le Vésinet Centre]
+          - [Le Vésinet Centre, Chatou - Croissy]
+          - [Chatou - Croissy, Rueil-Malmaison]
+          - [Rueil-Malmaison, Nanterre-Ville]
+          - [Houilles - Carrières-sur-Seine, Nanterre-Ville]
+          - [Nanterre-Ville, Nanterre-Université]
+          - [Nanterre-Université, Nanterre-Préfecture]
+          - [Nanterre-Préfecture, La Défense - Grande Arche]
+          - [La Défense - Grande Arche, Charles de Gaulle - Étoile]
+          - [Charles de Gaulle - Étoile, Auber]
+          - [Auber, Châtelet - Les Halles]
+          - [Châtelet - Les Halles, Gare de Lyon]
+          - [Gare de Lyon, Nation]
+          - [Nation, Vincennes]
+          - [Vincennes, Fontenay-sous-Bois]
+          - [Fontenay-sous-Bois, Nogent-sur-Marne]
+          - [Fontenay-sous-Bois, Val-de-Fontenay]
+          - [Nogent-sur-Marne, Joinville-le-Pont]
+          - [Joinville-le-Pont, Saint-Maur Créteil]
+          - [Saint-Maur Créteil, Le Parc de Saint-Maur]
+          - [Le Parc de Saint-Maur, Saint-Maur - Champigny]
+          - [Saint-Maur - Champigny, La Varenne - Chennevières]
+          - [La Varenne - Chennevières, Sucy - Bonneuil]
+          - [Sucy - Bonneuil, Boissy-Saint-Léger]
+          - [Val-de-Fontenay, Neuilly-Plaisance]
+          - [Neuilly-Plaisance, Bry-sur-Marne]
+          - [Bry-sur-Marne, Noisy-le-Grand - Mont d'Est]
+          - [Noisy-le-Grand - Mont d'Est, Noisy-Champs]
+          - [Noisy-Champs, Noisiel]
+          - [Noisiel, Lognes]
+          - [Lognes, Torcy]
+          - [Torcy, Bussy-Saint-Georges]
+          - [Bussy-Saint-Georges, Val d'Europe]
+          - [Val d'Europe, Marne-la-Vallée - Chessy]
+  - !Folder
+    name: Lignes RER-B
+    choices:
+      - !Segments
+        name: RER-B
+        kml: RER-B.kml
+        color: "ffff0000"
+        neighbours:
+          - [Aulnay-sous-Bois, Sevran - Beaudottes]
+          - [Sevran - Beaudottes, Villepinte - Parc du Sausset]
+          - [Villepinte - Parc du Sausset, Parc des Expositions]
+          - [Parc des Expositions, Aeroport Charles de Gaulle 1]
+          - [Aeroport Charles de Gaulle 1, Aeroport Charles de Gaulle 2 TGV]
+          - [Aulnay-sous-Bois, Sevran - Livry]
+          - [Sevran - Livry, Vert Galant]
+          - [Vert Galant, Villeparisis - Mitry le Neuf]
+          - [Villeparisis - Mitry le Neuf, Mitry - Claye]
+          - [Aulnay-sous-Bois, Le Blanc-Mesnil]
+          - [Le Blanc-Mesnil, Drancy]
+          - [Drancy, Le Bourget]
+          - [Le Bourget, La Courneuve - Aubervilliers]
+          - [La Courneuve - Aubervilliers, La Plaine - Stade de France]
+          - [La Plaine - Stade de France, Gare du Nord]
+          - [Gare du Nord, Châtelet - Les Halles]
+          - [Châtelet - Les Halles, Saint-Michel Notre-Dame]
+          - [Saint-Michel Notre-Dame, Luxembourg]
+          - [Luxembourg, Port Royal]
+          - [Port Royal, Denfert-Rochereau]
+          - [Denfert-Rochereau, Cité Universitaire]
+          - [Cité Universitaire, Gentilly]
+          - [Gentilly, Laplace]
+          - [Laplace, Arcueil - Cachan]
+          - [Arcueil - Cachan, Bagneux]
+          - [Bagneux, Bourg-la-Reine]
+          - [Bourg-la-Reine, Fontenay-aux-Roses]
+          - [Fontenay-aux-Roses, Sceaux]
+          - [Sceaux, Robinson]
+          - [Bourg-la-Reine, Parc de Sceaux]
+          - [Parc de Sceaux, La Croix de Berny]
+          - [La Croix de Berny, Antony]
+          - [Antony, Fontaine-Michalon]
+          - [Fontaine-Michalon, Les Baconnets]
+          - [Les Baconnets, Massy - Verrières]
+          - [Massy - Verrières, Massy-Palaiseau]
+          - [Massy-Palaiseau, Palaiseau]
+          - [Palaiseau, Palaiseau - Villebon]
+          - [Palaiseau - Villebon, Lozère]
+          - [Lozère, Le Guichet]
+          - [Le Guichet, Orsay-Ville]
+          - [Orsay-Ville, Bures-sur-Yvette]
+          - [Bures-sur-Yvette, La Hacquinière]
+          - [La Hacquinière, Gif-sur-Yvette]
+          - [Gif-sur-Yvette, Courcelle-sur-Yvette]
+          - [Courcelle-sur-Yvette, Saint-Rémy-lès-Chevreuse]
+  - !Folder
+    name: Lignes RER-C
+    choices:
+      - !Segments
+        name: RER-C
+        kml: RER-C.kml
+        color: "ff00ffff"
+        neighbours:
+          - [Pontoise, Saint-Ouen-l'Aumône]
+          - [Saint-Ouen-l'Aumône, Saint-Ouen-l'Aumône Liesse]
+          - [Saint-Ouen-l'Aumône Liesse, Pierrelaye]
+          - [Pierrelaye, Montigny-Beauchamp]
+          - [Montigny-Beauchamp, Franconville - Le Plessis-Bouchard]
+          - [Franconville - Le Plessis-Bouchard, Cernay]
+          - [Cernay, Ermont - Eaubonne]
+          - [Ermont - Eaubonne, Saint-Gratien]
+          - [Saint-Gratien, Épinay-sur-Seine]
+          - [Épinay-sur-Seine, Gennevilliers]
+          - [Gennevilliers, Les Grésillons]
+          - [Les Grésillons, Saint-Ouen]
+          - [Saint-Ouen, Porte de Clichy]
+          - [Porte de Clichy, Pereire - Levallois]
+          - [Pereire - Levallois, Neuilly - Porte Maillot]
+          - [Neuilly - Porte Maillot, Avenue Foch]
+          - [Avenue Foch, Avenue Henri Martin]
+          - [Avenue Henri Martin, Boulainvilliers]
+          - [Boulainvilliers, Avenue du Président Kennedy]
+          - [Avenue du Président Kennedy, Champ de Mars - Tour Eiffel]
+          - [Champ de Mars - Tour Eiffel, Javel]
+          - [Champ de Mars - Tour Eiffel, Pont de l'Alma]
+          - [Pont de l'Alma, Musée d'Orsay]
+          - [Musée d'Orsay, Saint-Michel Notre-Dame]
+          - [Saint-Michel Notre-Dame, Paris Austerlitz]
+          - [Paris Austerlitz, Bibliothèque François Mitterrand]
+          - [Bibliothèque François Mitterrand, Ivry-sur-Seine]
+          - [Ivry-sur-Seine, Vitry-sur-Seine]
+          - [Vitry-sur-Seine, Les Ardoines]
+          - [Les Ardoines, Choisy-le-Roi]
+          - [Choisy-le-Roi, Villeneuve-le-Roi]
+          - [Villeneuve-le-Roi, Ablon]
+          - [Ablon, Athis-Mons]
+          - [Athis-Mons, Juvisy-sur-Orge]
+          - [Choisy-le-Roi, Les Saules]
+          - [Les Saules, Orly Ville]
+          - [Orly Ville, Pont de Rungis Aéroport d'Orly]
+          - [Pont de Rungis Aéroport d'Orly, Rungis - La Fraternelle]
+          - [Rungis - La Fraternelle, Chemin d'Antony]
+          - [Chemin d'Antony, Massy - Verrières]
+          - [Massy - Verrières, Massy-Palaiseau]
+          - [Juvisy-sur-Orge, Savigny-sur-Orge]
+          - [Savigny-sur-Orge, Épinay-sur-Orge]
+          - [Épinay-sur-Orge, Sainte-Geneviève-des-Bois]
+          - [Sainte-Geneviève-des-Bois, Saint-Michel-sur-Orge]
+          - [Saint-Michel-sur-Orge, Brétigny]
+          - [Brétigny, La Norville - Saint-Germain-lès-Arpajon]
+          - [La Norville - Saint-Germain-lès-Arpajon, Arpajon]
+          - [Arpajon, Égly]
+          - [Égly, Breuillet - Bruyères-le-Châtel]
+          - [Breuillet - Bruyères-le-Châtel, Breuillet - Village]
+          - [Breuillet - Village, Saint-Chéron]
+          - [Saint-Chéron, Sermaise]
+          - [Sermaise, Dourdan]
+          - [Dourdan, Dourdan - La Forêt]
+          - [Brétigny, Marolles-en-Hurepoix]
+          - [Marolles-en-Hurepoix, Bouray]
+          - [Bouray, Lardy]
+          - [Lardy, Chamarande]
+          - [Chamarande, Étréchy]
+          - [Étréchy, Étampes]
+          - [Étampes, Saint-Martin d'Étampes]
+          - [Javel, Pont du Garigliano]
+          - [Pont du Garigliano, Issy Val de Seine]
+          - [Issy Val de Seine, Issy]
+          - [Issy, Meudon Val Fleury]
+          - [Meudon Val Fleury, Chaville-Vélizy]
+          - [Chaville-Vélizy, Viroflay Rive Gauche]
+          - [Viroflay Rive Gauche, Porchefontaine]
+          - [Porchefontaine, Versailles Château Rive Gauche]
+          - [Viroflay Rive Gauche, Versailles-Chantiers]
+          - [Versailles-Chantiers, Saint-Cyr]
+          - [Saint-Cyr, Saint-Quentin-en-Yvelines]
+  - !Folder
+    name: Lignes RER-D
+    choices:
+      - !Segments
+        name: RER-D
+        kml: RER-D.kml
+        color: "ff00ff00"
+        neighbours:
+          - [Creil, Chantilly - Gouvieux]
+          - [Chantilly - Gouvieux, Orry-la-Ville - Coye-la-Forêt]
+          - [Orry-la-Ville - Coye-la-Forêt, La Borne Blanche]
+          - [La Borne Blanche, Survilliers - Fosses]
+          - [Survilliers - Fosses, Louvres]
+          - [Louvres, Les Noues]
+          - [Les Noues, Goussainville]
+          - [Goussainville, Villiers-le-Bel - Gonesse - Arnouville]
+          - [Villiers-le-Bel - Gonesse - Arnouville, Garges - Sarcelles]
+          - [Garges - Sarcelles, Pierrefitte - Stains]
+          - [Pierrefitte - Stains, Saint-Denis]
+          - [Saint-Denis, Stade de France - Saint-Denis]
+          - [Stade de France - Saint-Denis, Gare du Nord]
+          - [Gare du Nord, Châtelet - Les Halles]
+          - [Châtelet - Les Halles, Gare de Lyon]
+          - [Gare de Lyon, Maisons-Alfort - Alfortville]
+          - [Maisons-Alfort - Alfortville, Le Vert de Maisons]
+          - [Le Vert de Maisons, Créteil - Pompadour]
+          - [Créteil - Pompadour, Villeneuve Triage]
+          - [Villeneuve Triage, Villeneuve-Saint-Georges]
+          - [Villeneuve-Saint-Georges, Montgeron - Crosne]
+          - [Montgeron - Crosne, Yerres]
+          - [Yerres, Brunoy]
+          - [Brunoy, Boussy-Saint-Antoine]
+          - [Boussy-Saint-Antoine, Combs-la-Ville - Quincy]
+          - [Combs-la-Ville - Quincy, Lieusaint - Moissy]
+          - [Lieusaint - Moissy, Savigny-le-Temple - Nandy]
+          - [Savigny-le-Temple - Nandy, Cesson]
+          - [Cesson, Le Mée]
+          - [Le Mée, Melun]
+          - [Villeneuve-Saint-Georges, Vigneux-sur-Seine]
+          - [Vigneux-sur-Seine, Juvisy-sur-Orge]
+          - [Juvisy-sur-Orge, Viry-Châtillon]
+          - [Viry-Châtillon, Grigny-Centre]
+          - [Grigny-Centre, Orangis - Bois de l'Épine]
+          - [Orangis - Bois de l'Épine, Évry Courcouronnes-Centre]
+          - [Évry Courcouronnes-Centre, Le Bras de Fer]
+          - [Le Bras de Fer, Corbeil-Essonnes]
+          - [Corbeil-Essonnes, Moulin Galant]
+          - [Moulin Galant, Mennecy]
+          - [Mennecy, Ballancourt]
+          - [Ballancourt, La Ferté-Alais]
+          - [La Ferté-Alais, Boutigny]
+          - [Boutigny, Maisse]
+          - [Maisse, Buno - Gironville]
+          - [Buno - Gironville, Boigneville]
+          - [Boigneville, Malesherbes]
+          - [Juvisy-sur-Orge, Ris-Orangis]
+          - [Ris-Orangis, Grand Bourg]
+          - [Grand Bourg, Évry Val de Seine]
+          - [Évry Val de Seine, Essonnes - Robinson]
+          - [Essonnes - Robinson, Corbeil-Essonnes]
+          - [Corbeil-Essonnes, Villabé]
+          - [Villabé, Le Plessis-Chenet]
+          - [Le Plessis-Chenet, Le Coudray - Montceaux]
+          - [Le Coudray - Montceaux, Saint-Fargeau]
+          - [Saint-Fargeau, Ponthierry - Pringy]
+          - [Ponthierry - Pringy, Boissise-le-Roi]
+          - [Boissise-le-Roi, Vosves]
+          - [Vosves, Melun]
+  - !Folder
+    name: Lignes RER-E
+    choices:
+      - !Segments
+        name: RER-E
+        kml: RER-E.kml
+        color: "ffff00ff"
+        neighbours:
+          - [Nanterre - La Folie, La Défense - Grande Arche]
+          - [La Défense - Grande Arche, Neuilly - Porte Maillot]
+          - [Neuilly - Porte Maillot, Haussmann - Saint-Lazare]
+          - [Haussmann - Saint-Lazare, Magenta]
+          - [Magenta, Rosa Parks]
+          - [Rosa Parks, Pantin]
+          - [Pantin, Noisy-le-Sec]
+          - [Noisy-le-Sec, Bondy]
+          - [Bondy, Le Raincy - Villemomble - Montfermeil]
+          - [Le Raincy - Villemomble - Montfermeil, Gagny]
+          - [Gagny, Le Chénay - Gagny]
+          - [Le Chénay - Gagny, Chelles - Gournay]
+          - [Noisy-le-Sec, Rosny - Bois-Perrier]
+          - [Rosny - Bois-Perrier, Rosny-sous-Bois]
+          - [Rosny-sous-Bois, Val de Fontenay]
+          - [Val de Fontenay, Nogent - Le Perreux]
+          - [Nogent - Le Perreux, Les Boullereaux - Champigny]
+          - [Les Boullereaux - Champigny, Villiers-sur-Marne - Le Plessis-Trévise]
+          - [Villiers-sur-Marne - Le Plessis-Trévise, Les Yvris - Noisy-le-Grand]
+          - [Les Yvris - Noisy-le-Grand, Émerainville - Pontault-Combault]
+          - [Émerainville - Pontault-Combault, Roissy-en-Brie]
+          - [Roissy-en-Brie, Ozoir-la-Ferrière]
+          - [Ozoir-la-Ferrière, Gretz-Armainvilliers]
+          - [Gretz-Armainvilliers, Tournan]

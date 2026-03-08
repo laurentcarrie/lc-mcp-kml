@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>RER A</name>
+  <Style id="red-icon"><IconStyle><color>ff0000ff</color><Icon><href>http://maps.google.com/mapfiles/kml/shapes/rail.png</href></Icon></IconStyle></Style>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Cergy-le-Haut</name><Point><coordinates>2.0120435,49.0485662,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Cergy - Saint-Christophe</name><Point><coordinates>2.0346673,49.0496069,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Cergy Préfecture</name><Point><coordinates>2.0795429,49.0364254,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Neuville Université</name><Point><coordinates>2.0783216,49.0139543,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Conflans-Fin-d'Oise</name><Point><coordinates>2.0740220,48.9904564,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Achères - Ville</name><Point><coordinates>2.0777376,48.9706675,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Poissy</name><Point><coordinates>2.0410599,48.9333007,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Achères Grand Cormier</name><Point><coordinates>2.0926183,48.9552612,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Maisons-Laffitte</name><Point><coordinates>2.1449765,48.9455827,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Sartrouville</name><Point><coordinates>2.1570314,48.9377579,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Houilles - Carrières-sur-Seine</name><Point><coordinates>2.1853520,48.9202268,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Saint-Germain-en-Laye</name><Point><coordinates>2.0951596,48.9001801,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Le Vésinet - Le Pecq</name><Point><coordinates>2.1220736,48.8978970,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Le Vésinet Centre</name><Point><coordinates>2.1343715,48.8901550,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Chatou - Croissy</name><Point><coordinates>2.1562743,48.8851990,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Rueil-Malmaison</name><Point><coordinates>2.1724770,48.8876732,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Nanterre-Ville</name><Point><coordinates>2.1950379,48.8950221,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Nanterre-Université</name><Point><coordinates>2.2136129,48.9010133,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Nanterre-Préfecture</name><Point><coordinates>2.2223393,48.8964811,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>La Défense - Grande Arche</name><Point><coordinates>2.2383114,48.8917036,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Charles de Gaulle - Étoile</name><Point><coordinates>2.2948715,48.8742724,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Auber</name><Point><coordinates>2.3297931,48.8722271,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Châtelet - Les Halles</name><Point><coordinates>2.3470560,48.8616150,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Gare de Lyon</name><Point><coordinates>2.3743307,48.8435357,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Nation</name><Point><coordinates>2.3958359,48.8482757,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Vincennes</name><Point><coordinates>2.4324622,48.8473453,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Fontenay-sous-Bois</name><Point><coordinates>2.4637351,48.8436934,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Nogent-sur-Marne</name><Point><coordinates>2.4718156,48.8351985,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Val-de-Fontenay</name><Point><coordinates>2.4888861,48.8542096,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Joinville-le-Pont</name><Point><coordinates>2.4637851,48.8208700,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Saint-Maur Créteil</name><Point><coordinates>2.4722479,48.8063871,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Le Parc de Saint-Maur</name><Point><coordinates>2.4856014,48.8052714,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Saint-Maur - Champigny</name><Point><coordinates>2.5100316,48.8070018,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>La Varenne - Chennevières</name><Point><coordinates>2.5128806,48.7948729,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Sucy - Bonneuil</name><Point><coordinates>2.5074870,48.7720759,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Boissy-Saint-Léger</name><Point><coordinates>2.5047564,48.7525204,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Neuilly-Plaisance</name><Point><coordinates>2.5138327,48.8534403,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Bry-sur-Marne</name><Point><coordinates>2.5256088,48.8451835,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Noisy-le-Grand - Mont d'Est</name><Point><coordinates>2.5477551,48.8407690,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Noisy-Champs</name><Point><coordinates>2.5798271,48.8428607,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Noisiel</name><Point><coordinates>2.6166424,48.8435056,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Lognes</name><Point><coordinates>2.6331171,48.8392491,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Torcy</name><Point><coordinates>2.6552339,48.8396710,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Bussy-Saint-Georges</name><Point><coordinates>2.7098936,48.8366511,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Val d'Europe</name><Point><coordinates>2.7725664,48.8548991,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#red-icon</styleUrl><name>Marne-la-Vallée - Chessy</name><Point><coordinates>2.7825035,48.8701571,0</coordinates></Point></Placemark>
+</Document>
+</kml>

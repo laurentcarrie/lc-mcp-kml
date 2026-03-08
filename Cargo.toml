@@ -2,5 +2,11 @@
 name = "lc-kml-utils"
 version = "0.1.0"
 edition = "2024"
+default-run = "lc-kml-utils"
 
 [dependencies]
+kml = "0.13.0"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_yaml = "0.9.34"
+geo = "0.29"
+regex = "1"

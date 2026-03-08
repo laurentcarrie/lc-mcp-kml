@@ -1,0 +1,51 @@
+choices:
+  - !ConcentricCircles
+    center:
+      kml: maisons.kml
+      name: secretan
+    name: cercles-autour-de-secretan
+    circle_on_top: true
+    v_radius:
+      - 500.0
+      - 1000.0
+      - 1500.0
+  - !ConcentricCircles
+    center:
+      kml: maisons.kml
+      name: maman
+    name: cercles-autour-de-maman
+    circle_on_top: true
+    v_radius:
+      - 500.0
+      - 1000.0
+      - 1500.0
+  - !ConcentricCircles
+    center:
+      kml: maisons.kml
+      name: stephane
+    name: cercles-autour-de-stephane
+    circle_on_top: true
+    v_radius:
+      - 500.0
+      - 1000.0
+      - 1500.0
+  - !ConcentricCircles
+    center:
+      kml: maisons.kml
+      name: papa
+    name: cercles-autour-de-papa
+    circle_on_top: true
+    v_radius:
+      - 500.0
+      - 1000.0
+      - 1500.0
+  - !ConcentricCircles
+    center:
+      kml: maisons.kml
+      name: thierry
+    name: cercles-autour-de-thierry
+    circle_on_top: true
+    v_radius:
+      - 500.0
+      - 1000.0
+      - 1500.0

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>RER C</name>
+  <Style id="yellow-icon"><IconStyle><color>ff00ffff</color><Icon><href>http://maps.google.com/mapfiles/kml/shapes/rail.png</href></Icon></IconStyle></Style>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Pontoise</name><Point><coordinates>2.0952,49.0468,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Saint-Ouen-l'Aumône</name><Point><coordinates>2.1050,49.0453,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Saint-Ouen-l'Aumône Liesse</name><Point><coordinates>2.1283,49.0340,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Pierrelaye</name><Point><coordinates>2.1536,49.0194,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Montigny-Beauchamp</name><Point><coordinates>2.1976,49.0074,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Franconville - Le Plessis-Bouchard</name><Point><coordinates>2.2351,48.9934,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Cernay</name><Point><coordinates>2.2570,48.9852,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Ermont - Eaubonne</name><Point><coordinates>2.2722,48.9805,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Saint-Gratien</name><Point><coordinates>2.2859,48.9636,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Épinay-sur-Seine</name><Point><coordinates>2.3023,48.9541,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Gennevilliers</name><Point><coordinates>2.3079,48.9329,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Les Grésillons</name><Point><coordinates>2.3138,48.9209,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Saint-Ouen</name><Point><coordinates>2.3225,48.9053,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Porte de Clichy</name><Point><coordinates>2.3155,48.8942,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Pereire - Levallois</name><Point><coordinates>2.2989,48.8859,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Neuilly - Porte Maillot</name><Point><coordinates>2.2856,48.8788,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Avenue Foch</name><Point><coordinates>2.2747,48.8698,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Avenue Henri Martin</name><Point><coordinates>2.2721,48.8653,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Boulainvilliers</name><Point><coordinates>2.2752,48.8566,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Avenue du Président Kennedy</name><Point><coordinates>2.2801,48.8533,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Champ de Mars - Tour Eiffel</name><Point><coordinates>2.2898,48.8569,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Pont de l'Alma</name><Point><coordinates>2.3000,48.8626,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Musée d'Orsay</name><Point><coordinates>2.3261,48.8605,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Saint-Michel Notre-Dame</name><Point><coordinates>2.3456,48.8534,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Paris Austerlitz</name><Point><coordinates>2.3670,48.8406,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Bibliothèque François Mitterrand</name><Point><coordinates>2.3778,48.8289,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Ivry-sur-Seine</name><Point><coordinates>2.3913,48.8145,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Vitry-sur-Seine</name><Point><coordinates>2.4025,48.8006,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Les Ardoines</name><Point><coordinates>2.4094,48.7830,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Choisy-le-Roi</name><Point><coordinates>2.4112,48.7642,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Villeneuve-le-Roi</name><Point><coordinates>2.4262,48.7402,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Ablon</name><Point><coordinates>2.4200,48.7259,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Athis-Mons</name><Point><coordinates>2.4036,48.7126,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Juvisy-sur-Orge</name><Point><coordinates>2.3829,48.6898,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Orly Ville</name><Point><coordinates>2.4029,48.7419,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Les Saules</name><Point><coordinates>2.4176,48.7455,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Savigny-sur-Orge</name><Point><coordinates>2.3521,48.6761,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Épinay-sur-Orge</name><Point><coordinates>2.3318,48.6693,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Sainte-Geneviève-des-Bois</name><Point><coordinates>2.3133,48.6531,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Saint-Michel-sur-Orge</name><Point><coordinates>2.3068,48.6357,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Brétigny</name><Point><coordinates>2.3020,48.6067,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Javel</name><Point><coordinates>2.2776,48.8469,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Pont du Garigliano</name><Point><coordinates>2.2704,48.8391,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Issy Val de Seine</name><Point><coordinates>2.2635,48.8299,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Issy</name><Point><coordinates>2.2591,48.8198,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Meudon Val Fleury</name><Point><coordinates>2.2412,48.8078,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Chaville-Vélizy</name><Point><coordinates>2.1841,48.7995,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Viroflay Rive Gauche</name><Point><coordinates>2.1701,48.8007,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Porchefontaine</name><Point><coordinates>2.1514,48.7964,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Versailles-Chantiers</name><Point><coordinates>2.1355,48.7954,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Versailles Château Rive Gauche</name><Point><coordinates>2.1291,48.8003,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Saint-Cyr</name><Point><coordinates>2.0729,48.7987,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Saint-Quentin-en-Yvelines</name><Point><coordinates>2.0455,48.7881,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Massy-Palaiseau</name><Point><coordinates>2.2580,48.7257,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Massy - Verrières</name><Point><coordinates>2.2736,48.7349,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Chemin d'Antony</name><Point><coordinates>2.3127,48.7479,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Pont de Rungis Aéroport d'Orly</name><Point><coordinates>2.3732,48.7484,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Rungis - La Fraternelle</name><Point><coordinates>2.3526,48.7404,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Arpajon</name><Point><coordinates>2.2412,48.5860,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Égly</name><Point><coordinates>2.2226,48.5825,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>La Norville - Saint-Germain-lès-Arpajon</name><Point><coordinates>2.2670,48.5915,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Breuillet - Bruyères-le-Châtel</name><Point><coordinates>2.1918,48.5774,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Breuillet - Village</name><Point><coordinates>2.1708,48.5645,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Saint-Chéron</name><Point><coordinates>2.1257,48.5511,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Sermaise</name><Point><coordinates>2.0688,48.5355,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Dourdan</name><Point><coordinates>2.0096,48.5336,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Dourdan - La Forêt</name><Point><coordinates>1.9957,48.5354,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Marolles-en-Hurepoix</name><Point><coordinates>2.2909,48.5651,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Bouray</name><Point><coordinates>2.2904,48.5332,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Lardy</name><Point><coordinates>2.2555,48.5207,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Chamarande</name><Point><coordinates>2.2156,48.5143,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Étréchy</name><Point><coordinates>2.1946,48.4936,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Étampes</name><Point><coordinates>2.1595,48.4370,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#yellow-icon</styleUrl><name>Saint-Martin d'Étampes</name><Point><coordinates>2.1452,48.4274,0</coordinates></Point></Placemark>
+</Document>
+</kml>

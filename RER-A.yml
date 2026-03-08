@@ -1,0 +1,56 @@
+kml: RER-A.kml
+neighbours:
+  # Branche Cergy
+  - [Cergy-le-Haut, Cergy - Saint-Christophe]
+  - [Cergy - Saint-Christophe, Cergy Préfecture]
+  - [Cergy Préfecture, Neuville Université]
+  - [Neuville Université, Conflans-Fin-d'Oise]
+  - [Conflans-Fin-d'Oise, Achères - Ville]
+  - [Achères - Ville, Poissy]
+  # Branche Poissy
+  - [Achères - Ville, Achères Grand Cormier]
+  - [Achères Grand Cormier, Maisons-Laffitte]
+  - [Maisons-Laffitte, Sartrouville]
+  - [Sartrouville, Houilles - Carrières-sur-Seine]
+  # Branche Saint-Germain-en-Laye
+  - [Saint-Germain-en-Laye, Le Vésinet - Le Pecq]
+  - [Le Vésinet - Le Pecq, Le Vésinet Centre]
+  - [Le Vésinet Centre, Chatou - Croissy]
+  - [Chatou - Croissy, Rueil-Malmaison]
+  - [Rueil-Malmaison, Nanterre-Ville]
+  # Jonction Nanterre
+  - [Houilles - Carrières-sur-Seine, Nanterre-Ville]
+  - [Nanterre-Ville, Nanterre-Université]
+  - [Nanterre-Université, Nanterre-Préfecture]
+  # Tronçon central
+  - [Nanterre-Préfecture, La Défense - Grande Arche]
+  - [La Défense - Grande Arche, Charles de Gaulle - Étoile]
+  - [Charles de Gaulle - Étoile, Auber]
+  - [Auber, Châtelet - Les Halles]
+  - [Châtelet - Les Halles, Gare de Lyon]
+  - [Gare de Lyon, Nation]
+  # Tronçon est commun
+  - [Nation, Vincennes]
+  - [Vincennes, Fontenay-sous-Bois]
+  # Fourche Fontenay
+  - [Fontenay-sous-Bois, Nogent-sur-Marne]
+  - [Fontenay-sous-Bois, Val-de-Fontenay]
+  # Branche Boissy-Saint-Léger
+  - [Nogent-sur-Marne, Joinville-le-Pont]
+  - [Joinville-le-Pont, Saint-Maur Créteil]
+  - [Saint-Maur Créteil, Le Parc de Saint-Maur]
+  - [Le Parc de Saint-Maur, Saint-Maur - Champigny]
+  - [Saint-Maur - Champigny, La Varenne - Chennevières]
+  - [La Varenne - Chennevières, Sucy - Bonneuil]
+  - [Sucy - Bonneuil, Boissy-Saint-Léger]
+  # Branche Marne-la-Vallée
+  - [Val-de-Fontenay, Neuilly-Plaisance]
+  - [Neuilly-Plaisance, Bry-sur-Marne]
+  - [Bry-sur-Marne, Noisy-le-Grand - Mont d'Est]
+  - [Noisy-le-Grand - Mont d'Est, Noisy-Champs]
+  - [Noisy-Champs, Noisiel]
+  - [Noisiel, Lognes]
+  - [Lognes, Torcy]
+  - [Torcy, Bussy-Saint-Georges]
+  - [Bussy-Saint-Georges, Val d'Europe]
+  - [Val d'Europe, Marne-la-Vallée - Chessy]

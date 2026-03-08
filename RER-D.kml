@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>RER D</name>
+  <Style id="green-icon"><IconStyle><color>ff00ff00</color><Icon><href>http://maps.google.com/mapfiles/kml/shapes/rail.png</href></Icon></IconStyle></Style>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Creil</name><Point><coordinates>2.4687,49.2640,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Chantilly - Gouvieux</name><Point><coordinates>2.4594,49.1871,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Orry-la-Ville - Coye-la-Forêt</name><Point><coordinates>2.4900,49.1383,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>La Borne Blanche</name><Point><coordinates>2.5061,49.1268,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Survilliers - Fosses</name><Point><coordinates>2.5255,49.0996,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Louvres</name><Point><coordinates>2.5021,49.0496,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Les Noues</name><Point><coordinates>2.4769,49.0325,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Goussainville</name><Point><coordinates>2.4621,49.0229,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Villiers-le-Bel - Gonesse - Arnouville</name><Point><coordinates>2.4163,48.9940,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Garges - Sarcelles</name><Point><coordinates>2.3901,48.9765,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Pierrefitte - Stains</name><Point><coordinates>2.3698,48.9624,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Saint-Denis</name><Point><coordinates>2.3458,48.9345,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Stade de France - Saint-Denis</name><Point><coordinates>2.3502,48.9179,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Gare du Nord</name><Point><coordinates>2.3571,48.8814,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Châtelet - Les Halles</name><Point><coordinates>2.3476,48.8607,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Gare de Lyon</name><Point><coordinates>2.3745,48.8437,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Maisons-Alfort - Alfortville</name><Point><coordinates>2.4265,48.8023,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Le Vert de Maisons</name><Point><coordinates>2.4319,48.7890,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Créteil - Pompadour</name><Point><coordinates>2.4356,48.7721,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Villeneuve Triage</name><Point><coordinates>2.4385,48.7448,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Villeneuve-Saint-Georges</name><Point><coordinates>2.4463,48.7301,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Montgeron - Crosne</name><Point><coordinates>2.4621,48.7083,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Yerres</name><Point><coordinates>2.4834,48.7065,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Brunoy</name><Point><coordinates>2.5066,48.6992,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Boussy-Saint-Antoine</name><Point><coordinates>2.5332,48.6808,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Combs-la-Ville - Quincy</name><Point><coordinates>2.5477,48.6678,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Lieusaint - Moissy</name><Point><coordinates>2.5696,48.6283,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Savigny-le-Temple - Nandy</name><Point><coordinates>2.5839,48.5956,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Cesson</name><Point><coordinates>2.5943,48.5655,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Le Mée</name><Point><coordinates>2.6251,48.5391,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Melun</name><Point><coordinates>2.6552,48.5275,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Vigneux-sur-Seine</name><Point><coordinates>2.4143,48.7083,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Juvisy-sur-Orge</name><Point><coordinates>2.3837,48.6894,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Viry-Châtillon</name><Point><coordinates>2.3867,48.6762,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Grigny-Centre</name><Point><coordinates>2.3964,48.6542,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Orangis - Bois de l'Épine</name><Point><coordinates>2.4077,48.6363,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Évry Courcouronnes-Centre</name><Point><coordinates>2.4299,48.6259,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Le Bras de Fer</name><Point><coordinates>2.4508,48.6233,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Corbeil-Essonnes</name><Point><coordinates>2.4723,48.6132,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Moulin Galant</name><Point><coordinates>2.4735,48.5864,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Mennecy</name><Point><coordinates>2.4331,48.5711,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Ballancourt</name><Point><coordinates>2.3711,48.5322,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>La Ferté-Alais</name><Point><coordinates>2.3517,48.4848,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Boutigny</name><Point><coordinates>2.3762,48.4349,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Maisse</name><Point><coordinates>2.3934,48.3937,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Buno - Gironville</name><Point><coordinates>2.3870,48.3707,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Boigneville</name><Point><coordinates>2.3790,48.3421,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Malesherbes</name><Point><coordinates>2.4012,48.2934,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Ris-Orangis</name><Point><coordinates>2.4143,48.6593,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Grand Bourg</name><Point><coordinates>2.4360,48.6481,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Évry Val de Seine</name><Point><coordinates>2.4522,48.6345,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Essonnes - Robinson</name><Point><coordinates>2.4626,48.6056,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Villabé</name><Point><coordinates>2.4615,48.5928,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Le Plessis-Chenet</name><Point><coordinates>2.4796,48.5736,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Le Coudray - Montceaux</name><Point><coordinates>2.4925,48.5662,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Saint-Fargeau</name><Point><coordinates>2.5427,48.5645,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Ponthierry - Pringy</name><Point><coordinates>2.5450,48.5350,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Boissise-le-Roi</name><Point><coordinates>2.5729,48.5294,0</coordinates></Point></Placemark>
+  <Placemark><styleUrl>#green-icon</styleUrl><name>Vosves</name><Point><coordinates>2.5991,48.5151,0</coordinates></Point></Placemark>
+</Document>
+</kml>
