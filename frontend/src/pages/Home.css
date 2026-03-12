@@ -1,0 +1,51 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 40px;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 24px;
+}
+
+.home-btn {
+  padding: 20px 48px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  color: white;
+}
+
+.home-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.home-btn.configure {
+  background: #5c6bc0;
+}
+
+.home-btn.configure:hover {
+  background: #4a5ab5;
+}
+
+.home-btn.map {
+  background: #43a047;
+}
+
+.home-btn.map:hover {
+  background: #388e3c;
+}

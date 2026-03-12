@@ -1,0 +1,47 @@
+.map-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.map-bar {
+  height: 48px;
+  background: #333;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.map-bar input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+}
+
+.map-bar .back-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #5c6bc0;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.map-bar .load-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #43a047;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.map-container {
+  flex: 1;
+}
