@@ -43,6 +43,14 @@ pub struct TriangleBisect {
 }
 
 #[derive(Deserialize, Serialize)]
+pub struct RawKml {
+    pub path: String,
+    pub color: Option<String>,
+    #[serde(default)]
+    pub alpha: f64,
+}
+
+#[derive(Deserialize, Serialize)]
 pub enum EChoice {
     ConcentricCircles(ConcentricCircles),
     Point(PointDefinition),
@@ -50,6 +58,7 @@ pub enum EChoice {
     UnionCircles(UnionCircles),
     Segments(Segments),
     TriangleBisect(TriangleBisect),
+    RawKml(RawKml),
 }
 
 #[derive(Deserialize, Serialize)]

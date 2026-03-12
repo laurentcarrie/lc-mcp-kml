@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="document">
+	<name>local</name>
+	<gx:CascadingStyle kml:id="__managed_style_2183E0CE773E16CD9F43">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=fbc02d&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>1.5</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_19F8D6E6F03E16CD9F43">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=fbc02d&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_50C51D15AC3E16CE1524">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_09DDC28FC03E16CD9F43">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_19F8D6E6F03E16CD9F43</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2183E0CE773E16CD9F43</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_2D94A1EF963E16CD9F41">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>1.5</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_485E7AC93A3E16CE1524">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_390515151F3E16CE1524">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_485E7AC93A3E16CE1524</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_50C51D15AC3E16CE1524</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_10B73C5F0D3E16CD9F41">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0C6FD09A463E16CD9F41">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_10B73C5F0D3E16CD9F41</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2D94A1EF963E16CD9F41</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="5AF47CF8AE000001">
+		<name>pont champigny</name>
+		<LookAt>
+			<longitude>2.510645774174551</longitude>
+			<latitude>48.81084383065815</latitude>
+			<altitude>35.45786141164884</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1923.458907252643</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0C6FD09A463E16CD9F41</styleUrl>
+		<Point>
+			<coordinates>2.510202722933916,48.81086741147565,38.99889781960575</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="5AF47CF8AE000002">
+		<name>maison rue diderot</name>
+		<LookAt>
+			<longitude>2.493361704651216</longitude>
+			<latitude>48.81268687567845</latitude>
+			<altitude>34.7629045582045</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>99.15009641159486</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_09DDC28FC03E16CD9F43</styleUrl>
+		<Point>
+			<coordinates>2.493285223006838,48.8127531284484,40.12979323278168</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="5AF47CF8AE000003">
+		<name>maman</name>
+		<LookAt>
+			<longitude>2.0536675</longitude>
+			<latitude>48.9253578</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>665.6506352943416</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_09DDC28FC03E16CD9F43</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>2.0536675,48.9253578,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="5AF47CF8AE000004">
+		<name>xxx</name>
+		<LookAt>
+			<longitude>2.406008240556232</longitude>
+			<latitude>48.68753541008073</latitude>
+			<altitude>46.95380551863186</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>65.59821516719239</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0C6FD09A463E16CD9F41</styleUrl>
+		<Point>
+			<coordinates>2.406112360249879,48.68754508291813,47.1659660442204</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="5AF47CF8AE000005">
+		<name>20 Rue des Chênes</name>
+		<LookAt>
+			<longitude>2.4616368</longitude>
+			<latitude>48.69954980000001</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>668.903338280102</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_09DDC28FC03E16CD9F43</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>2.4616368,48.6995498,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0A958E16273E16CE1520">
+		<name>Houilles-BF-1</name>
+		<LookAt>
+			<longitude>2.177390036516478</longitude>
+			<latitude>48.9128760909706</latitude>
+			<altitude>65.31906243321764</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>134.7922146878591</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_390515151F3E16CE1524</styleUrl>
+		<Point>
+			<coordinates>2.177170468480225,48.91303888779394,50.99429259457261</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0A5A3B91683E16CEBB17">
+		<name>Houilles - BF2</name>
+		<LookAt>
+			<longitude>2.180846481904404</longitude>
+			<latitude>48.91270779252928</latitude>
+			<altitude>46.9935581133203</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>335.7932815756431</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_390515151F3E16CE1524</styleUrl>
+		<Point>
+			<coordinates>2.180933028490821,48.9127051531616,46.99331586185532</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="04087534FC3E16CF1BFF">
+		<name>Houilles - BF 3</name>
+		<LookAt>
+			<longitude>2.183598709692756</longitude>
+			<latitude>48.91449555052627</latitude>
+			<altitude>40.62815921769138</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>962.4333109636791</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_390515151F3E16CE1524</styleUrl>
+		<Point>
+			<coordinates>2.185321926802322,48.9156059499737,34.85833327751751</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0E85561AAB3E16CF5AA4">
+		<name>Houilles - BF 4</name>
+		<LookAt>
+			<longitude>2.186089144722796</longitude>
+			<latitude>48.91269010573413</latitude>
+			<altitude>38.78797947697078</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>876.0694964916911</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_390515151F3E16CE1524</styleUrl>
+		<Point>
+			<coordinates>2.186792624572429,48.91316503380194,36.50304640190797</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0870F3E60A3E16D01D4B">
+		<name>Houilles - BF 5</name>
+		<LookAt>
+			<longitude>2.190153491924669</longitude>
+			<latitude>48.91192940771661</latitude>
+			<altitude>26.36413866765931</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1020.819630669284</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_390515151F3E16CE1524</styleUrl>
+		<Point>
+			<coordinates>2.19102110110317,48.91327618228544,31.7224967931235</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0456307A583E16D07B18">
+		<name>Houilles - BF 6</name>
+		<LookAt>
+			<longitude>2.195237966685148</longitude>
+			<latitude>48.91671764378906</latitude>
+			<altitude>29.25605994171828</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1017.927807952365</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_390515151F3E16CE1524</styleUrl>
+		<Point>
+			<coordinates>2.195501754725919,48.91700607143827,27.93754317451873</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

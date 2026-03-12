@@ -415,38 +415,56 @@ pub fn process_choices(choices: &[EChoice], kml_cache: &mut HashMap<String, Kml>
                 elements.push(Kml::Style(Style {
                     id: Some(style_id.clone()),
                     line: Some(LineStyle {
-                        color: "ff888888".to_string(),
+                        color: "ff000000".to_string(),
                         width: 2.0,
                         ..Default::default()
                     }),
                     ..Default::default()
                 }));
 
-                elements.push(Kml::Placemark(Placemark {
-                    name: Some(format!(
-                        "Bisect {} - {}",
-                        tb.point1.name, tb.point2.name
-                    )),
-                    style_url: Some(format!("#{}", style_id)),
-                    geometry: Some(::kml::types::Geometry::LineString(
-                        ::kml::types::LineString {
-                            coords: vec![
-                                Coord {
-                                    x: a_lon,
-                                    y: a_lat,
-                                    z: Some(0.0),
-                                },
-                                Coord {
-                                    x: b_lon,
-                                    y: b_lat,
-                                    z: Some(0.0),
-                                },
-                            ],
-                            ..Default::default()
+                // Simulate dashed line by splitting into segments and drawing every other one
+                let num_dashes = 20;
+                for i in 0..num_dashes {
+                    if i % 2 != 0 {
+                        continue; // skip gaps
+                    }
+                    let t0 = i as f64 / num_dashes as f64;
+                    let t1 = (i + 1) as f64 / num_dashes as f64;
+                    let lon0 = a_lon + (b_lon - a_lon) * t0;
+                    let lat0 = a_lat + (b_lat - a_lat) * t0;
+                    let lon1 = a_lon + (b_lon - a_lon) * t1;
+                    let lat1 = a_lat + (b_lat - a_lat) * t1;
+
+                    elements.push(Kml::Placemark(Placemark {
+                        name: if i == 0 {
+                            Some(format!(
+                                "Bisect {} - {}",
+                                tb.point1.name, tb.point2.name
+                            ))
+                        } else {
+                            None
                         },
-                    )),
-                    ..Default::default()
-                }));
+                        style_url: Some(format!("#{}", style_id)),
+                        geometry: Some(::kml::types::Geometry::LineString(
+                            ::kml::types::LineString {
+                                coords: vec![
+                                    Coord {
+                                        x: lon0,
+                                        y: lat0,
+                                        z: Some(0.0),
+                                    },
+                                    Coord {
+                                        x: lon1,
+                                        y: lat1,
+                                        z: Some(0.0),
+                                    },
+                                ],
+                                ..Default::default()
+                            },
+                        )),
+                        ..Default::default()
+                    }));
+                }
             }
             EChoice::Folder(folder) => {
                 let folder_elements = process_choices(&folder.choices, kml_cache);
@@ -455,6 +473,60 @@ pub fn process_choices(choices: &[EChoice], kml_cache: &mut HashMap<String, Kml>
                     elements: folder_elements,
                     ..Default::default()
                 }));
+            }
+            EChoice::RawKml(raw) => {
+                let kml = KmlReader::from_path(Path::new(&raw.path))
+                    .expect(&format!("Failed to open {}", raw.path))
+                    .read()
+                    .expect(&format!("Failed to parse {}", raw.path));
+                fn extract_elements(kml: Kml) -> Vec<Kml> {
+                    match kml {
+                        Kml::KmlDocument(doc) => {
+                            doc.elements.into_iter().flat_map(extract_elements).collect()
+                        }
+                        Kml::Document { elements, .. } => elements
+                            .into_iter()
+                            .filter(|e| !matches!(e, Kml::Element(el) if el.name == "name"))
+                            .collect(),
+                        other => vec![other],
+                    }
+                }
+                if let Some(ref color) = raw.color {
+                    // Override styles with the given color
+                    let style_id = format!(
+                        "rawkml_color_{}",
+                        raw.path.replace(['/', '.', '-'], "_")
+                    );
+                    let alpha_byte = (raw.alpha.clamp(0.0, 1.0) * 255.0) as u8;
+                    let fill_color = format!("{:02x}{}", alpha_byte, &color[2..]);
+                    elements.push(Kml::Style(Style {
+                        id: Some(style_id.clone()),
+                        line: Some(LineStyle {
+                            color: color.clone(),
+                            width: 2.0,
+                            ..Default::default()
+                        }),
+                        poly: Some(PolyStyle {
+                            color: fill_color,
+                            fill: true,
+                            outline: true,
+                            ..Default::default()
+                        }),
+                        ..Default::default()
+                    }));
+                    let style_url = format!("#{}", style_id);
+                    for el in extract_elements(kml) {
+                        match el {
+                            Kml::Placemark(mut p) => {
+                                p.style_url = Some(style_url.clone());
+                                elements.push(Kml::Placemark(p));
+                            }
+                            other => elements.push(other),
+                        }
+                    }
+                } else {
+                    elements.extend(extract_elements(kml));
+                }
             }
         }
     }
