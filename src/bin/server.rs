@@ -1,4 +1,5 @@
 use axum::{Router, extract::Path, response::IntoResponse, http::StatusCode};
+use tower_http::cors::CorsLayer;
 
 const S3_BUCKET: &str = "kml-laurent";
 const S3_REGION: &str = "eu-west-3";
@@ -11,7 +12,10 @@ async fn proxy_s3(Path(path): Path<String>) -> impl IntoResponse {
     match reqwest::get(&url).await {
         Ok(resp) if resp.status().is_success() => {
             let body = resp.bytes().await.unwrap_or_default();
-            (StatusCode::OK, [("content-type", "application/vnd.google-earth.kml+xml")], body).into_response()
+            (StatusCode::OK, [
+                ("content-type", "application/vnd.google-earth.kml+xml"),
+                ("access-control-allow-origin", "*"),
+            ], body).into_response()
         }
         Ok(resp) => (StatusCode::from_u16(resp.status().as_u16()).unwrap_or(StatusCode::NOT_FOUND), "Not found").into_response(),
         Err(e) => (StatusCode::BAD_GATEWAY, format!("S3 fetch error: {}", e)).into_response(),
@@ -22,7 +26,10 @@ async fn proxy_s3(Path(path): Path<String>) -> impl IntoResponse {
 async fn main() {
     let port = std::env::var("PORT").unwrap_or_else(|_| "8080".to_string());
 
-    let app = Router::new().route("/{*path}", axum::routing::get(proxy_s3));
+    let cors = CorsLayer::permissive();
+    let app = Router::new()
+        .route("/{*path}", axum::routing::get(proxy_s3))
+        .layer(cors);
 
     let addr = format!("0.0.0.0:{}", port);
     println!("Proxying S3 bucket {} on {}", S3_BUCKET, addr);
