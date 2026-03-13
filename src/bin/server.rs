@@ -1,10 +1,11 @@
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 use std::io::BufWriter;
 use std::sync::Arc;
 
 use axum::{Router, Json, extract::{Path, State}, response::IntoResponse, http::StatusCode};
 use tower_http::cors::CorsLayer;
 use tower_http::services::{ServeDir, ServeFile};
+use tokio::sync::OnceCell;
 
 use ::kml::types::KmlDocument;
 use ::kml::{Kml, KmlReader, KmlWriter};
@@ -14,10 +15,12 @@ use lc_kml_utils::processing::process_choices_with_resolver;
 const S3_BUCKET: &str = "kml-laurent";
 const S3_REGION: &str = "eu-west-3";
 const S3_PREFIX: &str = "library/idf/";
+const GRID_CELL_SIZE: f64 = 0.001; // ~100m
 
 struct AppState {
     s3_client: aws_sdk_s3::Client,
     llm_api_key: Option<String>,
+    adjacency: OnceCell<HashMap<String, Vec<String>>>,
 }
 
 async fn proxy_s3(Path(path): Path<String>) -> impl IntoResponse {
@@ -96,6 +99,183 @@ fn resolve_kml_from_cache<'a>(kml_cache: &'a mut HashMap<String, Kml>, path: &st
     kml_cache.get(path).unwrap()
 }
 
+fn extract_polygon_coords(kml: &Kml) -> Vec<(f64, f64)> {
+    let mut coords = Vec::new();
+    extract_polygon_coords_recursive(kml, &mut coords);
+    coords
+}
+
+fn extract_polygon_coords_recursive(kml: &Kml, coords: &mut Vec<(f64, f64)>) {
+    match kml {
+        Kml::KmlDocument(doc) => doc.elements.iter().for_each(|e| extract_polygon_coords_recursive(e, coords)),
+        Kml::Document { elements, .. } => elements.iter().for_each(|e| extract_polygon_coords_recursive(e, coords)),
+        Kml::Folder(folder) => folder.elements.iter().for_each(|e| extract_polygon_coords_recursive(e, coords)),
+        Kml::Placemark(p) => {
+            if let Some(geom) = &p.geometry {
+                extract_geom_coords(geom, coords);
+            }
+        }
+        _ => {}
+    }
+}
+
+fn extract_geom_coords(geom: &::kml::types::Geometry, coords: &mut Vec<(f64, f64)>) {
+    match geom {
+        ::kml::types::Geometry::Polygon(poly) => {
+            for c in &poly.outer.coords {
+                coords.push((c.x, c.y));
+            }
+        }
+        ::kml::types::Geometry::MultiGeometry(mg) => {
+            for g in &mg.geometries {
+                extract_geom_coords(g, coords);
+            }
+        }
+        _ => {}
+    }
+}
+
+fn is_commune_file(key: &str) -> bool {
+    let parts: Vec<&str> = key.split('/').collect();
+    parts.len() == 2 && parts[0].len() == 2 && parts[0].chars().all(|c| c.is_ascii_digit())
+}
+
+async fn compute_adjacency(s3_client: &aws_sdk_s3::Client) -> HashMap<String, Vec<String>> {
+    eprintln!("Computing commune adjacency graph...");
+
+    // List all commune KML files
+    let mut commune_files = Vec::new();
+    let mut continuation_token: Option<String> = None;
+    loop {
+        let mut req = s3_client.list_objects_v2().bucket(S3_BUCKET).prefix(S3_PREFIX);
+        if let Some(token) = &continuation_token {
+            req = req.continuation_token(token);
+        }
+        match req.send().await {
+            Ok(output) => {
+                for obj in output.contents() {
+                    if let Some(key) = obj.key() {
+                        if key.ends_with(".kml") {
+                            let rel = key.strip_prefix(S3_PREFIX).unwrap_or(key);
+                            if is_commune_file(rel) {
+                                commune_files.push(rel.to_string());
+                            }
+                        }
+                    }
+                }
+                if output.is_truncated() == Some(true) {
+                    continuation_token = output.next_continuation_token().map(|s| s.to_string());
+                } else {
+                    break;
+                }
+            }
+            Err(e) => {
+                eprintln!("Failed to list S3 for adjacency: {}", e);
+                return HashMap::new();
+            }
+        }
+    }
+    eprintln!("Found {} commune files", commune_files.len());
+
+    // Fetch and parse all commune KMLs concurrently (bounded)
+    let semaphore = Arc::new(tokio::sync::Semaphore::new(50));
+    let client = reqwest::Client::new();
+    let mut handles = Vec::new();
+
+    for file in &commune_files {
+        let sem = semaphore.clone();
+        let client = client.clone();
+        let file = file.clone();
+        let url = format!(
+            "https://{}.s3.{}.amazonaws.com/{}{}",
+            S3_BUCKET, S3_REGION, S3_PREFIX, file
+        );
+        handles.push(tokio::spawn(async move {
+            let _permit = sem.acquire().await.unwrap();
+            let result = match client.get(&url).send().await {
+                Ok(resp) if resp.status().is_success() => {
+                    match resp.bytes().await {
+                        Ok(bytes) => {
+                            match KmlReader::from_reader(std::io::Cursor::new(bytes)).read() {
+                                Ok(kml) => Some(extract_polygon_coords(&kml)),
+                                Err(_) => None,
+                            }
+                        }
+                        Err(_) => None,
+                    }
+                }
+                _ => None,
+            };
+            (file, result)
+        }));
+    }
+
+    // Collect results
+    let mut commune_coords: HashMap<String, Vec<(f64, f64)>> = HashMap::new();
+    for handle in handles {
+        if let Ok((file, Some(coords))) = handle.await {
+            if !coords.is_empty() {
+                commune_coords.insert(file, coords);
+            }
+        }
+    }
+    eprintln!("Parsed {} commune boundaries", commune_coords.len());
+
+    // Build spatial grid index
+    let mut grid: HashMap<(i64, i64), Vec<String>> = HashMap::new();
+    for (file, coords) in &commune_coords {
+        let mut cells_seen = HashSet::new();
+        for &(lon, lat) in coords {
+            let cell = (
+                (lon / GRID_CELL_SIZE).round() as i64,
+                (lat / GRID_CELL_SIZE).round() as i64,
+            );
+            if cells_seen.insert(cell) {
+                grid.entry(cell).or_default().push(file.clone());
+            }
+        }
+    }
+
+    // Derive adjacency from shared grid cells
+    let mut adjacency: HashMap<String, HashSet<String>> = HashMap::new();
+    for (_cell, communes) in &grid {
+        if communes.len() >= 2 {
+            for i in 0..communes.len() {
+                for j in (i + 1)..communes.len() {
+                    adjacency.entry(communes[i].clone()).or_default().insert(communes[j].clone());
+                    adjacency.entry(communes[j].clone()).or_default().insert(communes[i].clone());
+                }
+            }
+        }
+    }
+
+    let result: HashMap<String, Vec<String>> = adjacency.into_iter()
+        .map(|(k, v)| {
+            let mut neighbors: Vec<String> = v.into_iter().collect();
+            neighbors.sort();
+            (k, neighbors)
+        })
+        .collect();
+
+    let edge_count: usize = result.values().map(|v| v.len()).sum::<usize>() / 2;
+    eprintln!("Adjacency computed: {} communes, {} edges", result.len(), edge_count);
+    result
+}
+
+fn format_adjacency_for_prompt(adjacency: &HashMap<String, Vec<String>>) -> String {
+    let mut lines: Vec<String> = adjacency.iter()
+        .map(|(commune, neighbors)| {
+            let key = commune.trim_end_matches(".kml");
+            let neighbor_keys: Vec<&str> = neighbors.iter()
+                .map(|n| n.trim_end_matches(".kml").as_ref())
+                .collect();
+            format!("  {}: {}", key, neighbor_keys.join(", "))
+        })
+        .collect();
+    lines.sort();
+    lines.join("\n")
+}
+
 #[derive(serde::Deserialize)]
 struct PromptRequest {
     prompt: String,
@@ -161,6 +341,24 @@ async fn prompt_to_config(
         }
     }
 
+    // Compute adjacency lazily on first request, cached to disk
+    let adjacency = state.adjacency.get_or_init(|| async {
+        let cache_path = "adjacency_cache.json";
+        if let Ok(data) = tokio::fs::read_to_string(cache_path).await {
+            if let Ok(parsed) = serde_json::from_str::<HashMap<String, Vec<String>>>(&data) {
+                eprintln!("Loaded adjacency from {}: {} communes", cache_path, parsed.len());
+                return parsed;
+            }
+        }
+        let result = compute_adjacency(&state.s3_client).await;
+        if let Ok(json) = serde_json::to_string(&result) {
+            let _ = tokio::fs::write(cache_path, json).await;
+            eprintln!("Saved adjacency to {}", cache_path);
+        }
+        result
+    }).await;
+    let adjacency_text = format_adjacency_for_prompt(adjacency);
+
     let system_prompt = format!(
 r#"You generate InputData JSON configurations for a KML map visualization tool.
 
@@ -216,13 +414,19 @@ Use RawKml to display commune boundaries. You MUST use the correct INSEE code. C
   93066_Saint-Denis, 75056_Paris.
 If unsure of an INSEE code for a commune not listed above, make your best guess based on the pattern.
 
-When the user asks to color multiple communes such that adjacent/neighbouring ones have different colors, use your geographic knowledge of Île-de-France to determine which communes share a border, then apply a graph coloring (e.g. 3-4 colors) so that no two adjacent communes share the same color. Each RawKml entry can have its own color.
+When coloring communes, use the adjacency graph below to ensure no two adjacent communes share the same color.
+A 4-color solution always exists. Pick from these 4 colors: red ("ff0000ff"), green ("ff00ff00"), blue ("ffff0000"), yellow ("ff00ffff").
+Only include communes that are actually adjacent to the requested commune(s) — do NOT include communes that are not neighbors.
+
+Commune adjacency graph (commune: neighbor1, neighbor2, ...):
+{}
 
 IMPORTANT: Return ONLY valid JSON, no markdown, no explanation. Just the InputData object."#,
         library_files.iter().map(|f| format!("  {}", f)).collect::<Vec<_>>().join("\n"),
         kml_placemarks.iter().map(|(file, names)| {
             format!("  {} → {}", file, names.join(", "))
-        }).collect::<Vec<_>>().join("\n")
+        }).collect::<Vec<_>>().join("\n"),
+        adjacency_text
     );
 
     let body = serde_json::json!({
@@ -378,7 +582,7 @@ async fn main() {
     if llm_api_key.is_none() {
         eprintln!("Warning: ANTHROPIC_API_KEY not set, /api/prompt will be disabled");
     }
-    let state = Arc::new(AppState { s3_client, llm_api_key });
+    let state = Arc::new(AppState { s3_client, llm_api_key, adjacency: OnceCell::new() });
 
     let cors = CorsLayer::permissive();
 
