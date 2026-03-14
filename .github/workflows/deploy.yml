@@ -41,44 +41,46 @@ jobs:
       - name: Create or update App Runner service
         env:
           IMAGE_URI: ${{ steps.build-image.outputs.image }}
+          RT_AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          RT_AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          RT_ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RT_GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          RT_ORS_API_KEY: ${{ secrets.ORS_API_KEY }}
         run: |
           SERVICE_ARN=$(aws apprunner list-services --query "ServiceSummaryList[?ServiceName=='${APP_RUNNER_SERVICE}'].ServiceArn" --output text)
+          IMAGE_CONFIG=$(cat <<ENDJSON
+          {
+            "AuthenticationConfiguration": {
+              "AccessRoleArn": "arn:aws:iam::579871531410:role/kml-apprunner-ecr-access"
+            },
+            "ImageRepository": {
+              "ImageIdentifier": "${IMAGE_URI}",
+              "ImageRepositoryType": "ECR",
+              "ImageConfiguration": {
+                "Port": "8080",
+                "RuntimeEnvironmentVariables": {
+                  "AWS_ACCESS_KEY_ID": "${RT_AWS_ACCESS_KEY_ID}",
+                  "AWS_SECRET_ACCESS_KEY": "${RT_AWS_SECRET_ACCESS_KEY}",
+                  "AWS_DEFAULT_REGION": "eu-west-3",
+                  "ANTHROPIC_API_KEY": "${RT_ANTHROPIC_API_KEY}",
+                  "GOOGLE_API_KEY": "${RT_GOOGLE_API_KEY}",
+                  "ORS_API_KEY": "${RT_ORS_API_KEY}"
+                }
+              }
+            },
+            "AutoDeploymentsEnabled": false
+          }
+          ENDJSON
+          )
           if [ -z "$SERVICE_ARN" ]; then
             echo "Creating new App Runner service..."
             aws apprunner create-service \
               --service-name $APP_RUNNER_SERVICE \
-              --source-configuration '{
-                "AuthenticationConfiguration": {
-                  "AccessRoleArn": "arn:aws:iam::579871531410:role/kml-apprunner-ecr-access"
-                },
-                "ImageRepository": {
-                  "ImageIdentifier": "'"$IMAGE_URI"'",
-                  "ImageRepositoryType": "ECR",
-                  "ImageConfiguration": {
-                    "Port": "8080"
-                  }
-                },
-                "AutoDeploymentsEnabled": false
-              }' \
-              --instance-configuration '{
-                "Cpu": "0.25 vCPU",
-                "Memory": "0.5 GB"
-              }'
+              --source-configuration "$IMAGE_CONFIG" \
+              --instance-configuration '{"Cpu": "0.25 vCPU", "Memory": "0.5 GB"}'
           else
             echo "Updating existing App Runner service..."
             aws apprunner update-service \
               --service-arn "$SERVICE_ARN" \
-              --source-configuration '{
-                "AuthenticationConfiguration": {
-                  "AccessRoleArn": "arn:aws:iam::579871531410:role/kml-apprunner-ecr-access"
-                },
-                "ImageRepository": {
-                  "ImageIdentifier": "'"$IMAGE_URI"'",
-                  "ImageRepositoryType": "ECR",
-                  "ImageConfiguration": {
-                    "Port": "8080"
-                  }
-                },
-                "AutoDeploymentsEnabled": false
-              }'
+              --source-configuration "$IMAGE_CONFIG"
           fi
