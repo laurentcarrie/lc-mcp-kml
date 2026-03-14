@@ -69,23 +69,61 @@ export default function MapPage() {
         doc.querySelectorAll('Style').forEach(s => {
           const id = s.getAttribute('id')
           const lineEl = s.querySelector('LineStyle > color')
-          if (id && lineEl) {
-            styles[id] = kmlColorToHex(lineEl.textContent.trim())
+          const polyEl = s.querySelector('PolyStyle > color')
+          const iconHref = s.querySelector('IconStyle > Icon > href')
+          const iconColor = s.querySelector('IconStyle > color')
+          if (id) {
+            const polyColorRaw = polyEl ? polyEl.textContent.trim() : null
+            styles[id] = {
+              lineColor: lineEl ? kmlColorToHex(lineEl.textContent.trim()) : null,
+              polyColor: polyColorRaw ? kmlColorToHex(polyColorRaw) : null,
+              polyAlpha: polyColorRaw ? parseInt(polyColorRaw.substring(0, 2), 16) / 255 : null,
+              iconHref: iconHref ? iconHref.textContent.trim() : null,
+              iconColor: iconColor ? iconColor.textContent.trim() : null,
+            }
           }
         })
 
         const layer = omnivore.kml.parse(kmlText)
-        layer.eachLayer(l => {
-          if (l.feature?.properties?.styleUrl) {
-            const styleId = l.feature.properties.styleUrl.replace('#', '')
-            if (styles[styleId] && l.setStyle) {
-              l.setStyle({ color: styles[styleId], weight: 3 })
+        const applyStyles = (parentLayer) => {
+          parentLayer.eachLayer(l => {
+            if (l.eachLayer && !l.feature) { applyStyles(l); return }
+            if (l.feature?.properties?.styleUrl) {
+              const styleId = l.feature.properties.styleUrl.replace('#', '')
+              const style = styles[styleId]
+              if (style) {
+                if (style.iconHref && l.setIcon) {
+                  l.setIcon(L.icon({
+                    iconUrl: style.iconHref,
+                    iconSize: [24, 24],
+                    iconAnchor: [12, 12],
+                    popupAnchor: [0, -12],
+                  }))
+                }
+                if (l.setStyle) {
+                  const styleObj = {}
+                  if (style.lineColor) {
+                    styleObj.color = style.lineColor
+                    styleObj.weight = 3
+                  }
+                  if (style.polyColor) {
+                    styleObj.fillColor = style.polyColor
+                    styleObj.fillOpacity = style.polyAlpha ?? 0.3
+                    if (!style.lineColor) {
+                      styleObj.color = style.polyColor
+                      styleObj.weight = 2
+                    }
+                  }
+                  if (Object.keys(styleObj).length) l.setStyle(styleObj)
+                }
+              }
             }
-          }
-          if (l.feature?.properties?.name) {
-            l.bindPopup('<b>' + l.feature.properties.name + '</b>')
-          }
-        })
+            if (l.feature?.properties?.name) {
+              l.bindPopup('<b>' + l.feature.properties.name + '</b>')
+            }
+          })
+        }
+        applyStyles(layer)
         layer.addTo(mapInstance.current)
         mapInstance.current.fitBounds(layer.getBounds().pad(0.1))
         currentLayer.current = layer
