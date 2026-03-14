@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus 442 - 442</name>
+    <description>Transdev Côteaux de la Marne</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ffB482FF</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ffB482FF</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>442</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.5399,48.777279,0 2.540493,48.777115,0 2.540661,48.77702,0 2.540779,48.77689,0 2.54092,48.776752,0 2.541008,48.776699,0 2.54112,48.776665,0 2.541236,48.776646,0 2.541354,48.776665,0 2.541524,48.776714,0 2.543868,48.777596,0 2.544495,48.777863,0 2.545116,48.777302,0 2.545492,48.776932,0 2.545642,48.776794,0 2.546976,48.775486,0 2.546976,48.775486,0 2.547237,48.775234,0 2.547253,48.775146,0 2.547154,48.775085,0 2.54699,48.775051,0 2.546975,48.77499,0 2.546996,48.774929,0 2.547081,48.77486,0 2.547137,48.774837,0 2.547105,48.774811,0 2.547029,48.774666,0 2.546641,48.774181,0 2.545365,48.772533,0 2.545365,48.772533,0 2.542458,48.768784,0 2.542458,48.768784,0 2.542263,48.76852,0 2.540634,48.766415,0 2.540634,48.766415,0 2.540525,48.766277,0 2.540391,48.766129,0 2.539929,48.76577,0 2.537548,48.764305,0 2.536317,48.763561,0 2.536256,48.763584,0 2.536211,48.763588,0 2.536167,48.763584,0 2.536116,48.763561,0 2.536083,48.763531,0 2.536075,48.763504,0 2.536076,48.763481,0 2.536105,48.763439,0 2.53509,48.762745,0 2.53509,48.762745,0 2.533815,48.761826,0 2.53371,48.761734,0 2.533541,48.761536,0 2.533501,48.761547,0 2.533458,48.761547,0 2.533416,48.761539,0 2.53338,48.761524,0 2.533353,48.761501,0 2.533338,48.761475,0 2.533338,48.761444,0 2.533347,48.761421,0 2.533366,48.761402,0 2.533425,48.761375,0 2.533395,48.761303,0 2.533456,48.761189,0 2.533603,48.7612,0 2.533701,48.761234,0 2.533723,48.761265,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>442</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.533594,48.761417,0 2.533607,48.76144,0 2.533609,48.761467,0 2.533598,48.761494,0 2.533575,48.76152,0 2.533541,48.761536,0 2.53371,48.761734,0 2.533815,48.761826,0 2.53509,48.762745,0 2.535666,48.763138,0 2.535666,48.763138,0 2.536105,48.763439,0 2.536164,48.763409,0 2.536252,48.763405,0 2.536313,48.763428,0 2.536352,48.76347,0 2.536356,48.763508,0 2.536343,48.763538,0 2.536317,48.763561,0 2.537548,48.764305,0 2.539929,48.76577,0 2.540391,48.766129,0 2.540525,48.766277,0 2.540634,48.766415,0 2.540634,48.766415,0 2.542263,48.76852,0 2.542458,48.768784,0 2.542458,48.768784,0 2.545365,48.772533,0 2.545365,48.772533,0 2.546641,48.774181,0 2.546826,48.77441,0 2.546826,48.77441,0 2.547029,48.774666,0 2.547093,48.774731,0 2.547191,48.774815,0 2.547626,48.775127,0 2.547978,48.775326,0 2.548538,48.775578,0 2.548172,48.775913,0 2.548172,48.775913,0 2.547961,48.776108,0 2.546843,48.775612,0 2.545642,48.776794,0 2.545492,48.776932,0 2.545116,48.777302,0 2.544495,48.777863,0 2.543868,48.777596,0 2.543687,48.777531,0 2.543687,48.777531,0 2.541524,48.776714,0 2.541354,48.776665,0 2.541236,48.776646,0 2.54112,48.776665,0 2.541008,48.776699,0 2.54092,48.776752,0 2.540779,48.77689,0 2.540661,48.77702,0 2.540493,48.777115,0 2.539514,48.777386,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Pierre Curie</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5452551807172403,48.772496655852954,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Berthelot</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.542525664595081,48.76876269947602,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mairie</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.54819138215825,48.77597948603704,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>La Garenne</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5399067216340003,48.777225016084266,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fontaine de Villiers</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5406006323620085,48.76641685311893,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alexandre Milard</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.543673277970465,48.7775632455388,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Collège du Parc</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.533789866027662,48.76121885391611,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jean Jaurès</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.546871661414702,48.77438254859201,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Léon Blum</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5469988337081,48.775408347938246,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Route de la Queue en Brie</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5350413137562278,48.76276172661883,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

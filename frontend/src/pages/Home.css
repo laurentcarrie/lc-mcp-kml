@@ -13,6 +13,12 @@
   margin: 0;
 }
 
+.home-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0;
+}
+
 .home-buttons {
   display: flex;
   gap: 24px;
@@ -48,4 +54,12 @@
 
 .home-btn.map:hover {
   background: #388e3c;
+}
+
+.home-btn.library {
+  background: #ff8f00;
+}
+
+.home-btn.library:hover {
+  background: #e65100;
 }

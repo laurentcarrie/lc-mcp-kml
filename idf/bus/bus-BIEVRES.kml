@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus BIEVRES - La Traverse Bièvre Montsouris</name>
+    <description>RATP</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ff984DBB</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ff984DBB</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>BIEVRES</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.353917,48.824112,0 2.353577,48.823944,0 2.353475,48.824009,0 2.353379,48.824039,0 2.353256,48.824039,0 2.353187,48.824028,0 2.353107,48.823994,0 2.353059,48.823959,0 2.353012,48.823902,0 2.352996,48.823849,0 2.348541,48.824001,0 2.348382,48.823845,0 2.348382,48.823845,0 2.347172,48.822662,0 2.347172,48.822662,0 2.346996,48.822487,0 2.346902,48.822502,0 2.346796,48.822506,0 2.346661,48.824741,0 2.346661,48.824741,0 2.346655,48.824963,0 2.346499,48.824989,0 2.345107,48.825649,0 2.34521,48.825943,0 2.344958,48.825974,0 2.344958,48.825974,0 2.344047,48.826115,0 2.34231,48.826363,0 2.34231,48.826363,0 2.342181,48.826382,0 2.341995,48.826454,0 2.341825,48.826492,0 2.341691,48.826511,0 2.341627,48.826504,0 2.341585,48.826473,0 2.341578,48.826385,0 2.341534,48.826275,0 2.341437,48.826157,0 2.341126,48.825836,0 2.341126,48.825836,0 2.339889,48.824631,0 2.339786,48.824631,0 2.338585,48.824497,0 2.338585,48.824497,0 2.336521,48.824265,0 2.336521,48.824265,0 2.336305,48.824242,0 2.336198,48.824539,0 2.335779,48.825623,0 2.335212,48.827164,0 2.335212,48.827164,0 2.335112,48.827431,0 2.33258,48.827808,0 2.332532,48.827812,0 2.332438,48.827614,0 2.332245,48.827164,0 2.332061,48.826794,0 2.33169,48.825943,0 2.331222,48.826035,0 2.331222,48.826035,0 2.330738,48.82613,0 2.329974,48.826622,0 2.329207,48.826267,0 2.329207,48.826267,0 2.328894,48.826122,0 2.326496,48.82692,0 2.326663,48.827435,0 2.326663,48.827435,0 2.32671,48.827557,0 2.32681,48.827656,0 2.32688,48.82777,0 2.326972,48.827801,0 2.327025,48.827839,0 2.327918,48.827827,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>BIEVRES</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.327918,48.827827,0 2.332021,48.827816,0 2.332021,48.827816,0 2.332532,48.827812,0 2.332438,48.827614,0 2.332245,48.827164,0 2.332061,48.826794,0 2.33169,48.825943,0 2.331264,48.824749,0 2.330922,48.824833,0 2.330922,48.824833,0 2.32941,48.825218,0 2.328321,48.82449,0 2.327761,48.824097,0 2.328016,48.824047,0 2.328016,48.824047,0 2.330416,48.823589,0 2.331844,48.823738,0 2.331844,48.823738,0 2.335902,48.824203,0 2.336521,48.824265,0 2.336521,48.824265,0 2.33833,48.824471,0 2.338278,48.824699,0 2.338278,48.824699,0 2.338261,48.824776,0 2.338215,48.82515,0 2.338221,48.825378,0 2.338277,48.825794,0 2.338321,48.825962,0 2.338495,48.826488,0 2.338495,48.826488,0 2.338633,48.826916,0 2.341269,48.826527,0 2.341269,48.826527,0 2.342001,48.826389,0 2.341959,48.82626,0 2.343052,48.825378,0 2.343052,48.825378,0 2.344455,48.824177,0 2.344647,48.823997,0 2.344778,48.823891,0 2.344778,48.823891,0 2.345172,48.823566,0 2.346452,48.822472,0 2.346452,48.822472,0 2.346472,48.822456,0 2.346559,48.822487,0 2.346796,48.822506,0 2.346902,48.822502,0 2.346996,48.822487,0 2.347055,48.82246,0 2.347086,48.822437,0 2.347106,48.822411,0 2.347111,48.822372,0 2.347093,48.822308,0 2.347109,48.822224,0 2.347135,48.822201,0 2.347172,48.822178,0 2.349886,48.822174,0 2.350092,48.822136,0 2.350512,48.822037,0 2.350512,48.822037,0 2.352393,48.821621,0 2.352558,48.82159,0 2.352566,48.8218,0 2.35269,48.822151,0 2.352979,48.822147,0 2.352979,48.822147,0 2.35389,48.82214,0 2.353914,48.822121,0 2.353945,48.822109,0 2.353982,48.822102,0 2.354052,48.822113,0 2.354081,48.822132,0 2.354091,48.822147,0 2.354191,48.822136,0 2.356496,48.822102,0 2.356865,48.822121,0 2.356865,48.822121,0 2.358518,48.822205,0 2.358428,48.822514,0 2.358428,48.822514,0 2.358348,48.822788,0 2.358217,48.823143,0 2.357589,48.825119,0 2.357267,48.825066,0 2.356624,48.824944,0 2.356624,48.824944,0 2.356394,48.824898,0 2.355484,48.824848,0 2.355381,48.824867,0 2.35533,48.824852,0 2.355308,48.824829,0 2.355308,48.824802,0 2.353917,48.824112,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>BIEVRES</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.327918,48.827827,0 2.332021,48.827816,0 2.332021,48.827816,0 2.332532,48.827812,0 2.332438,48.827614,0 2.332245,48.827164,0 2.332061,48.826794,0 2.33169,48.825943,0 2.331264,48.824749,0 2.330922,48.824833,0 2.330922,48.824833,0 2.32941,48.825218,0 2.328321,48.82449,0 2.327761,48.824097,0 2.328016,48.824047,0 2.328016,48.824047,0 2.330416,48.823589,0 2.331844,48.823738,0 2.331844,48.823738,0 2.335902,48.824203,0 2.336521,48.824265,0 2.336521,48.824265,0 2.33833,48.824471,0 2.338278,48.824699,0 2.338278,48.824699,0 2.338261,48.824776,0 2.338215,48.82515,0 2.338221,48.825378,0 2.338277,48.825794,0 2.338321,48.825962,0 2.338495,48.826488,0 2.338495,48.826488,0 2.338633,48.826916,0 2.341269,48.826527,0 2.341269,48.826527,0 2.342001,48.826389,0 2.341959,48.82626,0 2.343052,48.825378,0 2.343052,48.825378,0 2.344455,48.824177,0 2.344647,48.823997,0 2.344778,48.823891,0 2.344778,48.823891,0 2.345172,48.823566,0 2.346452,48.822472,0 2.346452,48.822472,0 2.346472,48.822456,0 2.346559,48.822487,0 2.346796,48.822506,0 2.346902,48.822502,0 2.346996,48.822487,0 2.347055,48.82246,0 2.347086,48.822437,0 2.347106,48.822411,0 2.347111,48.822372,0 2.347093,48.822308,0 2.347109,48.822224,0 2.347135,48.822201,0 2.347172,48.822178,0 2.349886,48.822174,0 2.350092,48.822136,0 2.350512,48.822037,0 2.350512,48.822037,0 2.352393,48.821621,0 2.352558,48.82159,0 2.352566,48.8218,0 2.35269,48.822151,0 2.352979,48.822147,0 2.352979,48.822147,0 2.35389,48.82214,0 2.353914,48.822121,0 2.353945,48.822109,0 2.353982,48.822102,0 2.354052,48.822113,0 2.354081,48.822132,0 2.354091,48.822147,0 2.354191,48.822136,0 2.356496,48.822102,0 2.356865,48.822121,0 2.356865,48.822121,0 2.358518,48.822205,0 2.358428,48.822514,0 2.358428,48.822514,0 2.358348,48.822788,0 2.358217,48.823143,0 2.357589,48.825119,0 2.357267,48.825066,0 2.356624,48.824944,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Bobillot</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3482883980524374,48.82388451880026,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Barrault</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3466979045031913,48.82472125529166,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lacaze</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3307587738163043,48.82492091759274,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place Jules Henaffe</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.331755442035392,48.82367635415638,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Moulin de la Pointe</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3568373884503115,48.82206909195274,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place de l'Abbé Georges Henocque</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3538287774082085,48.82414842281085,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alesia - René Coty</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.335293069088721,48.82717666294919,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Thomas Francine</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3385577686578842,48.82645727544943,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boussingault</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.34299871167222,48.82534854090216,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place de Rungis</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3462774224825633,48.82240755513339,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Küss</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3505303893113547,48.822133934723134,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Glacière - Tolbiac</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.342317594317828,48.82643304292198,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>La Tombe Issoire</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3320163869940265,48.82776098800009,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Peupliers</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3530236299444582,48.82207549995928,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Docteur Laurent</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.357167634979638,48.82511076297198,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vergniaud - Tolbiac</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3448968407605335,48.826051474122956,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>La Sibelle</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3385682222520665,48.82455964674402,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parc Montsouris</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3365008438416015,48.82432334941407,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Douanier Rousseau</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3312210568648783,48.8260477265698,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alésia - Général Leclerc</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.326750007592742,48.82735371830587,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Paul Fort</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.327992101072778,48.82398803539178,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vergniaud</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3446659746828806,48.823828747101196,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Maison Blanche</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.358561517628395,48.82252804195093,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rungis</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.347104492698053,48.82270886881879,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sarrette</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3291741819627374,48.82633305691024,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus SUBB S - SUBB Boucle Sud</name>
+    <description>Origami / Mobicité</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ff3AB0E0</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ff3AB0E0</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>SUBB S</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.239778,48.836498,0 2.240582,48.836601,0 2.240685,48.836636,0 2.240739,48.836628,0 2.240783,48.836651,0 2.240793,48.836666,0 2.240792,48.836685,0 2.24313,48.836975,0 2.24313,48.836975,0 2.247601,48.837536,0 2.247601,48.837536,0 2.247953,48.837578,0 2.248251,48.837181,0 2.248665,48.836578,0 2.249146,48.835938,0 2.249146,48.835938,0 2.249338,48.835682,0 2.2495,48.835445,0 2.250239,48.834461,0 2.250265,48.834415,0 2.250472,48.834133,0 2.250472,48.834133,0 2.251755,48.832378,0 2.252034,48.832329,0 2.252755,48.832161,0 2.253071,48.832081,0 2.252784,48.831673,0 2.252784,48.831673,0 2.252515,48.831295,0 2.251825,48.830284,0 2.251384,48.829681,0 2.250777,48.828793,0 2.250777,48.828793,0 2.249575,48.827065,0 2.249264,48.826595,0 2.248736,48.825832,0 2.248736,48.825832,0 2.248418,48.825375,0 2.248341,48.825382,0 2.248264,48.825371,0 2.248197,48.825344,0 2.248148,48.82531,0 2.248118,48.825264,0 2.248108,48.825218,0 2.248117,48.82518,0 2.247973,48.825062,0 2.247711,48.824966,0 2.247349,48.824863,0 2.246215,48.824501,0 2.245656,48.824291,0 2.245062,48.824039,0 2.244866,48.824043,0 2.244817,48.824059,0 2.244397,48.824539,0 2.244397,48.824539,0 2.244153,48.824818,0 2.242189,48.827,0 2.24201,48.826992,0 2.241806,48.827217,0 2.2417,48.827278,0 2.241881,48.827362,0 2.241638,48.827618,0 2.241638,48.827618,0 2.239932,48.829502,0 2.239932,48.829502,0 2.239438,48.830036,0 2.239338,48.830074,0 2.239215,48.830078,0 2.239077,48.83007,0 2.238978,48.830112,0 2.238903,48.830158,0 2.238848,48.830212,0 2.238829,48.830273,0 2.238044,48.829987,0 2.238044,48.829987,0 2.237414,48.829762,0 2.236455,48.829403,0 2.235783,48.829681,0 2.235506,48.829853,0 2.23536,48.82996,0 2.235181,48.830162,0 2.235078,48.830288,0 2.235078,48.830288,0 2.234805,48.830719,0 2.234708,48.830791,0 2.234153,48.831768,0 2.234153,48.831768,0 2.233994,48.832058,0 2.233534,48.833122,0 2.233424,48.833393,0 2.233228,48.833805,0 2.237335,48.834373,0 2.237319,48.834419,0 2.237607,48.834465,0 2.237607,48.834465,0 2.238157,48.834557,0 2.239482,48.834747,0 2.239439,48.834881,0 2.239214,48.83569,0 2.239202,48.835758,0 2.239256,48.835831,0 2.239727,48.835648,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Pont de Billancourt</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2486639089984504,48.825890310974366,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yves Kermen</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2351410652951498,48.83031050995678,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hôtel de Ville - Les Passages</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.239316232918272,48.83638997506243,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lycée E.J. Marey</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2342062415950674,48.83181549262068,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rue de Seine</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2506921744875843,48.828826037955736,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pyramide</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2375470771694617,48.834391081201865,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hôtel de Ville de Boulogne-Billancourt</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.239736332670162,48.83561018606876,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gallieni - Belle Feuille</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.243054967852324,48.83693533282936,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gallieni - Thiers</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.247638681264546,48.8374679032163,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Thiers Edouard Vaillant</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2490507953221006,48.83591185979018,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rue du Point du Jour</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.252707949097596,48.831698686691794,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place Jules Guesde</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.241774348360499,48.8275646552131,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Casteja</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2380467497643446,48.83003226054591,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Thiers - Maison Du Combattant</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2502881910713763,48.83418382093684,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Traversière</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.244405803552656,48.824577358622484,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place Bir-Hakeim</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2399612019975317,48.829531793230714,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

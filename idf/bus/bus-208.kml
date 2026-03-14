@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus 208 - 208</name>
+    <description>RATP</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ff6E00A0</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ff6E00A0</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Centre Commercial de Pincevent</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.560638890687581,48.79583050877643,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jean Mermoz</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5542749397454103,48.8029750120055,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Marché</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.510346053485724,48.81093351398682,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jean de la Fontaine</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5583277415646206,48.805112585595445,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place de Verdun</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.585532651415192,48.80499415593846,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Champigny - Saint-Maur RER</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5108603412495176,48.80691540652972,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Avenue Georges</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5396864265778545,48.80220021986328,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Houdon</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.554022118138123,48.80706623273501,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mairie</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.512339370196762,48.81328902700705,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fort de Champigny</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.533748111962685,48.805495912420085,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rodin</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5499432319247872,48.80637641457965,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Collège Boileau</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5548669520950478,48.80539654286689,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Colombe - Hardelet</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5423397110816173,48.8101429086669,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hippodrome</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5639046773261587,48.795995364751874,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lycée Champlain</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.555673788580435,48.79859124598097,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Châteaudun</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5524040303446363,48.81156604565491,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Les Mordacs</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5381192428853403,48.80851679769487,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Champlain - Pagnol</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5534768604022373,48.79918564442705,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Avenue Bertrand</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.58190070491592,48.806267613505824,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mairie - Marché</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5096089810493463,48.814015344710334,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Claude Bernard</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.547022590715619,48.80402700311356,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Collège Molière</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.533933400478585,48.80152137905467,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Musée de la Résistance</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.526396096767657,48.8069419898971,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rue du Monument</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5162177736859874,48.81210861727521,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Avenue Ardouin</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.576891511978211,48.806088101555495,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Collège Albert Camus - ZA Ponroy</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.572518171020531,48.80475046100941,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Martelet</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.520260642544,48.81079383514123,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rabelais</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.550050605834865,48.80339988088817,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bois l'Abbé</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.557156629884589,48.80673612292545,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jean-Baptiste Clément</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.497800614352972,48.817006206131076,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Champigny</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5000789565892787,48.816503112286924,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>11 novembre 1918</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5372781826291284,48.81122965435819,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Paul Venzac</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.555919633229734,48.81129135699052,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>La Cascade</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5247204839156776,48.80852723606595,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rue des Fusillés de Châteaubriant</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.542616629158734,48.800304781604,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rue du Bois l'Abbé - Louise Collet</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.540059096177431,48.8108896298747,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rond-Point du Château</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5453046552926097,48.81054994622503,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Guittard</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.506739617208904,48.81502882567528,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Groupe Scolaire Rousseau</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5483811457556858,48.801226081349384,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place de la Résistance</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.557748485757973,48.81401423458303,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

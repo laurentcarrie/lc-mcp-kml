@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus 3141 - 3141</name>
+    <description>Keolis Portes et Val de Brie</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ffDFD387</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ffDFD387</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>3141</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.61385,48.696266,0 2.613406,48.695988,0 2.615282,48.69529,0 2.616061,48.694824,0 2.616366,48.694637,0 2.61659,48.694439,0 2.617131,48.693737,0 2.617131,48.693737,0 2.617356,48.693451,0 2.617435,48.693367,0 2.6174,48.693333,0 2.617397,48.69331,0 2.617403,48.693291,0 2.617417,48.693275,0 2.617464,48.693253,0 2.617492,48.693249,0 2.617547,48.69326,0 2.61761,48.693169,0 2.61779,48.692959,0 2.617888,48.692818,0 2.617991,48.692627,0 2.618313,48.691883,0 2.615439,48.690739,0 2.615439,48.690739,0 2.614505,48.690361,0 2.614427,48.690311,0 2.614008,48.690544,0 2.613772,48.69072,0 2.613633,48.690857,0 2.613101,48.691452,0 2.613101,48.691452,0 2.611983,48.692703,0 2.611465,48.693264,0 2.610554,48.693348,0 2.610554,48.693348,0 2.609737,48.693439,0 2.609496,48.693478,0 2.609363,48.693382,0 2.609198,48.693306,0 2.608033,48.692673,0 2.607853,48.692535,0 2.607698,48.692375,0 2.607484,48.692047,0 2.607426,48.691895,0 2.607412,48.691719,0 2.607412,48.691719,0 2.607382,48.69138,0 2.607189,48.691231,0 2.607145,48.691227,0 2.606937,48.691269,0 2.606844,48.691299,0 2.605799,48.691666,0 2.604353,48.691948,0 2.604068,48.691982,0 2.603413,48.691975,0 2.60301,48.691986,0 2.60162,48.692093,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>3141</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.60162,48.692093,0 2.60301,48.691986,0 2.603413,48.691975,0 2.604068,48.691982,0 2.604353,48.691948,0 2.605799,48.691666,0 2.606844,48.691299,0 2.606957,48.691231,0 2.607037,48.691174,0 2.60702,48.691139,0 2.607018,48.691105,0 2.60703,48.691074,0 2.607055,48.691048,0 2.607091,48.691025,0 2.607134,48.69101,0 2.607226,48.691006,0 2.607307,48.691036,0 2.607349,48.691078,0 2.607359,48.691109,0 2.607356,48.691143,0 2.607426,48.691895,0 2.607484,48.692047,0 2.607698,48.692375,0 2.607853,48.692535,0 2.608033,48.692673,0 2.609198,48.693306,0 2.609363,48.693382,0 2.609496,48.693478,0 2.610216,48.694263,0 2.610249,48.69426,0 2.610279,48.694271,0 2.611038,48.693653,0 2.611038,48.693653,0 2.611262,48.693462,0 2.611545,48.693184,0 2.612154,48.692509,0 2.612154,48.692509,0 2.613633,48.690857,0 2.613772,48.69072,0 2.614008,48.690544,0 2.614427,48.690311,0 2.614505,48.690361,0 2.615439,48.690739,0 2.615439,48.690739,0 2.618313,48.691883,0 2.618436,48.691452,0 2.618518,48.691208,0 2.618518,48.691208,0 2.618572,48.691044,0 2.61968,48.689354,0 2.619707,48.689293,0 2.620159,48.689373,0 2.621096,48.689556,0 2.621096,48.689556,0 2.621625,48.689659,0 2.621974,48.689701,0 2.622627,48.689762,0 2.623065,48.689819,0 2.623504,48.689911,0 2.623504,48.689911,0 2.623753,48.68996,0 2.623968,48.689552,0 2.624463,48.689499,0 2.624692,48.689587,0 2.625004,48.689674,0 2.625496,48.689804,0 2.626753,48.690041,0 2.626961,48.690285,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Les Chênes</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.618449121786225,48.69114158221599,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Petit Bicêtre</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.613142762241633,48.69147226536478,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place des Fêtes</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6073940804243585,48.69171432438458,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Beau - Mendès France Collège Georges Brassens</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.602188364911059,48.69201188640416,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Centre Commercial Pasteur</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6169290124106404,48.69390403481107,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rendez-Vous Château - Jean-Claude Barigot</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6111854327156663,48.693426725345276,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gambetta</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.612075340265727,48.69251217332763,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Claude Bernard</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6211041196264517,48.68959995855413,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rue de Verdun</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6138060589355154,48.696286524276005,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tournelles de Pamphou</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.623547440684082,48.68988652915618,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ambroise Paré</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6270361517060743,48.69027526404378,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Les Myosotis</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6151723319505265,48.69064682905834,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

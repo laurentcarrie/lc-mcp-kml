@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus 4636 - 4636</name>
+    <description>RD Saclay</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ff0066FF</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ff0066FF</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>4636</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.331707,48.669582,0 2.332799,48.669853,0 2.332732,48.669968,0 2.332681,48.67004,0 2.332278,48.670517,0 2.331664,48.671333,0 2.33158,48.671432,0 2.331486,48.671532,0 2.331375,48.671623,0 2.331273,48.671696,0 2.331145,48.671768,0 2.330987,48.671837,0 2.330879,48.671875,0 2.330667,48.671947,0 2.328565,48.672546,0 2.32841,48.672604,0 2.32841,48.672604,0 2.328069,48.672752,0 2.327961,48.672806,0 2.327605,48.673016,0 2.327492,48.673,0 2.326252,48.672951,0 2.32538,48.672932,0 2.32518,48.672939,0 2.323805,48.673157,0 2.323805,48.673157,0 2.322366,48.67337,0 2.321038,48.673008,0 2.320875,48.672974,0 2.320852,48.673,0 2.320787,48.673027,0 2.320753,48.673027,0 2.320705,48.673019,0 2.32022,48.673435,0 2.32022,48.673435,0 2.31858,48.674843,0 2.31858,48.674843,0 2.318427,48.674973,0 2.317729,48.675919,0 2.318072,48.676094,0 2.318072,48.676094,0 2.317989,48.676228,0 2.31792,48.676304,0 2.317789,48.676407,0 2.317472,48.67625,0 2.317472,48.676311,0 2.317048,48.677082,0 2.31817,48.678448,0 2.31866,48.678169,0 2.31866,48.678169,0 2.318923,48.67802,0 2.319709,48.678631,0 2.320146,48.678963,0 2.320146,48.678963,0 2.320475,48.679199,0 2.320527,48.67918,0 2.320589,48.679192,0 2.32061,48.679207,0 2.32062,48.67923,0 2.320618,48.679253,0 2.32059,48.679279,0 2.320984,48.679565,0 2.321355,48.679821,0 2.321509,48.679943,0 2.321522,48.679996,0 2.321527,48.680054,0 2.321519,48.680096,0 2.321528,48.680199,0 2.322075,48.680603,0 2.322597,48.680962,0 2.322819,48.680828,0 2.322819,48.680828,0 2.323377,48.680462,0 2.324551,48.679642,0 2.325408,48.679085,0 2.325544,48.679001,0 2.325544,48.679001,0 2.326292,48.678555,0 2.325654,48.677475,0 2.325654,48.677475,0 2.325601,48.677372,0 2.326657,48.677696,0 2.327111,48.677551,0 2.327332,48.677425,0 2.327518,48.676823,0 2.327664,48.676144,0 2.327664,48.676144,0 2.327686,48.676037,0 2.327787,48.67601,0 2.328734,48.675381,0 2.329478,48.674847,0 2.329635,48.674747,0 2.329635,48.674747,0 2.329901,48.674576,0 2.329966,48.674503,0 2.330335,48.674587,0 2.330698,48.674679,0 2.33109,48.674797,0 2.331867,48.675049,0 2.332245,48.67519,0 2.333258,48.675648,0 2.333618,48.675777,0 2.333684,48.675785,0 2.333684,48.675785,0 2.333752,48.675797,0 2.334004,48.675617,0 2.334429,48.6754,0 2.334581,48.675255,0 2.334589,48.675056,0 2.334554,48.674908,0 2.334415,48.674644,0 2.33419,48.674274,0 2.334,48.674004,0 2.333433,48.67329,0 2.333433,48.67329,0 2.333261,48.673077,0 2.333016,48.672672,0 2.33287,48.672321,0 2.332818,48.672047,0 2.332839,48.67189,0 2.332993,48.671906,0 2.33296,48.671822,0 2.332832,48.671314,0 2.332796,48.671101,0 2.332785,48.670891,0 2.33279,48.670341,0 2.332713,48.670238,0 2.332663,48.670193,0 2.332508,48.67012,0 2.332694,48.66983,0 2.331707,48.669582,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Place des Monseaux</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.328459678926228,48.67240816046994,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rue du Parc</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3186220925036136,48.67485294601568,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pavillon</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3202562339196797,48.673477048130664,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mauregard</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3185789620059625,48.67816284347466,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gare de Petit Vaux</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3338233027213833,48.6756854322844,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hôtel de Ville</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.323831893239066,48.67319155170196,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Henri Dunant</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.322796298618042,48.680795400381825,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gare d'Epinay-sur-Orge</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.331700275921527,48.66963792445646,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Molière - Silléry</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.325523006772464,48.6789668955586,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pont Rubeau</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3276103301227242,48.6761452785285,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chemin Vert</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.333926442731342,48.67398596218447,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gabriel Péri</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3179645480544657,48.67632436044688,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Collège Maurois</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.320225540012856,48.67897279181263,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rue d'Athis</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3256501064921586,48.67753741958337,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hauts Graviers</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3296526269808346,48.67469959592837,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

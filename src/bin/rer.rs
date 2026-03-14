@@ -447,6 +447,7 @@ fn main() {
                     kml: kml_file.clone(),
                     name: name.clone(),
                     color: Some(color.to_string()),
+                    ..Default::default()
                 })
             })
             .collect();
@@ -464,6 +465,7 @@ fn main() {
                     kml: kml_file.clone(),
                     name: name.clone(),
                     color: None,
+                    ..Default::default()
                 })
                 .collect();
             line_choices.push(EChoice::Folder(Folder {
@@ -504,11 +506,13 @@ fn main() {
                                 kml: kml_file.clone(),
                                 name: pair[0].clone(),
                                 color: None,
+                                ..Default::default()
                             },
                             point2: PointDefinition {
                                 kml: kml_file.clone(),
                                 name: pair[1].clone(),
                                 color: None,
+                                ..Default::default()
                             },
                             radius_factor: bisect_radius_factor,
                         })
@@ -606,7 +610,7 @@ fn main() {
         }
     }
 
-    let input_data = InputData { choices };
+    let input_data = InputData { choices, error: None };
 
     // Write debug YAML
     let debug_yml = "rer-debug-input.yml";

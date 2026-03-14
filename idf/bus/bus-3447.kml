@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus 3447 - 3447</name>
+    <description>Transdev Pays de Fontainebleau</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ffE6C882</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ffE6C882</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>3447</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.692245,48.475128,0 2.692129,48.475197,0 2.691608,48.474728,0 2.692133,48.474556,0 2.692941,48.474342,0 2.692713,48.473434,0 2.692624,48.473125,0 2.691387,48.472694,0 2.690747,48.472492,0 2.690257,48.472351,0 2.690257,48.472351,0 2.690137,48.472317,0 2.689273,48.472919,0 2.68896,48.473095,0 2.68896,48.473095,0 2.688448,48.473351,0 2.688226,48.473431,0 2.687993,48.473492,0 2.687557,48.473644,0 2.686639,48.474033,0 2.686071,48.474281,0 2.68575,48.474434,0 2.685633,48.474556,0 2.685257,48.474808,0 2.684282,48.475399,0 2.682174,48.476833,0 2.681903,48.477039,0 2.681903,48.477039,0 2.681734,48.477169,0 2.680767,48.478031,0 2.680348,48.477905,0 2.678025,48.476486,0 2.677207,48.475998,0 2.676149,48.476681,0 2.675705,48.476959,0 2.674743,48.477535,0 2.67109,48.479881,0 2.66975,48.48085,0 2.669299,48.481144,0 2.669631,48.481239,0 2.669855,48.481274,0 2.672486,48.481792,0 2.672486,48.481792,0 2.674165,48.482109,0 2.674319,48.482128,0 2.674442,48.482136,0 2.674503,48.482128,0 2.674676,48.482086,0 2.675438,48.481846,0 2.675823,48.481701,0 2.675823,48.481701,0 2.676373,48.481491,0 2.676945,48.481327,0 2.677502,48.481266,0 2.677757,48.481201,0 2.678477,48.480888,0 2.679156,48.480633,0 2.679354,48.480522,0 2.679665,48.480289,0 2.67983,48.48016,0 2.680004,48.479973,0 2.680084,48.4799,0 2.680494,48.479637,0 2.680764,48.479496,0 2.68158,48.479111,0 2.682373,48.478813,0 2.682616,48.478741,0 2.682999,48.478706,0 2.683322,48.478668,0 2.683322,48.478668,0 2.683486,48.478645,0 2.683556,48.47863,0 2.683917,48.4785,0 2.684262,48.478321,0 2.685111,48.477695,0 2.685702,48.477108,0 2.685845,48.477013,0 2.686058,48.476917,0 2.686314,48.476826,0 2.687181,48.476658,0 2.68735,48.476616,0 2.687751,48.476547,0 2.68795,48.476494,0 2.688101,48.476429,0 2.688407,48.47628,0 2.690609,48.475182,0 2.691404,48.474808,0 2.691608,48.474728,0 2.692133,48.474556,0 2.692941,48.474342,0 2.692968,48.474453,0 2.693065,48.474663,0 2.692958,48.474701,0 2.692245,48.475128,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Chemin de Fay</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.688485456399044,48.473401811530564,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chemin des Coureurs</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6903184336894124,48.47230007593959,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brolles</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6758113918451847,48.48167133541925,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place Platet</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6834342074839026,48.47867819427871,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chemin des Charbonniers</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.681955322127863,48.47710891381288,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gare de Bois le Roi</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6923174882021796,48.47516605438728,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Avenue du 23 Août</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.672482166140463,48.48174316670044,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

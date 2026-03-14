@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus MONTBUS - MONTBUS</name>
+    <description>Transdev Vallée Sud</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ff73DC82</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ff73DC82</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>MONTBUS</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.30324,48.811104,0 2.303171,48.811111,0 2.302926,48.811172,0 2.3029,48.811192,0 2.302857,48.811249,0 2.303082,48.811436,0 2.303284,48.811565,0 2.30398,48.811951,0 2.306631,48.813473,0 2.306631,48.813473,0 2.306821,48.813583,0 2.305299,48.814159,0 2.306665,48.815784,0 2.306924,48.816086,0 2.30705,48.816223,0 2.307582,48.816208,0 2.307582,48.816208,0 2.310403,48.816135,0 2.310403,48.816135,0 2.310957,48.816124,0 2.311221,48.81609,0 2.311416,48.816139,0 2.315787,48.817467,0 2.31585,48.81749,0 2.31588,48.81752,0 2.31588,48.81752,0 2.31606,48.817814,0 2.316113,48.817841,0 2.316186,48.817844,0 2.316644,48.817734,0 2.316944,48.817833,0 2.318982,48.818398,0 2.319018,48.81847,0 2.319084,48.818489,0 2.31911,48.818535,0 2.319157,48.818539,0 2.319399,48.818497,0 2.319607,48.818508,0 2.320221,48.819496,0 2.320292,48.819584,0 2.320379,48.819721,0 2.320379,48.819721,0 2.321002,48.820721,0 2.321103,48.820847,0 2.321282,48.821022,0 2.321099,48.821095,0 2.32086,48.820992,0 2.32086,48.820992,0 2.320632,48.820896,0 2.323815,48.82021,0 2.324023,48.820198,0 2.323913,48.820026,0 2.323323,48.819218,0 2.323114,48.818962,0 2.322885,48.818657,0 2.322885,48.818657,0 2.322436,48.818119,0 2.322317,48.818024,0 2.322517,48.818005,0 2.322844,48.817951,0 2.323093,48.817924,0 2.323942,48.817783,0 2.323942,48.817783,0 2.32499,48.817604,0 2.325215,48.817543,0 2.325563,48.817478,0 2.325644,48.817463,0 2.326184,48.81741,0 2.326184,48.81741,0 2.32675,48.817356,0 2.326739,48.817223,0 2.326832,48.816605,0 2.326851,48.816536,0 2.326885,48.816471,0 2.32698,48.816357,0 2.327093,48.816242,0 2.327839,48.815502,0 2.327875,48.815475,0 2.327995,48.815414,0 2.328119,48.815376,0 2.328301,48.815342,0 2.328301,48.815342,0 2.328462,48.815315,0 2.328257,48.814495,0 2.32801,48.813599,0 2.327833,48.812912,0 2.327833,48.812912,0 2.327713,48.812397,0 2.327685,48.812359,0 2.327444,48.812317,0 2.326463,48.812172,0 2.326275,48.812126,0 2.326232,48.812046,0 2.326165,48.812027,0 2.32632,48.811508,0 2.326144,48.811516,0 2.325763,48.811592,0 2.325763,48.811592,0 2.323772,48.812008,0 2.322719,48.812302,0 2.322719,48.812302,0 2.320904,48.812805,0 2.320803,48.812828,0 2.319643,48.813145,0 2.317522,48.81374,0 2.316778,48.813938,0 2.316953,48.81422,0 2.316953,48.81422,0 2.317625,48.815323,0 2.318121,48.815178,0 2.318121,48.815178,0 2.319277,48.814846,0 2.320503,48.814503,0 2.318526,48.811375,0 2.318526,48.811375,0 2.318425,48.811222,0 2.316996,48.811619,0 2.315581,48.811993,0 2.314888,48.810867,0 2.314888,48.810867,0 2.314431,48.810116,0 2.312835,48.810253,0 2.312041,48.810314,0 2.312198,48.810585,0 2.312201,48.810635,0 2.312188,48.810658,0 2.312145,48.810692,0 2.312115,48.810703,0 2.311548,48.810856,0 2.311548,48.810856,0 2.311421,48.81089,0 2.311109,48.810394,0 2.308909,48.810581,0 2.309756,48.811478,0 2.310276,48.811256,0 2.310276,48.811256,0 2.310536,48.811146,0 2.311069,48.811699,0 2.311866,48.812733,0 2.312014,48.812973,0 2.310427,48.813412,0 2.310427,48.813412,0 2.310103,48.813499,0 2.309881,48.813152,0 2.309517,48.812634,0 2.308911,48.811836,0 2.3086,48.811447,0 2.308012,48.810772,0 2.307912,48.810669,0 2.307331,48.810753,0 2.307331,48.810753,0 2.306623,48.810825,0 2.30324,48.811104,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>De Gaulle / Vanne</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3282538486132354,48.81530146447908,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vanne / Aqueduc</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.327753370594157,48.81292426816171,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place Jules Ferry</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.322839757768811,48.812734648741,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Châtillon-Montrouge-Métro</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.303169486472959,48.81114661635359,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parc Renaudel</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.306652400156448,48.81343333212282,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place Jean Jaurès</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.310798367459404,48.816065531317165,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gabrielle De Guerchy</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.323044109584439,48.81902251902335,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Carvès</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3257957727564906,48.81160913039262,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Verdier / Hugo</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3181238008236686,48.81513619438922,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boileau</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.31847228105568,48.8113967221078,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Résidence Madeleine Verdier</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.311752839770862,48.81081859320233,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place des Etats-Unis</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3168639414486756,48.81774621838001,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gabriel Péri</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3261701711079104,48.81741229044684,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stade Jean Lezer</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3101813662981336,48.81123225021084,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Espace Michel Colucci</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.310547471854234,48.81341088773855,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Maurice Arnoux</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3073408984214914,48.81081110049005,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Verdier - Marne</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3072564420244412,48.81614399487024,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mairie de Montrouge</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.320087247496867,48.819131655934754,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cimetière de Montrouge</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.32075719216091,48.821024169013654,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Amaury Duval</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3239873090862337,48.81770575985872,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>République / Périer</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3169121261711965,48.81406799970237,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>République / Molière</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3148162882491925,48.810854177767524,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

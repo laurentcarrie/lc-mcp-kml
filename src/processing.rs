@@ -2,8 +2,8 @@ use std::collections::HashMap;
 use std::path::Path;
 
 use ::kml::types::{
-    AltitudeMode, Coord, Folder as KmlFolder, LineStyle, LinearRing, Placemark, PolyStyle,
-    Polygon, Style,
+    AltitudeMode, Coord, Folder as KmlFolder, Icon, IconStyle, LineStyle, LinearRing, Placemark,
+    PolyStyle, Polygon, Style,
 };
 use ::kml::{Kml, KmlReader};
 use geo::BooleanOps;
@@ -132,19 +132,31 @@ pub fn find_placemark_point(kml: &Kml, name: &str) -> Option<Coord> {
     }
 }
 
+fn resolve_kml_from_file<'a>(kml_cache: &'a mut HashMap<String, Kml>, path: &'a str) -> &'a Kml {
+    kml_cache.entry(path.to_string()).or_insert_with(|| {
+        let kml_path = Path::new(path);
+        KmlReader::from_path(kml_path)
+            .expect(&format!("Failed to open {}", path))
+            .read()
+            .expect("Failed to parse KML")
+    })
+}
+
 pub fn process_choices(choices: &[EChoice], kml_cache: &mut HashMap<String, Kml>) -> Vec<Kml> {
+    process_choices_with_resolver(choices, kml_cache, resolve_kml_from_file)
+}
+
+pub fn process_choices_with_resolver(
+    choices: &[EChoice],
+    kml_cache: &mut HashMap<String, Kml>,
+    resolve_kml: for<'a> fn(&'a mut HashMap<String, Kml>, &'a str) -> &'a Kml,
+) -> Vec<Kml> {
     let mut elements: Vec<Kml> = Vec::new();
 
     for choice in choices {
         match choice {
             EChoice::ConcentricCircles(cc) => {
-                let kml = kml_cache.entry(cc.center.kml.clone()).or_insert_with(|| {
-                    let kml_path = Path::new(&cc.center.kml);
-                    KmlReader::from_path(kml_path)
-                        .expect(&format!("Failed to open {}", cc.center.kml))
-                        .read()
-                        .expect("Failed to parse KML")
-                });
+                let kml = resolve_kml(kml_cache, &cc.center.kml);
 
                 let center = find_placemark_point(kml, &cc.center.name)
                     .expect(&format!("Placemark '{}' not found", cc.center.name));
@@ -206,13 +218,7 @@ pub fn process_choices(choices: &[EChoice], kml_cache: &mut HashMap<String, Kml>
                 }
             }
             EChoice::Point(pd) => {
-                let kml = kml_cache.entry(pd.kml.clone()).or_insert_with(|| {
-                    let kml_path = Path::new(&pd.kml);
-                    KmlReader::from_path(kml_path)
-                        .expect(&format!("Failed to open {}", pd.kml))
-                        .read()
-                        .expect("Failed to parse KML")
-                });
+                let kml = resolve_kml(kml_cache, &pd.kml);
 
                 let coord = find_placemark_point(kml, &pd.name)
                     .expect(&format!("Placemark '{}' not found", pd.name));
@@ -249,13 +255,7 @@ pub fn process_choices(choices: &[EChoice], kml_cache: &mut HashMap<String, Kml>
                 let mut union_result: Option<geo::MultiPolygon<f64>> = None;
 
                 for pd in &uc.centers {
-                    let kml = kml_cache.entry(pd.kml.clone()).or_insert_with(|| {
-                        let kml_path = Path::new(&pd.kml);
-                        KmlReader::from_path(kml_path)
-                            .expect(&format!("Failed to open {}", pd.kml))
-                            .read()
-                            .expect("Failed to parse KML")
-                    });
+                    let kml = resolve_kml(kml_cache, &pd.kml);
                     let center = find_placemark_point(kml, &pd.name)
                         .expect(&format!("Placemark '{}' not found", pd.name));
                     let circle = circle_geo_polygon(&center, uc.radius, 72);
@@ -307,13 +307,7 @@ pub fn process_choices(choices: &[EChoice], kml_cache: &mut HashMap<String, Kml>
                 }
             }
             EChoice::Segments(seg) => {
-                let kml = kml_cache.entry(seg.kml.clone()).or_insert_with(|| {
-                    let kml_path = Path::new(&seg.kml);
-                    KmlReader::from_path(kml_path)
-                        .expect(&format!("Failed to open {}", seg.kml))
-                        .read()
-                        .expect("Failed to parse KML")
-                });
+                let kml = resolve_kml(kml_cache, &seg.kml);
 
                 let color = seg
                     .color
@@ -351,25 +345,11 @@ pub fn process_choices(choices: &[EChoice], kml_cache: &mut HashMap<String, Kml>
                 }
             }
             EChoice::TriangleBisect(tb) => {
-                let kml1 = kml_cache
-                    .entry(tb.point1.kml.clone())
-                    .or_insert_with(|| {
-                        KmlReader::from_path(Path::new(&tb.point1.kml))
-                            .expect(&format!("Failed to open {}", tb.point1.kml))
-                            .read()
-                            .expect("Failed to parse KML")
-                    });
+                let kml1 = resolve_kml(kml_cache, &tb.point1.kml);
                 let c1 = find_placemark_point(kml1, &tb.point1.name)
                     .expect(&format!("Placemark '{}' not found", tb.point1.name));
 
-                let kml2 = kml_cache
-                    .entry(tb.point2.kml.clone())
-                    .or_insert_with(|| {
-                        KmlReader::from_path(Path::new(&tb.point2.kml))
-                            .expect(&format!("Failed to open {}", tb.point2.kml))
-                            .read()
-                            .expect("Failed to parse KML")
-                    });
+                let kml2 = resolve_kml(kml_cache, &tb.point2.kml);
                 let c2 = find_placemark_point(kml2, &tb.point2.name)
                     .expect(&format!("Placemark '{}' not found", tb.point2.name));
 
@@ -467,18 +447,18 @@ pub fn process_choices(choices: &[EChoice], kml_cache: &mut HashMap<String, Kml>
                 }
             }
             EChoice::Folder(folder) => {
-                let folder_elements = process_choices(&folder.choices, kml_cache);
+                let folder_elements = process_choices_with_resolver(&folder.choices, kml_cache, resolve_kml);
                 elements.push(Kml::Folder(KmlFolder {
                     name: Some(folder.name.clone()),
                     elements: folder_elements,
                     ..Default::default()
                 }));
             }
+            EChoice::Route(_) => {
+                // Handled async in server.rs via OSRM
+            }
             EChoice::RawKml(raw) => {
-                let kml = KmlReader::from_path(Path::new(&raw.path))
-                    .expect(&format!("Failed to open {}", raw.path))
-                    .read()
-                    .expect(&format!("Failed to parse {}", raw.path));
+                let kml = resolve_kml(kml_cache, &raw.path).clone();
                 fn extract_elements(kml: Kml) -> Vec<Kml> {
                     match kml {
                         Kml::KmlDocument(doc) => {
@@ -491,16 +471,58 @@ pub fn process_choices(choices: &[EChoice], kml_cache: &mut HashMap<String, Kml>
                         other => vec![other],
                     }
                 }
+                // Collect icon hrefs from original styles
+                fn collect_icon_hrefs(els: &[Kml]) -> Vec<String> {
+                    let mut hrefs = Vec::new();
+                    for el in els {
+                        match el {
+                            Kml::Style(s) => {
+                                if let Some(ref icon_style) = s.icon {
+                                    if !icon_style.icon.href.is_empty() {
+                                        hrefs.push(icon_style.icon.href.clone());
+                                    }
+                                }
+                            }
+                            Kml::Folder(f) => hrefs.extend(collect_icon_hrefs(&f.elements)),
+                            Kml::Document { elements, .. } => hrefs.extend(collect_icon_hrefs(elements)),
+                            Kml::KmlDocument(doc) => hrefs.extend(collect_icon_hrefs(&doc.elements)),
+                            _ => {}
+                        }
+                    }
+                    hrefs
+                }
+                fn override_style_urls(els: Vec<Kml>, line_style_url: &str, point_style_url: &str) -> Vec<Kml> {
+                    els.into_iter().filter_map(|el| match el {
+                        Kml::Style(_) => None,
+                        Kml::Placemark(mut p) => {
+                            let is_point = matches!(&p.geometry, Some(::kml::types::Geometry::Point(_)));
+                            p.style_url = Some(if is_point { point_style_url } else { line_style_url }.to_string());
+                            Some(Kml::Placemark(p))
+                        }
+                        Kml::Folder(mut f) => {
+                            f.elements = override_style_urls(f.elements, line_style_url, point_style_url);
+                            Some(Kml::Folder(f))
+                        }
+                        other => Some(other),
+                    }).collect()
+                }
                 if let Some(ref color) = raw.color {
-                    // Override styles with the given color
-                    let style_id = format!(
+                    let extracted = extract_elements(kml);
+                    let icon_hrefs = collect_icon_hrefs(&extracted);
+                    let icon_href = icon_hrefs.into_iter().next();
+
+                    let base_id = format!(
                         "rawkml_color_{}",
                         raw.path.replace(['/', '.', '-'], "_")
                     );
+                    let line_style_id = format!("{}_line", base_id);
+                    let point_style_id = format!("{}_point", base_id);
                     let alpha_byte = (raw.alpha.clamp(0.0, 1.0) * 255.0) as u8;
                     let fill_color = format!("{:02x}{}", alpha_byte, &color[2..]);
+
+                    // Line/poly style
                     elements.push(Kml::Style(Style {
-                        id: Some(style_id.clone()),
+                        id: Some(line_style_id.clone()),
                         line: Some(LineStyle {
                             color: color.clone(),
                             width: 2.0,
@@ -514,16 +536,31 @@ pub fn process_choices(choices: &[EChoice], kml_cache: &mut HashMap<String, Kml>
                         }),
                         ..Default::default()
                     }));
-                    let style_url = format!("#{}", style_id);
-                    for el in extract_elements(kml) {
-                        match el {
-                            Kml::Placemark(mut p) => {
-                                p.style_url = Some(style_url.clone());
-                                elements.push(Kml::Placemark(p));
-                            }
-                            other => elements.push(other),
-                        }
-                    }
+
+                    // Point/icon style
+                    let icon_style = if let Some(href) = icon_href {
+                        Some(IconStyle {
+                            color: color.clone(),
+                            scale: 0.6,
+                            icon: Icon { href, ..Default::default() },
+                            ..Default::default()
+                        })
+                    } else {
+                        Some(IconStyle {
+                            color: color.clone(),
+                            scale: 0.6,
+                            ..Default::default()
+                        })
+                    };
+                    elements.push(Kml::Style(Style {
+                        id: Some(point_style_id.clone()),
+                        icon: icon_style,
+                        ..Default::default()
+                    }));
+
+                    let line_url = format!("#{}", line_style_id);
+                    let point_url = format!("#{}", point_style_id);
+                    elements.extend(override_style_urls(extracted, &line_url, &point_url));
                 } else {
                     elements.extend(extract_elements(kml));
                 }

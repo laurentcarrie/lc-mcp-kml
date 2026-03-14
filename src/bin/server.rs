@@ -10,7 +10,7 @@ use tokio::sync::OnceCell;
 use ::kml::types::KmlDocument;
 use ::kml::{Kml, KmlReader, KmlWriter};
 use lc_kml_utils::model::{InputData, EChoice};
-use lc_kml_utils::processing::process_choices_with_resolver;
+use lc_kml_utils::processing::{process_choices_with_resolver, find_placemark_point};
 
 const S3_BUCKET: &str = "kml-laurent";
 const S3_REGION: &str = "eu-west-3";
@@ -19,7 +19,10 @@ const GRID_CELL_SIZE: f64 = 0.001; // ~100m
 
 struct AppState {
     s3_client: aws_sdk_s3::Client,
-    llm_api_key: Option<String>,
+    anthropic_api_key: Option<String>,
+    openai_api_key: Option<String>,
+    google_api_key: Option<String>,
+    ors_api_key: Option<String>,
     adjacency: OnceCell<HashMap<String, Vec<String>>>,
 }
 
@@ -87,6 +90,7 @@ fn collect_kml_paths(choices: &[EChoice], paths: &mut std::collections::HashSet<
             EChoice::Segments(seg) => { paths.insert(seg.kml.clone()); }
             EChoice::TriangleBisect(tb) => { paths.insert(tb.point1.kml.clone()); paths.insert(tb.point2.kml.clone()); }
             EChoice::RawKml(raw) => { paths.insert(raw.path.clone()); }
+            EChoice::Route(rt) => { if !rt.from.kml.is_empty() { paths.insert(rt.from.kml.clone()); } if !rt.to.kml.is_empty() { paths.insert(rt.to.kml.clone()); } }
             EChoice::Folder(f) => { collect_kml_paths(&f.choices, paths); }
         }
     }
@@ -279,16 +283,19 @@ fn format_adjacency_for_prompt(adjacency: &HashMap<String, Vec<String>>) -> Stri
 #[derive(serde::Deserialize)]
 struct PromptRequest {
     prompt: String,
+    #[serde(default = "default_model")]
+    model: String,
+}
+
+fn default_model() -> String {
+    "claude-sonnet".to_string()
 }
 
 async fn prompt_to_config(
     State(state): State<Arc<AppState>>,
     Json(req): Json<PromptRequest>,
 ) -> impl IntoResponse {
-    let api_key = match &state.llm_api_key {
-        Some(k) => k.clone(),
-        None => return (StatusCode::INTERNAL_SERVER_ERROR, "ANTHROPIC_API_KEY not set".to_string()).into_response(),
-    };
+    let model_id = &req.model;
 
     // Fetch library listing
     let mut library_files = Vec::new();
@@ -302,7 +309,7 @@ async fn prompt_to_config(
             Ok(output) => {
                 for obj in output.contents() {
                     if let Some(key) = obj.key() {
-                        if key.ends_with(".kml") {
+                        if key.ends_with(".kml") || key.ends_with(".yml") {
                             let display_key = key.strip_prefix(S3_PREFIX).unwrap_or(key);
                             library_files.push(display_key.to_string());
                         }
@@ -335,6 +342,30 @@ async fn prompt_to_config(
                                 kml_placemarks.insert(file.clone(), names);
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    // Fetch RER segment data (neighbours)
+    let mut rer_segments: Vec<String> = Vec::new();
+    for file in &library_files {
+        if file.starts_with("rer/") && file.ends_with(".yml") {
+            let url = format!(
+                "https://{}.s3.{}.amazonaws.com/{}{}",
+                S3_BUCKET, S3_REGION, S3_PREFIX, file
+            );
+            if let Ok(resp) = reqwest::get(&url).await {
+                if resp.status().is_success() {
+                    if let Ok(text) = resp.text().await {
+                        let line_name = file.trim_start_matches("rer/").trim_end_matches(".yml");
+                        rer_segments.push(format!("  {} (kml: rer/{}.kml):\n{}", line_name, line_name.replace(".yml", ""),
+                            text.lines()
+                                .filter(|l| l.trim_start().starts_with("- ["))
+                                .map(|l| format!("    {}", l.trim()))
+                                .collect::<Vec<_>>().join("\n")
+                        ));
                     }
                 }
             }
@@ -383,6 +414,9 @@ EChoice is one of (externally tagged):
   Draws a perpendicular bisector line between two points.
 - {{"RawKml": {{"path": string, "color": string or null, "alpha": float}}}}
   Imports a raw KML file. Use for commune boundaries or other polygon files.
+- {{"Route": {{"name": string, "from": PointDefinition, "to": PointDefinition, "color": string or null, "mode": string}}}}
+  Draws a walking/cycling/driving route between two points using OpenStreetMap routing.
+  mode is one of "foot" (default), "bike", "car".
 
 PointDefinition = {{"kml": string, "name": string, "color": string or null}}
   "kml" is a library path (e.g. "rer/RER-A.kml"), "name" is a placemark name within that file.
@@ -398,6 +432,9 @@ Available KML library files (use these paths in "kml" or "path" fields):
 {}
 
 Point placemarks available in key files:
+{}
+
+RER line segments (use with Segments type, "kml" is the station file, "neighbours" are pairs of connected stations):
 {}
 
 Commune boundary files are available under departement folders with naming pattern:
@@ -421,64 +458,161 @@ Only include communes that are actually adjacent to the requested commune(s) —
 Commune adjacency graph (commune: neighbor1, neighbor2, ...):
 {}
 
+LIMITATIONS: You can ONLY use the types listed above. You CANNOT:
+- Draw arbitrary lines between coordinates (use Route for paths between known points)
+- Access external APIs or live data
+- Create custom geometries not covered by the types above
+
+If any part of the request is impossible, you MUST include an "error" field in the JSON explaining what you could not do and suggesting alternatives.
+Example: {{"choices": [], "error": "Walking paths require a routing API which is not available. I can place Points at the start and end, or draw a Segments line between stations instead."}}
+
 IMPORTANT: Return ONLY valid JSON, no markdown, no explanation. Just the InputData object."#,
         library_files.iter().map(|f| format!("  {}", f)).collect::<Vec<_>>().join("\n"),
         kml_placemarks.iter().map(|(file, names)| {
             format!("  {} → {}", file, names.join(", "))
         }).collect::<Vec<_>>().join("\n"),
+        rer_segments.join("\n"),
         adjacency_text
     );
 
-    let body = serde_json::json!({
-        "model": "claude-sonnet-4-20250514",
-        "max_tokens": 16384,
-        "system": system_prompt,
-        "messages": [
-            {"role": "user", "content": req.prompt}
-        ]
-    });
-
     let client = reqwest::Client::new();
-    let resp: reqwest::Response = match client
-        .post("https://api.anthropic.com/v1/messages")
-        .header("x-api-key", &api_key)
-        .header("anthropic-version", "2023-06-01")
-        .header("content-type", "application/json")
-        .json(&body)
-        .send()
-        .await
-    {
-        Ok(r) => r,
-        Err(e) => return (StatusCode::BAD_GATEWAY, format!("Claude API error: {}", e)).into_response(),
+
+    // Call the appropriate LLM API
+    let text = match call_llm(&client, model_id, &system_prompt, &req.prompt, &state).await {
+        Ok(t) => t,
+        Err(e) => return (StatusCode::BAD_GATEWAY, e).into_response(),
     };
-
-    let resp_status = resp.status().as_u16();
-    let resp_body = resp.text().await.unwrap_or_default();
-    if resp_status >= 400 {
-        return (StatusCode::from_u16(resp_status).unwrap_or(StatusCode::BAD_GATEWAY), format!("Claude API {}: {}", resp_status, resp_body)).into_response();
-    }
-
-    let resp_json: serde_json::Value = match serde_json::from_str(&resp_body) {
-        Ok(v) => v,
-        Err(e) => return (StatusCode::BAD_GATEWAY, format!("Failed to parse Claude response: {}", e)).into_response(),
-    };
-
-    // Extract text from Claude response
-    let text = resp_json["content"][0]["text"].as_str().unwrap_or("");
 
     // Try to parse as InputData to validate
-    match serde_json::from_str::<InputData>(text) {
+    match serde_json::from_str::<InputData>(&text) {
         Ok(input_data) => Json(input_data).into_response(),
         Err(e) => {
             // Try extracting JSON from markdown code block
             let cleaned = text.trim().trim_start_matches("```json").trim_start_matches("```").trim_end_matches("```").trim();
             match serde_json::from_str::<InputData>(cleaned) {
                 Ok(input_data) => Json(input_data).into_response(),
-                Err(_) => (StatusCode::BAD_REQUEST, format!("Claude returned invalid JSON: {}. Raw: {}", e, text)).into_response(),
+                Err(_) => (StatusCode::BAD_REQUEST, format!("LLM returned invalid JSON: {}. Raw: {}", e, text)).into_response(),
             }
         }
     }
 }
+
+async fn call_llm(
+    client: &reqwest::Client,
+    model_id: &str,
+    system_prompt: &str,
+    user_prompt: &str,
+    state: &AppState,
+) -> Result<String, String> {
+    match model_id {
+        "claude-sonnet" | "claude-haiku" => call_anthropic(client, model_id, system_prompt, user_prompt, state).await,
+        "gpt-4o" | "gpt-4o-mini" => call_openai(client, model_id, system_prompt, user_prompt, state).await,
+        "gemini-2.5-flash" | "gemini-2.5-pro" => call_google(client, model_id, system_prompt, user_prompt, state).await,
+        _ => Err(format!("Unknown model: {}", model_id)),
+    }
+}
+
+async fn call_anthropic(
+    client: &reqwest::Client,
+    model_id: &str,
+    system_prompt: &str,
+    user_prompt: &str,
+    state: &AppState,
+) -> Result<String, String> {
+    let api_key = state.anthropic_api_key.as_ref().ok_or("ANTHROPIC_API_KEY not set")?;
+    let api_model = match model_id {
+        "claude-haiku" => "claude-haiku-4-5-20251001",
+        _ => "claude-sonnet-4-20250514",
+    };
+    let body = serde_json::json!({
+        "model": api_model,
+        "max_tokens": 16384,
+        "system": system_prompt,
+        "messages": [{"role": "user", "content": user_prompt}]
+    });
+    let resp = client.post("https://api.anthropic.com/v1/messages")
+        .header("x-api-key", api_key)
+        .header("anthropic-version", "2023-06-01")
+        .header("content-type", "application/json")
+        .json(&body)
+        .send().await.map_err(|e| format!("Anthropic API error: {}", e))?;
+    let status = resp.status().as_u16();
+    let body = resp.text().await.unwrap_or_default();
+    if status >= 400 {
+        return Err(format!("Anthropic API {}: {}", status, body));
+    }
+    let json: serde_json::Value = serde_json::from_str(&body).map_err(|e| format!("Failed to parse Anthropic response: {}", e))?;
+    Ok(json["content"][0]["text"].as_str().unwrap_or("").to_string())
+}
+
+async fn call_openai(
+    client: &reqwest::Client,
+    model_id: &str,
+    system_prompt: &str,
+    user_prompt: &str,
+    state: &AppState,
+) -> Result<String, String> {
+    let api_key = state.openai_api_key.as_ref().ok_or("OPENAI_API_KEY not set")?;
+    let api_model = match model_id {
+        "gpt-4o-mini" => "gpt-4o-mini",
+        _ => "gpt-4o",
+    };
+    let body = serde_json::json!({
+        "model": api_model,
+        "max_tokens": 16384,
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt}
+        ]
+    });
+    let resp = client.post("https://api.openai.com/v1/chat/completions")
+        .header("Authorization", format!("Bearer {}", api_key))
+        .header("content-type", "application/json")
+        .json(&body)
+        .send().await.map_err(|e| format!("OpenAI API error: {}", e))?;
+    let status = resp.status().as_u16();
+    let body = resp.text().await.unwrap_or_default();
+    if status >= 400 {
+        return Err(format!("OpenAI API {}: {}", status, body));
+    }
+    let json: serde_json::Value = serde_json::from_str(&body).map_err(|e| format!("Failed to parse OpenAI response: {}", e))?;
+    Ok(json["choices"][0]["message"]["content"].as_str().unwrap_or("").to_string())
+}
+
+async fn call_google(
+    client: &reqwest::Client,
+    model_id: &str,
+    system_prompt: &str,
+    user_prompt: &str,
+    state: &AppState,
+) -> Result<String, String> {
+    let api_key = state.google_api_key.as_ref().ok_or("GOOGLE_API_KEY not set")?;
+    let api_model = match model_id {
+        "gemini-2.5-pro" => "gemini-2.5-pro",
+        _ => "gemini-2.5-flash",
+    };
+    let url = format!(
+        "https://generativelanguage.googleapis.com/v1beta/models/{}:generateContent?key={}",
+        api_model, api_key
+    );
+    let body = serde_json::json!({
+        "systemInstruction": {"parts": [{"text": system_prompt}]},
+        "contents": [{"parts": [{"text": user_prompt}]}],
+        "generationConfig": {"maxOutputTokens": 16384}
+    });
+    let resp = client.post(&url)
+        .header("content-type", "application/json")
+        .json(&body)
+        .send().await.map_err(|e| format!("Google API error: {}", e))?;
+    let status = resp.status().as_u16();
+    let body = resp.text().await.unwrap_or_default();
+    if status >= 400 {
+        return Err(format!("Google API {}: {}", status, body));
+    }
+    let json: serde_json::Value = serde_json::from_str(&body).map_err(|e| format!("Failed to parse Google response: {}", e))?;
+    Ok(json["candidates"][0]["content"]["parts"][0]["text"].as_str().unwrap_or("").to_string())
+}
+
 
 fn collect_point_names(kml: &Kml) -> Vec<String> {
     let mut names = Vec::new();
@@ -502,7 +636,101 @@ fn collect_point_names_recursive(kml: &Kml, names: &mut Vec<String>) {
     }
 }
 
-async fn generate_kml(Json(input_data): Json<InputData>) -> impl IntoResponse {
+async fn resolve_routes(choices: &[EChoice], kml_cache: &mut HashMap<String, Kml>, elements: &mut Vec<Kml>, ors_api_key: Option<&str>, counter: &mut usize) {
+    for choice in choices {
+        match choice {
+            EChoice::Route(rt) => {
+                let from_coord = if let (Some(lat), Some(lng)) = (rt.from.lat, rt.from.lng) {
+                    Some(::kml::types::Coord { x: lng, y: lat, z: Some(0.0) })
+                } else {
+                    kml_cache.get(&rt.from.kml).and_then(|k| find_placemark_point(k, &rt.from.name))
+                };
+                let to_coord = if let (Some(lat), Some(lng)) = (rt.to.lat, rt.to.lng) {
+                    Some(::kml::types::Coord { x: lng, y: lat, z: Some(0.0) })
+                } else {
+                    kml_cache.get(&rt.to.kml).and_then(|k| find_placemark_point(k, &rt.to.name))
+                };
+                if let (Some(c1), Some(c2)) = (from_coord, to_coord) {
+                    let profile = match rt.mode.as_str() {
+                        "car" | "driving" => "driving-car",
+                        "bike" | "cycling" => "cycling-regular",
+                        _ => "foot-walking",
+                    };
+                    let api_key = match ors_api_key {
+                        Some(k) => k,
+                        None => {
+                            eprintln!("ORS_API_KEY not set, skipping route '{}'", rt.name);
+                            continue;
+                        }
+                    };
+                    let url = format!(
+                        "https://api.openrouteservice.org/v2/directions/{}?api_key={}&start={},{}&end={},{}",
+                        profile, api_key, c1.x, c1.y, c2.x, c2.y
+                    );
+                    eprintln!("ORS request: {}", url);
+                    if let Ok(resp) = reqwest::get(&url).await {
+                        let status = resp.status();
+                        if let Ok(json) = resp.json::<serde_json::Value>().await {
+                            eprintln!("ORS response status={}, has features={}", status, json["features"].is_array());
+                            if let Some(coords) = json["features"][0]["geometry"]["coordinates"].as_array() {
+                                let line_coords: Vec<::kml::types::Coord> = coords.iter().filter_map(|c| {
+                                    let arr = c.as_array()?;
+                                    Some(::kml::types::Coord {
+                                        x: arr[0].as_f64()?,
+                                        y: arr[1].as_f64()?,
+                                        z: Some(0.0),
+                                    })
+                                }).collect();
+
+                                let distance_m = json["features"][0]["properties"]["summary"]["distance"].as_f64().unwrap_or(0.0);
+                                let duration_s = json["features"][0]["properties"]["summary"]["duration"].as_f64().unwrap_or(0.0);
+                                let dist_str = if distance_m >= 1000.0 {
+                                    format!("{:.1} km", distance_m / 1000.0)
+                                } else {
+                                    format!("{:.0} m", distance_m)
+                                };
+                                let dur_min = (duration_s / 60.0).ceil() as u32;
+                                let route_label = format!("{} ({}, {} min)", rt.name, dist_str, dur_min);
+
+                                let color = rt.color.clone().unwrap_or_else(|| "ff0000ff".to_string());
+                                *counter += 1;
+                                let style_id = format!("route_style_{}", counter);
+                                elements.push(Kml::Style(::kml::types::Style {
+                                    id: Some(style_id.clone()),
+                                    line: Some(::kml::types::LineStyle {
+                                        color,
+                                        width: 4.0,
+                                        ..Default::default()
+                                    }),
+                                    ..Default::default()
+                                }));
+                                elements.push(Kml::Placemark(::kml::types::Placemark {
+                                    name: Some(route_label),
+                                    style_url: Some(format!("#{}", style_id)),
+                                    geometry: Some(::kml::types::Geometry::LineString(
+                                        ::kml::types::LineString {
+                                            coords: line_coords,
+                                            ..Default::default()
+                                        },
+                                    )),
+                                    ..Default::default()
+                                }));
+                            } else {
+                                eprintln!("ORS: no coordinates in response: {}", json);
+                            }
+                        }
+                    }
+                }
+            }
+            EChoice::Folder(f) => {
+                Box::pin(resolve_routes(&f.choices, kml_cache, elements, ors_api_key, counter)).await;
+            }
+            _ => {}
+        }
+    }
+}
+
+async fn generate_kml(State(state): State<Arc<AppState>>, Json(input_data): Json<InputData>) -> impl IntoResponse {
     eprintln!("generate_kml: {} choices, body: {}", input_data.choices.len(), serde_json::to_string(&input_data).unwrap_or_default());
     // Collect all referenced KML paths and fetch them from S3
     let mut paths = std::collections::HashSet::new();
@@ -547,6 +775,13 @@ async fn generate_kml(Json(input_data): Json<InputData>) -> impl IntoResponse {
         }
     };
 
+    // Resolve Route choices (requires async OSRM calls)
+    let mut route_elements = Vec::new();
+    let mut route_counter = 0usize;
+    resolve_routes(&input_data.choices, &mut kml_cache, &mut route_elements, state.ors_api_key.as_deref(), &mut route_counter).await;
+    let mut output_elements = output_elements;
+    output_elements.extend(route_elements);
+
     let output_kml_doc = Kml::KmlDocument(KmlDocument {
         elements: vec![Kml::Document {
             attrs: HashMap::new(),
@@ -578,11 +813,24 @@ async fn main() {
         .load()
         .await;
     let s3_client = aws_sdk_s3::Client::new(&config);
-    let llm_api_key = std::env::var("ANTHROPIC_API_KEY").ok();
-    if llm_api_key.is_none() {
-        eprintln!("Warning: ANTHROPIC_API_KEY not set, /api/prompt will be disabled");
+    let anthropic_api_key = std::env::var("ANTHROPIC_API_KEY").ok();
+    let openai_api_key = std::env::var("OPENAI_API_KEY").ok();
+    let google_api_key = std::env::var("GOOGLE_API_KEY").ok();
+    let ors_api_key = std::env::var("ORS_API_KEY").ok();
+    if ors_api_key.is_none() {
+        eprintln!("Warning: ORS_API_KEY not set, Route directions will be disabled");
     }
-    let state = Arc::new(AppState { s3_client, llm_api_key, adjacency: OnceCell::new() });
+    let available: Vec<&str> = [
+        anthropic_api_key.as_ref().map(|_| "Anthropic"),
+        openai_api_key.as_ref().map(|_| "OpenAI"),
+        google_api_key.as_ref().map(|_| "Google"),
+    ].into_iter().flatten().collect();
+    if available.is_empty() {
+        eprintln!("Warning: No LLM API keys set, /api/prompt will be disabled");
+    } else {
+        eprintln!("LLM providers available: {}", available.join(", "));
+    }
+    let state = Arc::new(AppState { s3_client, anthropic_api_key, openai_api_key, google_api_key, ors_api_key, adjacency: OnceCell::new() });
 
     let cors = CorsLayer::permissive();
 

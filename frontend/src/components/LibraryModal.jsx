@@ -77,7 +77,40 @@ function countFiles(node) {
   return count
 }
 
-export default function LibraryModal({ open, onClose, onSelect }) {
+function collectTreeItems(choices) {
+  const paths = new Set()
+  const mapPoints = []
+  for (const ch of (choices || [])) {
+    const type = Object.keys(ch)[0]
+    const data = Object.values(ch)[0]
+    if (type === 'MapPoint') {
+      mapPoints.push(data)
+    }
+    if (type === 'Point' && data.kml) paths.add(data.kml)
+    if (type === 'ConcentricCircles' && data.center?.kml) paths.add(data.center.kml)
+    if (type === 'Segments' && data.kml) paths.add(data.kml)
+    if (type === 'RawKml' && data.path) paths.add(data.path)
+    if (type === 'Route') {
+      if (data.from?.kml) paths.add(data.from.kml)
+      if (data.to?.kml) paths.add(data.to.kml)
+    }
+    if (type === 'TriangleBisect') {
+      if (data.point1?.kml) paths.add(data.point1.kml)
+      if (data.point2?.kml) paths.add(data.point2.kml)
+    }
+    if (type === 'UnionCircles') {
+      for (const c of (data.centers || [])) { if (c.kml) paths.add(c.kml) }
+    }
+    if (type === 'Folder') {
+      const sub = collectTreeItems(data.choices)
+      for (const p of sub.paths) paths.add(p)
+      mapPoints.push(...sub.mapPoints)
+    }
+  }
+  return { paths, mapPoints }
+}
+
+export default function LibraryModal({ open, onClose, onSelect, choices }) {
   const [files, setFiles] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
@@ -105,6 +138,8 @@ export default function LibraryModal({ open, onClose, onSelect }) {
   if (!open) return null
 
   const tree = buildTree(files)
+  const { paths: treePathSet, mapPoints } = collectTreeItems(choices)
+  const treePaths = [...treePathSet].filter(Boolean).sort()
 
   return (
     <div className="library-overlay" onClick={onClose}>
@@ -114,11 +149,38 @@ export default function LibraryModal({ open, onClose, onSelect }) {
           <button className="library-close" onClick={onClose}>x</button>
         </div>
         <div className="library-body">
+          {mapPoints.length > 0 && (
+            <div className="library-tree-section">
+              <div className="library-section-title">Map points</div>
+              {mapPoints.map((pt, i) => (
+                <button key={i} className="library-file-btn library-file-mappoint" onClick={() => {
+                  onSelect({ type: 'mappoint', name: pt.name, lat: pt.lat, lng: pt.lng })
+                  onClose()
+                }}>
+                  <span className="file-name">{pt.name || `${pt.lat?.toFixed(4)}, ${pt.lng?.toFixed(4)}`}</span>
+                  <span className="file-size">{pt.lat?.toFixed(4)}, {pt.lng?.toFixed(4)}</span>
+                </button>
+              ))}
+            </div>
+          )}
+          {treePaths.length > 0 && (
+            <div className="library-tree-section">
+              <div className="library-section-title">Used in current tree</div>
+              {treePaths.map(p => (
+                <button key={p} className="library-file-btn library-file-used" onClick={() => { onSelect(p); onClose() }}>
+                  <span className="file-name">{p}</span>
+                </button>
+              ))}
+            </div>
+          )}
           {loading && <p className="library-status">Loading...</p>}
           {error && <p className="library-error">{error}</p>}
           {!loading && !error && files.length === 0 && <p className="library-status">No KML files found</p>}
           {!loading && !error && files.length > 0 && (
-            <FolderView node={tree} path="" onSelect={onSelect} onClose={onClose} />
+            <>
+              {treePaths.length > 0 && <div className="library-section-title">S3 Library</div>}
+              <FolderView node={tree} path="" onSelect={onSelect} onClose={onClose} />
+            </>
           )}
         </div>
       </div>

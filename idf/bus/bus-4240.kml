@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus 4240 - 4240</name>
+    <description>TISSE</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ff005AFF</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ff005AFF</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>4240</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.485115,48.603535,0 2.485477,48.60355,0 2.485462,48.603745,0 2.485441,48.603867,0 2.485356,48.604179,0 2.484927,48.605556,0 2.484927,48.605556,0 2.484749,48.606071,0 2.484576,48.606529,0 2.48429,48.607025,0 2.485341,48.607243,0 2.485341,48.607243,0 2.488747,48.607952,0 2.488639,48.60812,0 2.488496,48.608307,0 2.488111,48.608768,0 2.487855,48.609062,0 2.487855,48.609062,0 2.487402,48.6096,0 2.486898,48.610176,0 2.485981,48.611244,0 2.485906,48.611343,0 2.485771,48.611488,0 2.485771,48.611488,0 2.485647,48.611626,0 2.485508,48.611736,0 2.484286,48.61256,0 2.482596,48.613842,0 2.482383,48.613987,0 2.482383,48.613987,0 2.48175,48.61438,0 2.480605,48.614922,0 2.480539,48.614937,0 2.480388,48.614948,0 2.480353,48.614979,0 2.480328,48.614986,0 2.480272,48.614994,0 2.480211,48.614975,0 2.480175,48.614941,0 2.48017,48.614918,0 2.480176,48.614895,0 2.480215,48.614861,0 2.480278,48.614845,0 2.480165,48.614681,0 2.479844,48.614254,0 2.479844,48.614254,0 2.479767,48.614155,0 2.479683,48.614105,0 2.47965,48.614117,0 2.479611,48.61412,0 2.479574,48.614117,0 2.479543,48.614101,0 2.479524,48.614079,0 2.478891,48.614086,0 2.47859,48.614079,0 2.478311,48.614052,0 2.477818,48.613991,0 2.477274,48.613945,0 2.477241,48.613956,0 2.477166,48.61396,0 2.477132,48.613949,0 2.477105,48.61393,0 2.477087,48.613907,0 2.477081,48.61388,0 2.476934,48.613712,0 2.476033,48.613247,0 2.4758,48.613087,0 2.475535,48.61285,0 2.475241,48.612534,0 2.474893,48.612244,0 2.474817,48.612198,0 2.474817,48.612198,0 2.474247,48.611828,0 2.474886,48.611328,0 2.475778,48.610683,0 2.475832,48.610653,0 2.473647,48.609215,0 2.473647,48.609215,0 2.472668,48.608566,0 2.471914,48.608078,0 2.471914,48.608078,0 2.471355,48.607708,0 2.471246,48.607685,0 2.471047,48.60767,0 2.470445,48.607643,0 2.470364,48.607628,0 2.469774,48.607357,0 2.469541,48.607235,0 2.46937,48.607071,0 2.46937,48.607071,0 2.469099,48.606815,0 2.468404,48.606091,0 2.468258,48.605957,0 2.468127,48.605923,0 2.467747,48.605881,0 2.467633,48.605885,0 2.467482,48.605923,0 2.466856,48.606163,0 2.466752,48.60619,0 2.466676,48.606194,0 2.466605,48.606186,0 2.46606,48.60603,0 2.465922,48.60598,0 2.465849,48.605942,0 2.465789,48.6059,0 2.465583,48.605656,0 2.465529,48.605621,0 2.465473,48.605602,0 2.465355,48.605587,0 2.465209,48.605618,0 2.464833,48.605778,0 2.464784,48.605736,0 2.464671,48.605556,0 2.46454,48.605309,0 2.46454,48.605309,0 2.46437,48.604973,0 2.464221,48.604584,0 2.464118,48.604252,0 2.464118,48.604252,0 2.464047,48.603985,0 2.463956,48.603336,0 2.463945,48.603214,0 2.463942,48.602901,0 2.463974,48.602528,0 2.464044,48.602009,0 2.46415,48.601711,0 2.464268,48.601482,0 2.464706,48.601639,0 2.464706,48.601639,0 2.464976,48.601734,0 2.46507,48.601761,0 2.466171,48.602039,0 2.467567,48.602318,0 2.468178,48.602459,0 2.468567,48.602528,0 2.469031,48.602577,0 2.469031,48.602577,0 2.469101,48.602585,0 2.469285,48.602589,0 2.47013,48.602684,0 2.470603,48.602684,0 2.470939,48.602634,0 2.471589,48.602501,0 2.471849,48.602455,0 2.472027,48.602448,0 2.472854,48.602512,0 2.472854,48.602512,0 2.474509,48.602654,0 2.475792,48.602776,0 2.476014,48.60281,0 2.476246,48.602859,0 2.476246,48.602859,0 2.476446,48.602905,0 2.476655,48.602978,0 2.476701,48.60294,0 2.476767,48.602921,0 2.47716,48.602871,0 2.47749,48.602329,0 2.47759,48.602051,0 2.477978,48.602234,0 2.478223,48.602001,0 2.478223,48.602001,0 2.478267,48.601955,0 2.478627,48.601276,0 2.478658,48.601063,0 2.478911,48.600491,0 2.477669,48.599949,0 2.477669,48.599949,0 2.477455,48.599854,0 2.4774,48.59988,0 2.477333,48.599876,0 2.477285,48.59985,0 2.477272,48.599831,0 2.477269,48.599812,0 2.477275,48.599792,0 2.477313,48.599758,0 2.477261,48.599709,0 2.476272,48.598633,0 2.476363,48.598324,0 2.476664,48.597446,0 2.476664,48.597446,0 2.476788,48.597073,0 2.476919,48.596718,0 2.477074,48.596226,0 2.477074,48.596226,0 2.477478,48.595001,0 2.477646,48.59457,0 2.47769,48.594471,0 2.477743,48.594383,0 2.477743,48.594383,0 2.477808,48.594322,0 2.477929,48.594273,0 2.478182,48.594208,0 2.479002,48.596279,0 2.479002,48.596279,0 2.479647,48.597874,0 2.480186,48.599232,0 2.480186,48.599232,0 2.480556,48.600166,0 2.48067,48.600487,0 2.481532,48.602734,0 2.481532,48.602734,0 2.481592,48.602879,0 2.483644,48.603397,0 2.483955,48.603466,0 2.48425,48.6035,0 2.485115,48.603535,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>République</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.479776300332313,48.614255779784806,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>René Pierre</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4776935191491094,48.60001603849909,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Piscine</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.485240697134494,48.603494138205775,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chevallier</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4853941578610264,48.607200883831595,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vieux Corbeil</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.485812837653455,48.611529439228136,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lamartine</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.476119583449999,48.60279769098827,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Square</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4776414564213356,48.59435769644207,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Maison de retraite</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4815864301658728,48.60270468122696,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MJC</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.473586289593559,48.60924517756747,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Centre Commercial</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.469146387642533,48.60698562718447,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gare d'Essonnes Robinson</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4645103645327073,48.6053726895807,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rue de Paris</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.468892418511333,48.60260375343508,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Belvédère</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4802365355258336,48.59932552777219,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bas Coudray</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.484976045471851,48.60557991521774,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Villoison</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.487898875938909,48.60906471929893,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gare Corbeil-Essonnes - Santé</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4747769297095408,48.61225487000943,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parc Chantemerle</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4718478534804778,48.60811306295393,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parc Robinson</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4646298150377923,48.601649141714745,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Louis Robert</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4728409005967813,48.60244139454646,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Guénault</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.482478318954807,48.61401568511435,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Conservatoire</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4640468856338478,48.60427316960102,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Castors</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4780939449346318,48.602023764924304,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Salvador Allende</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.476580130662915,48.59742946854718,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Les Tours</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4770544108187345,48.59610922698585,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place des Victoires</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4790194697417207,48.596243779096504,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

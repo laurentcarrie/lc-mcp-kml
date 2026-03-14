@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus 637 - 637</name>
+    <description>Transdev Nord Seine-Saint-Denis</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ffBAA4F3</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ffBAA4F3</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>637</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.49397,48.931709,0 2.494159,48.931709,0 2.494206,48.931698,0 2.494571,48.931561,0 2.494615,48.93153,0 2.494639,48.931503,0 2.494648,48.931469,0 2.494652,48.931355,0 2.495125,48.931358,0 2.495197,48.931351,0 2.495259,48.930058,0 2.495259,48.930058,0 2.495279,48.92968,0 2.495324,48.929104,0 2.495321,48.92905,0 2.495351,48.928303,0 2.495299,48.928295,0 2.495253,48.928276,0 2.495218,48.928253,0 2.495198,48.928219,0 2.495195,48.928185,0 2.495207,48.928154,0 2.49525,48.928116,0 2.49525,48.928116,0 2.495309,48.928097,0 2.495355,48.928089,0 2.495434,48.928104,0 2.495493,48.928143,0 2.495742,48.928059,0 2.500669,48.926254,0 2.500734,48.926235,0 2.500447,48.925911,0 2.500447,48.925911,0 2.499285,48.924614,0 2.497489,48.922573,0 2.497385,48.922512,0 2.497377,48.922295,0 2.497377,48.922295,0 2.497252,48.918613,0 2.49724,48.918053,0 2.49724,48.918053,0 2.497256,48.918011,0 2.497307,48.917957,0 2.497333,48.917942,0 2.497417,48.917999,0 2.497786,48.918316,0 2.499561,48.919941,0 2.500396,48.919521,0 2.500937,48.919262,0 2.500937,48.919262,0 2.501179,48.919147,0 2.501565,48.919491,0 2.501924,48.920113,0 2.502165,48.920586,0 2.502217,48.920647,0 2.502361,48.920666,0 2.502447,48.920715,0 2.502447,48.920715,0 2.504403,48.921883,0 2.504403,48.921883,0 2.505163,48.922325,0 2.506053,48.9226,0 2.506654,48.922802,0 2.507014,48.922913,0 2.507014,48.922913,0 2.508129,48.923283,0 2.509657,48.92334,0 2.51017,48.923496,0 2.51017,48.923496,0 2.511106,48.923782,0 2.511373,48.924042,0 2.510401,48.924477,0 2.509465,48.924908,0 2.509219,48.924946,0 2.509219,48.924946,0 2.507476,48.925064,0 2.507328,48.925026,0 2.503953,48.923779,0 2.503953,48.923779,0 2.503305,48.923542,0 2.503256,48.92363,0 2.502429,48.92421,0 2.502274,48.924305,0 2.502293,48.924324,0 2.502299,48.924351,0 2.502291,48.924374,0 2.50227,48.924393,0 2.502238,48.924408,0 2.502203,48.924412,0 2.502167,48.924404,0 2.502137,48.924393,0 2.50208,48.924446,0 2.501323,48.924973,0 2.501163,48.925049,0 2.500989,48.92511,0 2.500989,48.92511,0 2.498341,48.926079,0 2.499648,48.927551,0 2.500027,48.927959,0 2.500027,48.927959,0 2.500163,48.928123,0 2.499257,48.928394,0 2.498621,48.928551,0 2.49856,48.928589,0 2.498533,48.928665,0 2.498456,48.928951,0 2.498456,48.928951,0 2.498326,48.92947,0 2.496841,48.929291,0 2.496861,48.929356,0 2.496837,48.929722,0 2.496837,48.929722,0 2.496825,48.929897,0 2.496772,48.9314,0 2.495197,48.931351,0 2.495125,48.931358,0 2.494652,48.931355,0 2.494648,48.931469,0 2.494639,48.931503,0 2.494615,48.93153,0 2.494571,48.931561,0 2.494206,48.931698,0 2.494159,48.931709,0 2.49397,48.931709,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Ecoles des Prévoyants</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5069865269815708,48.922868296892695,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Coullemont</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.496877213365408,48.92964283341897,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pavillons</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.497345019672472,48.922189746264145,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sainte-Anne</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.500948927808636,48.91921018708325,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Louvois</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5022052657008533,48.92053736524884,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jean Jacques Rousseau</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4998980350311375,48.92774900456193,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dumont</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4952101863050355,48.92984265733237,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Berthollet</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.504260704027573,48.92393619107676,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gare d'Aulnay-sous-Bois</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4939084027353804,48.93177960839168,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Eglise Saint Joseph</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.500420337267291,48.92594362771547,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Condé Circulaire</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4971668341755033,48.918034292126464,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Friches</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5044034763887955,48.92184144924666,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place de la République</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4952136391024524,48.9280800832214,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Les Cèdres</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.510146968808472,48.92345680048292,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plant d'Argent</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.509259370338851,48.92496396380824,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vercingétorix</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.5011930033044103,48.925065549810256,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jean-Claude Abrioux</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4988809524487547,48.9284911583755,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

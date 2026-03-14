@@ -1,10 +1,16 @@
 use serde::{Deserialize, Serialize};
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, Default)]
 pub struct PointDefinition {
+    #[serde(default)]
     pub kml: String,
+    #[serde(default)]
     pub name: String,
     pub color: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub lat: Option<f64>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub lng: Option<f64>,
 }
 
 #[derive(Deserialize, Serialize)]
@@ -51,6 +57,18 @@ pub struct RawKml {
 }
 
 #[derive(Deserialize, Serialize)]
+pub struct Route {
+    pub name: String,
+    pub from: PointDefinition,
+    pub to: PointDefinition,
+    pub color: Option<String>,
+    #[serde(default = "default_route_mode")]
+    pub mode: String,
+}
+
+fn default_route_mode() -> String { "foot".to_string() }
+
+#[derive(Deserialize, Serialize)]
 pub enum EChoice {
     ConcentricCircles(ConcentricCircles),
     Point(PointDefinition),
@@ -59,6 +77,7 @@ pub enum EChoice {
     Segments(Segments),
     TriangleBisect(TriangleBisect),
     RawKml(RawKml),
+    Route(Route),
 }
 
 #[derive(Deserialize, Serialize)]
@@ -70,6 +89,8 @@ pub struct Folder {
 #[derive(Deserialize, Serialize)]
 pub struct InputData {
     pub choices: Vec<EChoice>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub error: Option<String>,
 }
 
 #[derive(Deserialize)]

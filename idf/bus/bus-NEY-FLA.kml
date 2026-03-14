@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus NEY-FLA - La Traverse Ney - Flandre</name>
+    <description>RATP</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ffCAA3C5</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ffCAA3C5</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>NEY-FLA</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.370834,48.899727,0 2.371119,48.899734,0 2.371224,48.899719,0 2.374065,48.899773,0 2.374073,48.899593,0 2.374073,48.899593,0 2.374117,48.898762,0 2.372899,48.898739,0 2.372899,48.898739,0 2.371399,48.898712,0 2.371172,48.898724,0 2.37096,48.898785,0 2.370492,48.898777,0 2.370336,48.898724,0 2.370504,48.89864,0 2.370518,48.898285,0 2.370518,48.898285,0 2.370627,48.896397,0 2.370643,48.896362,0 2.371,48.896065,0 2.371,48.896065,0 2.37136,48.895813,0 2.371824,48.895454,0 2.371945,48.895279,0 2.37178,48.895222,0 2.371496,48.895039,0 2.371496,48.895039,0 2.370838,48.894619,0 2.370768,48.894577,0 2.370522,48.894478,0 2.370355,48.894367,0 2.370165,48.894176,0 2.370062,48.894062,0 2.36955,48.892899,0 2.369462,48.892681,0 2.369462,48.892681,0 2.368818,48.891174,0 2.368207,48.889843,0 2.368207,48.889843,0 2.368151,48.889725,0 2.368058,48.889633,0 2.367596,48.888702,0 2.367299,48.887974,0 2.367175,48.887604,0 2.367059,48.887325,0 2.36696,48.887119,0 2.36696,48.887119,0 2.366887,48.886925,0 2.366809,48.886795,0 2.366731,48.886608,0 2.366302,48.886112,0 2.366242,48.886013,0 2.365871,48.88562,0 2.365818,48.885544,0 2.365498,48.885204,0 2.365235,48.884907,0 2.364804,48.884464,0 2.364377,48.884495,0 2.364377,48.884495,0 2.364208,48.884502,0 2.361443,48.884514,0 2.361404,48.884697,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>NEY-FLA</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.361404,48.884697,0 2.361131,48.886089,0 2.362712,48.886189,0 2.362785,48.886215,0 2.362837,48.886299,0 2.361175,48.886723,0 2.361278,48.886894,0 2.361278,48.886894,0 2.362063,48.888203,0 2.362063,48.888203,0 2.363095,48.889923,0 2.363463,48.889915,0 2.363463,48.889915,0 2.364489,48.889893,0 2.366988,48.889771,0 2.367755,48.889725,0 2.367755,48.889725,0 2.367953,48.889713,0 2.368203,48.889671,0 2.369274,48.889538,0 2.37127,48.889252,0 2.371303,48.889305,0 2.37144,48.88958,0 2.37144,48.88958,0 2.371763,48.890259,0 2.372365,48.891628,0 2.372365,48.891628,0 2.372554,48.892052,0 2.372747,48.892448,0 2.373214,48.893482,0 2.373214,48.893482,0 2.373275,48.893642,0 2.373325,48.893749,0 2.37338,48.893841,0 2.373357,48.893894,0 2.373334,48.893932,0 2.372321,48.895008,0 2.372321,48.895008,0 2.372153,48.895203,0 2.372076,48.895393,0 2.372051,48.895424,0 2.371496,48.895901,0 2.371311,48.896,0 2.371096,48.896156,0 2.371096,48.896156,0 2.370799,48.896397,0 2.370767,48.896446,0 2.370743,48.896801,0 2.370745,48.896881,0 2.370756,48.896938,0 2.371053,48.897182,0 2.371078,48.897209,0 2.371096,48.897251,0 2.371023,48.898647,0 2.371172,48.898724,0 2.37096,48.898785,0 2.370492,48.898777,0 2.370336,48.898724,0 2.369586,48.89872,0 2.369586,48.89872,0 2.366554,48.898655,0 2.365062,48.898632,0 2.365062,48.898632,0 2.362905,48.898586,0 2.362662,48.898624,0 2.361981,48.898617,0 2.361608,48.898624,0 2.360285,48.898716,0 2.359722,48.898705,0 2.359722,48.898705,0 2.359346,48.898697,0 2.359318,48.898952,0 2.359317,48.899284,0 2.359359,48.899681,0 2.359375,48.899914,0 2.359477,48.90012,0 2.359628,48.900467,0 2.359648,48.900642,0 2.359655,48.900791,0 2.359631,48.901093,0 2.359599,48.901279,0 2.359546,48.901451,0 2.35947,48.901581,0 2.362046,48.901638,0 2.362173,48.901623,0 2.362217,48.901588,0 2.362221,48.901539,0 2.362216,48.901497,0 2.362176,48.901466,0 2.362106,48.901451,0 2.36201,48.901455,0 2.361903,48.901474,0 2.361903,48.901474,0 2.361657,48.901505,0 2.361388,48.901527,0 2.361126,48.901527,0 2.360644,48.90152,0 2.360202,48.901493,0 2.359685,48.901489,0 2.359546,48.901451,0 2.359373,48.901424,0 2.358668,48.901287,0 2.358557,48.901253,0 2.358561,48.901104,0 2.358741,48.899345,0 2.358992,48.899029,0 2.35902,48.898525,0 2.360064,48.898556,0 2.360064,48.898556,0 2.360889,48.898575,0 2.361879,48.898544,0 2.362665,48.89856,0 2.362905,48.898586,0 2.364316,48.898617,0 2.364315,48.898716,0 2.364336,48.898746,0 2.364377,48.898777,0 2.364509,48.898834,0 2.364509,48.898834,0 2.365559,48.899284,0 2.366634,48.899757,0 2.366714,48.899776,0 2.368399,48.899807,0 2.368399,48.899807,0 2.370273,48.899845,0 2.370284,48.899712,0 2.370834,48.899727,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>NEY-FLA</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.361878,48.901318,0 2.36146,48.901379,0 2.361051,48.901424,0 2.360202,48.901493,0 2.359685,48.901489,0 2.359546,48.901451,0 2.359373,48.901424,0 2.358668,48.901287,0 2.358557,48.901253,0 2.358561,48.901104,0 2.358741,48.899345,0 2.358992,48.899029,0 2.35902,48.898525,0 2.360064,48.898556,0 2.360064,48.898556,0 2.360889,48.898575,0 2.361879,48.898544,0 2.362665,48.89856,0 2.362905,48.898586,0 2.364316,48.898617,0 2.364315,48.898716,0 2.364336,48.898746,0 2.364377,48.898777,0 2.364509,48.898834,0 2.364509,48.898834,0 2.365559,48.899284,0 2.366634,48.899757,0 2.366714,48.899776,0 2.368399,48.899807,0 2.368399,48.899807,0 2.370273,48.899845,0 2.370284,48.899712,0 2.370834,48.899727,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>NEY-FLA</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.363995,48.893452,0 2.365979,48.894325,0 2.366249,48.894424,0 2.366491,48.894493,0 2.370662,48.895538,0 2.37107,48.895634,0 2.371496,48.895901,0 2.371311,48.896,0 2.371096,48.896156,0 2.370799,48.896397,0 2.370767,48.896446,0 2.370743,48.896801,0 2.370745,48.896881,0 2.370756,48.896938,0 2.371053,48.897182,0 2.371078,48.897209,0 2.371096,48.897251,0 2.371023,48.898647,0 2.371172,48.898724,0 2.371119,48.899734,0 2.370834,48.899727,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>NEY-FLA</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.361878,48.901318,0 2.36146,48.901379,0 2.361051,48.901424,0 2.360202,48.901493,0 2.359685,48.901489,0 2.359546,48.901451,0 2.359373,48.901424,0 2.358668,48.901287,0 2.358557,48.901253,0 2.358561,48.901104,0 2.358741,48.899345,0 2.358992,48.899029,0 2.35902,48.898525,0 2.359077,48.898331,0 2.359116,48.897854,0 2.359175,48.897655,0 2.359205,48.897106,0 2.359221,48.896965,0 2.359334,48.895451,0 2.35928,48.895336,0 2.359288,48.895256,0 2.359344,48.895157,0 2.359631,48.895134,0 2.359983,48.894981,0 2.360595,48.894657,0 2.363416,48.893223,0 2.363397,48.893192,0 2.3634,48.893158,0 2.363424,48.893127,0 2.363462,48.893108,0 2.363508,48.893101,0 2.363561,48.893108,0 2.363604,48.893131,0 2.363626,48.893154,0 2.363633,48.893181,0 2.363624,48.893208,0 2.363601,48.893234,0 2.363567,48.89325,0 2.363719,48.89333,0 2.363995,48.893452,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Crimée - Aubervilliers</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3714569234944247,48.89509292177682,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chapelle - Caillié</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3643572003575604,48.88451538212418,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Évangile - Aubervilliers</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3709782212089983,48.89633146651675,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Porte de la Chapelle</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.359722849321755,48.898762927514504,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Radiguet</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.369439248956414,48.89276207141918,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Maroc</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.366903083445497,48.88710094360217,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mathis</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3724001000772907,48.89152757046255,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Emile Bertin</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.365070610595499,48.89870146666711,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Macdonald</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3729125332391465,48.89880573618163,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>La Chapelle</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.361490833638168,48.884733955393514,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Riquet</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.367758221882901,48.889677528243304,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Curial - Crimée</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3732770153910643,48.89345670798931,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Crimée - Rosa Parks</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.372399605956092,48.894962968125036,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Charles Hermite</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.368399508319673,48.89977126707391,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Porte d'Aubervilliers - Oberlé</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3708153694710337,48.89964908591476,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Duchesne - Bollaert</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3739533644010007,48.8995935850293,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pajol - Département</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3613147002743884,48.88686441988402,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pajol</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3620895232119206,48.88818156501128,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pajol - Riquet</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3634599069727384,48.889870593301126,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Curial - Archereau</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.371482772762172,48.88956223776574,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Porte d'Aubervilliers</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.369557333082542,48.89877912804924,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Abeille</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3619126819435388,48.90149953838753,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Charles Hermite - Ney</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.364510076555649,48.898806411539475,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Porte d'Aubervilliers - Macdonald</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3703949955788057,48.89831589069099,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place Hebert</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3639893875190494,48.89341673358765,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

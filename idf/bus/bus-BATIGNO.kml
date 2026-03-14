@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus BATIGNO - La Traverse Batignolles-Bichat</name>
+    <description>RATP</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ff8E3267</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ff8E3267</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>BATIGNO</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.329674,48.899632,0 2.329496,48.899105,0 2.329477,48.898998,0 2.329251,48.898319,0 2.329181,48.89819,0 2.329181,48.89819,0 2.329014,48.897732,0 2.328937,48.897549,0 2.32938,48.897545,0 2.329447,48.897442,0 2.329753,48.897129,0 2.329753,48.897129,0 2.330906,48.895969,0 2.33105,48.895813,0 2.331071,48.895756,0 2.330917,48.895584,0 2.330917,48.895584,0 2.330325,48.894947,0 2.329951,48.89439,0 2.329904,48.894337,0 2.329832,48.894215,0 2.329832,48.894215,0 2.329429,48.893475,0 2.327732,48.893085,0 2.327775,48.893013,0 2.327802,48.892994,0 2.328207,48.892906,0 2.328207,48.892906,0 2.330279,48.89249,0 2.330518,48.892452,0 2.330518,48.892452,0 2.33083,48.891563,0 2.330911,48.891304,0 2.330911,48.891304,0 2.33098,48.891094,0 2.330962,48.890999,0 2.330878,48.890999,0 2.329405,48.891132,0 2.32877,48.891174,0 2.327588,48.891281,0 2.327588,48.891281,0 2.326937,48.891346,0 2.326817,48.891338,0 2.326912,48.891621,0 2.32627,48.891895,0 2.326178,48.89193,0 2.325334,48.89114,0 2.325334,48.89114,0 2.32522,48.891033,0 2.322923,48.889263,0 2.322923,48.889263,0 2.322745,48.889126,0 2.320196,48.887646,0 2.319944,48.887493,0 2.319944,48.887493,0 2.319381,48.887169,0 2.32076,48.886299,0 2.320439,48.88607,0 2.319897,48.885696,0 2.319897,48.885696,0 2.319793,48.885624,0 2.318802,48.886223,0 2.318802,48.886223,0 2.318458,48.886429,0 2.318493,48.886467,0 2.318501,48.886505,0 2.318489,48.886547,0 2.318451,48.886623,0 2.318407,48.886665,0 2.317758,48.887051,0 2.317682,48.887112,0 2.317827,48.88726,0 2.317766,48.887363,0 2.31743,48.887566,0 2.31743,48.887566,0 2.316321,48.888214,0 2.315752,48.888561,0 2.315647,48.888615,0 2.31603,48.889023,0 2.31603,48.889023,0 2.317218,48.890251,0 2.31867,48.889477,0 2.319016,48.889732,0 2.319016,48.889732,0 2.320104,48.890537,0 2.320326,48.890633,0 2.320767,48.891159,0 2.320767,48.891159,0 2.321144,48.891617,0 2.322635,48.893528,0 2.32276,48.893631,0 2.322869,48.893776,0 2.322869,48.893776,0 2.324236,48.895508,0 2.324236,48.895508,0 2.324504,48.895844,0 2.324672,48.896004,0 2.325118,48.896481,0 2.325838,48.897209,0 2.326276,48.897015,0 2.327033,48.896652,0 2.327181,48.896572,0 2.327315,48.896801,0 2.327315,48.896801,0 2.327563,48.897228,0 2.327797,48.897533,0 2.328937,48.897549,0 2.329014,48.897732,0 2.329149,48.898102,0 2.329149,48.898102,0 2.329181,48.89819,0 2.329251,48.898319,0 2.329477,48.898998,0 2.329779,48.899021,0 2.330573,48.899044,0 2.330573,48.899044,0 2.330799,48.899052,0 2.330796,48.899174,0 2.32973,48.899155,0 2.329797,48.899372,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Jacques Cartier</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3297050538760735,48.894165032679155,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lobligeois</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.31882926581105,48.88623455169422,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Legendre</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3228268451651615,48.88923400523235,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brochant</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3207972369534438,48.891138075982674,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Collège Mallarme</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3229181493503956,48.893749135723866,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nollet</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3199171127370577,48.887517783646956,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lantiez</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.324273420057844,48.895465504262546,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hôpital Bichat</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.330543197355964,48.89899007963446,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Porte de Saint-Ouen</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.328901401295176,48.898315394927586,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vauvenargues</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.329722096702696,48.89707892967396,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hôpital Bretonneau</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3308328639496927,48.891311490634855,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lamarck - Guy Moquet</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.327627832163305,48.89131152369268,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Davy</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3253782368903453,48.891253904749064,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Porte de Saint-Ouen - Hôpital Bichat</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3295933893430507,48.8996592554575,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Firmin Gémier</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.330846039398354,48.89559234247622,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Guy Môquet</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3281942853410915,48.892861541193035,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Coysevox</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3304232693603377,48.89240637690684,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mairie du 17e</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3198724220738405,48.88571887015748,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pont Cardinet - Batignolles</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.317488884131453,48.88757591337805,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parc Martin Luther King</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3160936499654574,48.88893493209457,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Marché des Batignolles</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3190434293444,48.889671205953654,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Leclaire</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3273934369448286,48.89678708438951,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

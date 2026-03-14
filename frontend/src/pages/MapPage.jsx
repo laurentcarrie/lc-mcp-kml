@@ -3,6 +3,7 @@ import { useSearchParams, useNavigate } from 'react-router-dom'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import omnivore from 'leaflet-omnivore'
+import LibraryModal from '../components/LibraryModal'
 import './MapPage.css'
 
 const API_BASE = import.meta.env.VITE_API_BASE || '/api'
@@ -19,6 +20,7 @@ export default function MapPage() {
   const navigate = useNavigate()
   const [searchParams, setSearchParams] = useSearchParams()
   const [kmlPath, setKmlPath] = useState(searchParams.get('kml') || '')
+  const [libraryOpen, setLibraryOpen] = useState(false)
   const mapRef = useRef(null)
   const mapInstance = useRef(null)
   const currentLayer = useRef(null)
@@ -102,8 +104,14 @@ export default function MapPage() {
           onKeyDown={e => e.key === 'Enter' && loadKml()}
         />
         <button className="load-btn" onClick={() => loadKml()}>Load</button>
+        <button className="library-btn" onClick={() => setLibraryOpen(true)}>Library</button>
       </div>
       <div className="map-container" ref={mapRef} />
+      <LibraryModal
+        open={libraryOpen}
+        onClose={() => setLibraryOpen(false)}
+        onSelect={key => { setLibraryOpen(false); setKmlPath(key); loadKml(key) }}
+      />
     </div>
   )
 }

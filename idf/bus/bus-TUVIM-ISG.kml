@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus TUVIM ISG - TUVIM Ile Saint-Germain</name>
+    <description>Origami / Mobicité</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ffB29EF5</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ffB29EF5</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>TUVIM ISG</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.273735,48.825211,0 2.274016,48.824883,0 2.27413,48.824795,0 2.274355,48.824524,0 2.272829,48.823971,0 2.272597,48.823895,0 2.268543,48.822727,0 2.267994,48.822601,0 2.267947,48.823025,0 2.267947,48.823025,0 2.26794,48.823208,0 2.267871,48.823944,0 2.267765,48.825233,0 2.267662,48.825214,0 2.267212,48.825409,0 2.266083,48.825939,0 2.266083,48.825939,0 2.265949,48.826004,0 2.265828,48.825901,0 2.265735,48.825863,0 2.264995,48.825756,0 2.264873,48.825714,0 2.264819,48.825634,0 2.264855,48.825542,0 2.265022,48.825222,0 2.265284,48.824757,0 2.265351,48.82465,0 2.262689,48.824013,0 2.262294,48.823936,0 2.262175,48.82402,0 2.262112,48.8241,0 2.262019,48.82468,0 2.261532,48.824642,0 2.260782,48.824142,0 2.260782,48.824142,0 2.260724,48.824112,0 2.259771,48.823483,0 2.259734,48.823418,0 2.259851,48.822765,0 2.258421,48.822643,0 2.258421,48.822643,0 2.256274,48.82246,0 2.255283,48.822224,0 2.254945,48.822155,0 2.254945,48.822155,0 2.253195,48.821705,0 2.25257,48.821556,0 2.25257,48.821556,0 2.251455,48.821285,0 2.251233,48.821186,0 2.251051,48.821171,0 2.250507,48.82119,0 2.250539,48.821342,0 2.250466,48.821682,0 2.250314,48.821815,0 2.250214,48.821896,0 2.249928,48.82246,0 2.249735,48.822823,0 2.249685,48.823029,0 2.24964,48.823143,0 2.249646,48.823185,0 2.249631,48.823223,0 2.249588,48.823261,0 2.249538,48.82328,0 2.249482,48.823288,0 2.249425,48.823284,0 2.249373,48.823265,0 2.249334,48.823238,0 2.24931,48.823204,0 2.249305,48.82317,0 2.249317,48.823135,0 2.248585,48.822971,0 2.248585,48.822971,0 2.245311,48.822212,0 2.245311,48.822212,0 2.244081,48.821911,0 2.243203,48.821716,0 2.242126,48.821457,0 2.242325,48.821079,0 2.24267,48.821144,0 2.24267,48.821144,0 2.243403,48.821262,0 2.245152,48.821575,0 2.246332,48.82177,0 2.246718,48.821865,0 2.246718,48.821865,0 2.248462,48.822281,0 2.248779,48.82235,0 2.248779,48.82235,0 2.249701,48.822548,0 2.249832,48.822273,0 2.250049,48.821854,0 2.25,48.821724,0 2.249943,48.821609,0 2.249904,48.821461,0 2.249904,48.821461,0 2.249911,48.821419,0 2.250012,48.821136,0 2.250025,48.821075,0 2.250202,48.820999,0 2.250285,48.820992,0 2.250374,48.820999,0 2.25081,48.821095,0 2.251088,48.821083,0 2.251559,48.821148,0 2.252099,48.821274,0 2.252428,48.821323,0 2.252834,48.821354,0 2.253512,48.821335,0 2.253719,48.821365,0 2.254071,48.821339,0 2.255604,48.821247,0 2.255362,48.821999,0 2.255362,48.821999,0 2.255283,48.822224,0 2.256274,48.82246,0 2.258747,48.822674,0 2.258747,48.822674,0 2.259851,48.822765,0 2.259734,48.823418,0 2.259771,48.823483,0 2.260724,48.824112,0 2.260782,48.824142,0 2.260782,48.824142,0 2.261532,48.824642,0 2.262019,48.82468,0 2.262112,48.8241,0 2.262175,48.82402,0 2.262294,48.823936,0 2.262689,48.824013,0 2.263781,48.824276,0 2.264102,48.824188,0 2.264102,48.824188,0 2.265814,48.823692,0 2.267658,48.823177,0 2.267658,48.823177,0 2.26785,48.823124,0 2.26794,48.823128,0 2.268009,48.823139,0 2.268095,48.823174,0 2.268845,48.82354,0 2.268962,48.823582,0 2.269149,48.823669,0 2.269213,48.823715,0 2.270339,48.824261,0 2.270481,48.82431,0 2.270819,48.824486,0 2.271792,48.824913,0 2.272026,48.825024,0 2.27292,48.825325,0 2.273254,48.825432,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Allée des Moulineaux</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.246095550136856,48.8217009852406,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Capitaine Ferber</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2662080410745737,48.825909310834994,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jean-Jacques Rousseau</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2584622942530888,48.8226956909855,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stade Île Saint-Germain</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2452569737389907,48.82223532919747,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Les Moulineaux</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2507372936927923,48.82094769110732,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rue de la Gare</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2548604831795473,48.82216064972549,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pierre Poli</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2487428550299047,48.82230224969566,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jacques-Henri Lartigue</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.260866275739212,48.824140599763794,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gallieni</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2676363417570995,48.823138965474875,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bas Meudon</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.248582544894175,48.823029747478465,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sainte Eudoxie</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.242889407075752,48.82113210004295,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mairie d'Issy</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2735450108766955,48.82528856152981,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jacques Henri Lartigue Tramway</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2607162032125347,48.82415765981172,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Roger Salengro</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.264080543164067,48.824160423703454,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

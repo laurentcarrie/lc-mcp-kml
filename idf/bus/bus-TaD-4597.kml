@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus TàD 4597 - TàD 4597</name>
+    <description>Transdev Cœur Essonne</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ff00BEFF</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ff00BEFF</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Gare de Breuillet Village</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.1723035146144176,48.56491895477137,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

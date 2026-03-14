@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus Traverse - La Traverse Brancion-Commerce</name>
+    <description>Autocars Dominique</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ff59E8CB</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ff59E8CB</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>Traverse</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.295753,48.829105,0 2.295822,48.828701,0 2.295903,48.828686,0 2.296197,48.828617,0 2.297529,48.828197,0 2.29797,48.828068,0 2.298177,48.82803,0 2.298177,48.82803,0 2.300146,48.827728,0 2.30075,48.827625,0 2.30075,48.827625,0 2.301109,48.827572,0 2.301362,48.82848,0 2.301723,48.828419,0 2.302808,48.828167,0 2.30288,48.828178,0 2.302942,48.828209,0 2.303004,48.828342,0 2.303261,48.828457,0 2.303699,48.828632,0 2.303699,48.828632,0 2.303925,48.828724,0 2.304512,48.829113,0 2.305354,48.829792,0 2.305655,48.830029,0 2.304922,48.829941,0 2.304456,48.830246,0 2.304456,48.830246,0 2.304325,48.830326,0 2.303831,48.830578,0 2.305984,48.831604,0 2.306187,48.831821,0 2.306187,48.831821,0 2.307068,48.832771,0 2.307484,48.833191,0 2.3081,48.833874,0 2.308395,48.834274,0 2.308395,48.834274,0 2.308503,48.834419,0 2.308431,48.834503,0 2.30666,48.836296,0 2.306693,48.836327,0 2.306703,48.836365,0 2.306696,48.836391,0 2.306676,48.836418,0 2.306627,48.836445,0 2.306541,48.836456,0 2.306479,48.836441,0 2.306345,48.836727,0 2.306115,48.837143,0 2.306115,48.837143,0 2.305999,48.837357,0 2.307132,48.838085,0 2.307253,48.838154,0 2.307157,48.83823,0 2.306758,48.8386,0 2.306827,48.838634,0 2.307089,48.838741,0 2.307089,48.838741,0 2.309326,48.839645,0 2.309161,48.839798,0 2.307932,48.841476,0 2.308457,48.84164,0 2.308457,48.84164,0 2.312392,48.842857,0 2.313004,48.842079,0 2.312426,48.841652,0 2.312426,48.841652,0 2.310206,48.839981,0 2.310206,48.839981,0 2.309526,48.839474,0 2.308398,48.838303,0 2.308296,48.838161,0 2.308139,48.83802,0 2.308139,48.83802,0 2.30714,48.836964,0 2.30714,48.836964,0 2.306717,48.836529,0 2.306627,48.836445,0 2.306541,48.836456,0 2.306479,48.836441,0 2.306445,48.836418,0 2.306423,48.836391,0 2.3055,48.836502,0 2.3055,48.836502,0 2.303281,48.836769,0 2.302722,48.836845,0 2.302527,48.83688,0 2.302049,48.837002,0 2.301787,48.83709,0 2.301336,48.837276,0 2.301336,48.837276,0 2.301079,48.837379,0 2.30012,48.837185,0 2.29961,48.836784,0 2.299539,48.83675,0 2.298818,48.837215,0 2.298608,48.837345,0 2.298608,48.837345,0 2.29829,48.83754,0 2.298965,48.837971,0 2.299438,48.83828,0 2.299987,48.838539,0 2.300474,48.838783,0 2.300189,48.839016,0 2.300189,48.839016,0 2.300087,48.8391,0 2.300428,48.839245,0 2.301331,48.83955,0 2.300841,48.840313,0 2.300616,48.840649,0 2.300616,48.840649,0 2.30046,48.840889,0 2.299454,48.840553,0 2.299441,48.840614,0 2.299075,48.841675,0 2.298788,48.842808,0 2.298572,48.843594,0 2.298494,48.843689,0 2.298381,48.843693,0 2.297761,48.843674,0 2.297996,48.84293,0 2.298242,48.841934,0 2.298222,48.841888,0 2.297985,48.841805,0 2.297985,48.841805,0 2.296587,48.841354,0 2.295463,48.84256,0 2.295463,48.84256,0 2.295225,48.842834,0 2.295182,48.842857,0 2.295057,48.842892,0 2.295752,48.843609,0 2.294053,48.843548,0 2.294053,48.843548,0 2.29338,48.843525,0 2.292806,48.843761,0 2.291958,48.842758,0 2.291074,48.842396,0 2.291074,48.842396,0 2.290364,48.842094,0 2.290438,48.842037,0 2.290679,48.841812,0 2.290924,48.841572,0 2.291266,48.841167,0 2.29142,48.840996,0 2.29173,48.840744,0 2.29173,48.840744,0 2.292732,48.839935,0 2.293016,48.839684,0 2.293146,48.839531,0 2.294463,48.83865,0 2.294463,48.83865,0 2.294696,48.838505,0 2.294677,48.838455,0 2.294604,48.838146,0 2.294601,48.838058,0 2.296129,48.837368,0 2.296277,48.837296,0 2.296473,48.837215,0 2.296765,48.837364,0 2.297179,48.837593,0 2.297179,48.837593,0 2.297424,48.83773,0 2.298466,48.836994,0 2.297964,48.836697,0 2.297233,48.836147,0 2.297036,48.835934,0 2.297036,48.835934,0 2.296652,48.835514,0 2.296326,48.835182,0 2.296202,48.835037,0 2.294503,48.833271,0 2.294228,48.832996,0 2.292889,48.831577,0 2.292438,48.831123,0 2.292214,48.830879,0 2.292558,48.830753,0 2.29466,48.830086,0 2.295109,48.829933,0 2.295334,48.829842,0 2.29554,48.829777,0 2.295851,48.829693,0 2.296731,48.829483,0 2.297146,48.82943,0 2.29895,48.829021,0 2.299792,48.828846,0 2.300138,48.828766,0 2.300361,48.828693,0 2.300608,48.828636,0 2.301362,48.82848,0 2.301723,48.828419,0 2.302808,48.828167,0 2.30288,48.828178,0 2.302942,48.828209,0 2.303004,48.828342,0 2.303261,48.828457,0 2.303925,48.828724,0 2.304512,48.829113,0 2.305354,48.829792,0 2.305887,48.830208,0 2.306307,48.830677,0 2.305269,48.831264,0 2.305786,48.831512,0 2.305786,48.831512,0 2.305984,48.831604,0 2.305613,48.831726,0 2.305016,48.831867,0 2.304794,48.831909,0 2.303848,48.831982,0 2.30298,48.832127,0 2.302654,48.832207,0 2.301002,48.832634,0 2.300455,48.832817,0 2.299466,48.833206,0 2.298701,48.8335,0 2.295667,48.834484,0 2.293994,48.832748,0 2.293994,48.832748,0 2.292889,48.831577,0 2.292889,48.831577,0 2.292438,48.831123,0 2.292214,48.830879,0 2.292558,48.830753,0 2.293277,48.830521,0 2.293277,48.83017,0 2.293277,48.83017,0 2.293277,48.829098,0 2.292995,48.829159,0 2.292478,48.829506,0 2.292327,48.829563,0 2.292283,48.830338,0 2.292283,48.830509,0 2.292371,48.83075,0 2.292399,48.830811,0 2.292499,48.830944,0 2.29234,48.831013,0 2.291991,48.831135,0 2.291853,48.831188,0 2.288977,48.832432,0 2.288558,48.832592,0 2.288154,48.832764,0 2.288154,48.832764,0 2.287956,48.832848,0 2.287794,48.832935,0 2.287426,48.833103,0 2.287206,48.832951,0 2.287529,48.832497,0 2.287609,48.832363,0 2.287674,48.832329,0 2.287786,48.832283,0 2.288668,48.832294,0 2.288862,48.832275,0 2.289005,48.832253,0 2.289266,48.832165,0 2.292058,48.83094,0 2.292399,48.830811,0 2.292558,48.830753,0 2.293277,48.830521,0 2.29466,48.830086,0 2.295109,48.829933,0 2.295334,48.829842,0 2.29554,48.829777,0 2.295474,48.82967,0 2.295413,48.82962,0 2.295553,48.829624,0 2.295689,48.82954,0 2.295706,48.82951,0 2.295753,48.829105,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Brancion</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3006615910456203,48.827563757242615,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rue des Entrepreneurs</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2954999697750527,48.8426069714757,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Félix Faure</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.29413785355154,48.843579252925956,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Morillons</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.305786336695566,48.83143395740384,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fizeau</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.304521729866374,48.83023943335213,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alleray</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3070610133384744,48.836999478129506,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mairie du 15e</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3006490281203704,48.84068555490086,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dombasle</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2970334579325997,48.83599662559639,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Thureau - Dangin</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2932017231036412,48.83021803916765,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parc Georges Brassens</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2956686442223537,48.82911736350332,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Avenue Bartholomé</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.298040478540873,48.82798909702062,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Collège Modigliani</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.30620418239742,48.83176915106082,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Labrouste - Vouillé</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.308446579131206,48.83422843635315,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Volontaires - Vaugirard</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3085663647363917,48.84163094770569,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Procession</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.308150407798569,48.8380670417082,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Javel Félix Faure</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2910061612269454,48.84240954252611,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Croix Nivert</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2915732702528824,48.84078504398381,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Maison des Associations</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2939977967064213,48.83279495960067,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Petite Ceinture</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2928959123751986,48.83167322329033,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bargue</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3070522796325403,48.83868125070031,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Institut Pasteur</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.310167984502171,48.84003931936911,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Convention</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2987321616861367,48.837328674437124,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vaugirard</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3003039935528315,48.8389837284038,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Porte de Versailles</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2889541932682653,48.83301690715141,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chauvelot</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.303712923864595,48.828579872177606,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Paul Barruel</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.306187332781451,48.83712931931931,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pasteur - Docteur Roux</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.31234009252527,48.841670687612485,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place d'Alleray</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3055138395613826,48.8365498130451,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Médiathèque Yourcenar</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3013891837338893,48.837308247394844,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Square Saint-Lambert</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.297962946769046,48.84183900063703,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lecourbe</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.294423057986529,48.83861641671057,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Convention - Vaugirard</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2971490726774513,48.83752623833704,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

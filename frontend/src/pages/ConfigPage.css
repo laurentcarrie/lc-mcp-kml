@@ -30,6 +30,582 @@
   font-size: 14px;
 }
 
-.config-content {
-  padding: 24px;
+.config-bar-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.config-bar-actions .import-btn,
+.config-bar-actions .export-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #607d8b;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.config-bar-actions .visualize-btn {
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: none;
+  background: #43a047;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.config-bar-actions .visualize-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.config-split {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.config-editor {
+  flex: 0 0 50%;
+  max-width: 50%;
+  overflow-y: auto;
+  padding: 16px;
+  background: #f5f5f5;
+  border-right: 1px solid #ddd;
+}
+
+.toggle-editor-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  background: #455a64;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.toggle-editor-btn:hover {
+  background: #37474f;
+}
+
+.config-map {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.config-map .map-container {
+  flex: 1;
+}
+
+.error-bar {
+  background: #e53935;
+  color: white;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+/* Prompt bar */
+.prompt-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  align-items: flex-end;
+}
+
+.prompt-input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 2px solid #5c6bc0;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 40px;
+}
+
+.prompt-input:focus {
+  outline: none;
+  border-color: #3949ab;
+}
+
+.prompt-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: stretch;
+}
+
+.model-select {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 12px;
+  background: white;
+}
+
+.prompt-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #5c6bc0;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.prompt-btn:hover {
+  background: #3949ab;
+}
+
+.prompt-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* File-browser tree */
+.tree-list {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.tree-item + .tree-item {
+  border-top: 1px solid #eee;
+}
+
+.tree-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  cursor: grab;
+  user-select: none;
+  font-size: 13px;
+  min-height: 28px;
+}
+
+.tree-row:hover {
+  background: #e8eaf6;
+}
+
+.tree-toggle {
+  width: 14px;
+  text-align: center;
+  color: #888;
+  flex-shrink: 0;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.tree-label {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #222;
+  cursor: pointer;
+}
+
+.tree-type-hint {
+  font-size: 10px;
+  color: #aaa;
+  flex-shrink: 0;
+}
+
+.tree-eye {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 16px;
+  text-align: center;
+  color: #5c6bc0;
+}
+
+.tree-eye-off {
+  color: #ccc;
+}
+
+.tree-center {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 16px;
+  text-align: center;
+  color: #999;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.tree-row:hover .tree-center {
+  opacity: 1;
+}
+
+.tree-center:hover {
+  color: #5c6bc0;
+}
+
+.tree-color-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  flex-shrink: 0;
+}
+
+.tree-add-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.tree-add-btn {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+}
+
+.tree-add-btn:hover {
+  background: #e8eaf6;
+  color: #5c6bc0;
+  border-color: #5c6bc0;
+}
+
+.tree-add-menu {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 100;
+  min-width: 140px;
+  padding: 4px 0;
+}
+
+.tree-add-menu-item {
+  padding: 5px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #333;
+}
+
+.tree-add-menu-item:hover {
+  background: #e8eaf6;
+  color: #5c6bc0;
+}
+
+.tree-remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: #ccc;
+  padding: 0 2px;
+  line-height: 1;
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.tree-row:hover .tree-remove {
+  opacity: 1;
+}
+
+.tree-remove:hover {
+  color: #e53935;
+}
+
+.tree-hidden > .tree-row {
+  opacity: 0.4;
+}
+
+.tree-hidden > .tree-row .tree-label {
+  text-decoration: line-through;
+}
+
+.tree-drag-over > .tree-row {
+  background: #c5cae9;
+  outline: 2px dashed #5c6bc0;
+  outline-offset: -2px;
+}
+
+.tree-children {
+  border-top: 1px solid #eee;
+}
+
+.tree-children .tree-item + .tree-item {
+  border-top: 1px solid #f0f0f0;
+}
+
+.tree-add-folder {
+  padding: 4px 10px;
+  font-size: 12px;
+  color: #888;
+  cursor: pointer;
+  border-top: 1px solid #eee;
+}
+
+.tree-add-folder:hover {
+  background: #e8eaf6;
+  color: #5c6bc0;
+}
+
+.tree-detail {
+  padding: 8px 10px;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.add-btn.small {
+  padding: 2px 8px;
+  font-size: 11px;
+  border-radius: 4px;
+  border: 1px dashed #999;
+  background: white;
+  cursor: pointer;
+  color: #555;
+}
+
+.remove-btn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e57373;
+  color: white;
+}
+
+.remove-btn:hover {
+  background: #e53935;
+}
+
+.remove-btn.small {
+  width: 20px;
+  height: 20px;
+  font-size: 11px;
+}
+
+/* Fields */
+.field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.field label {
+  font-size: 12px;
+  color: #666;
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.field input[type="text"],
+.field input[type="number"],
+.field select {
+  flex: 1;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.browse-btn {
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #ff8f00;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.browse-btn:hover {
+  background: #e65100;
+}
+
+.field input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.field-hint {
+  font-size: 12px;
+  color: #e65100;
+  font-style: italic;
+}
+
+.sub-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+  margin-top: 4px;
+}
+
+.sub-editor {
+  padding: 4px 0;
+}
+
+/* Point editor */
+.point-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Neighbours */
+.neighbours-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.neighbours-editor > label {
+  font-size: 12px;
+  color: #666;
+}
+
+.neighbour-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.neighbour-row input {
+  flex: 1;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.neighbour-row span {
+  color: #999;
+}
+
+/* Center rows in UnionCircles */
+.center-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.center-row .point-editor {
+  flex: 1;
+}
+
+/* Pin mode */
+.pin-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  background: #455a64;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pin-btn:hover {
+  background: #37474f;
+}
+
+.pin-btn-active {
+  background: #e53935;
+}
+
+.map-crosshair {
+  cursor: crosshair !important;
+}
+
+.map-click-hint {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.point-creator {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  padding: 14px 18px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 280px;
+}
+
+.point-creator-title {
+  font-size: 12px;
+  color: #888;
+}
+
+.point-creator-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+/* Route tooltip on map */
+.route-tooltip {
+  background: rgba(0,0,0,0.7) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 2px 8px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+}
+
+.route-tooltip::before {
+  display: none !important;
 }

@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus CHOISYBUS - CHOISYBUS</name>
+    <description>Origami / Paris Seine Mobilités</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ff39B0DF</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ff39B0DF</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>CHOISYBUS</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.419391,48.755081,0 2.419718,48.755165,0 2.420086,48.754284,0 2.419169,48.75407,0 2.419169,48.75407,0 2.417972,48.753799,0 2.417687,48.754101,0 2.417573,48.754246,0 2.417356,48.754559,0 2.414851,48.758453,0 2.414851,48.758453,0 2.414741,48.758625,0 2.414727,48.758675,0 2.414781,48.758701,0 2.414879,48.758778,0 2.414919,48.758835,0 2.414883,48.759624,0 2.414916,48.759754,0 2.414976,48.759838,0 2.414999,48.759895,0 2.414541,48.760624,0 2.414148,48.761223,0 2.413639,48.762028,0 2.413486,48.762283,0 2.413486,48.762283,0 2.413356,48.762501,0 2.413179,48.762772,0 2.411331,48.76247,0 2.410918,48.762394,0 2.41041,48.76376,0 2.410246,48.764004,0 2.410246,48.764004,0 2.409976,48.764408,0 2.409796,48.764702,0 2.409282,48.76545,0 2.410554,48.765835,0 2.413073,48.766495,0 2.413453,48.766548,0 2.414306,48.766769,0 2.41479,48.766937,0 2.417454,48.767742,0 2.418486,48.768063,0 2.418609,48.768093,0 2.418751,48.767887,0 2.418751,48.767887,0 2.419691,48.766525,0 2.4198,48.766331,0 2.420982,48.764591,0 2.421206,48.764275,0 2.421206,48.764275,0 2.421565,48.763771,0 2.42168,48.763573,0 2.419015,48.762482,0 2.419842,48.76181,0 2.419842,48.76181,0 2.419994,48.761688,0 2.420527,48.761234,0 2.421754,48.76173,0 2.422124,48.76189,0 2.424752,48.762947,0 2.424752,48.762947,0 2.426004,48.763443,0 2.424578,48.764988,0 2.425066,48.765186,0 2.425095,48.765228,0 2.425076,48.765278,0 2.424111,48.766689,0 2.424111,48.766689,0 2.423571,48.767464,0 2.422475,48.76907,0 2.422475,48.76907,0 2.422228,48.769409,0 2.422285,48.771435,0 2.422292,48.771976,0 2.421995,48.77198,0 2.421995,48.77198,0 2.4207,48.771992,0 2.420646,48.77071,0 2.420606,48.768982,0 2.420618,48.768925,0 2.420638,48.768875,0 2.419868,48.768627,0 2.418367,48.768173,0 2.417338,48.767883,0 2.415003,48.767189,0 2.414659,48.767097,0 2.414393,48.76704,0 2.41338,48.766785,0 2.41327,48.766747,0 2.412992,48.766628,0 2.409752,48.765778,0 2.409598,48.766003,0 2.409598,48.766003,0 2.409338,48.766384,0 2.4093,48.766457,0 2.409299,48.766502,0 2.409355,48.766582,0 2.409405,48.766609,0 2.410211,48.76685,0 2.41054,48.766861,0 2.410591,48.766682,0 2.410621,48.766533,0 2.410647,48.766468,0 2.410652,48.766342,0 2.410644,48.766094,0 2.410694,48.764908,0 2.410679,48.764816,0 2.410648,48.764751,0 2.410583,48.764698,0 2.410348,48.764534,0 2.410278,48.764492,0 2.409976,48.764408,0 2.410246,48.764004,0 2.410246,48.764004,0 2.41041,48.76376,0 2.410918,48.762394,0 2.411331,48.76247,0 2.413179,48.762772,0 2.413356,48.762501,0 2.413639,48.762028,0 2.413639,48.762028,0 2.414148,48.761223,0 2.414541,48.760624,0 2.414999,48.759895,0 2.414976,48.759838,0 2.414916,48.759754,0 2.414883,48.759624,0 2.414919,48.758835,0 2.414879,48.758778,0 2.414817,48.758728,0 2.414817,48.758728,0 2.414781,48.758701,0 2.414727,48.758675,0 2.414741,48.758625,0 2.417356,48.754559,0 2.417573,48.754246,0 2.417687,48.754101,0 2.417972,48.753799,0 2.419169,48.75407,0 2.419169,48.75407,0 2.420086,48.754284,0 2.419718,48.755165,0 2.419391,48.755081,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Rue Pompadour</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.422570198715706,48.76904354355693,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Choisy le Roi - Charles Jules Vaillant</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4147937924954403,48.75876131168369,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Quartier du Port</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.413557130781738,48.76228098059857,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Choisy le Roi - Gare</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4102450844683383,48.76402753625674,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Choisy le Roi - Lycée Mirabeau</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4211405475878514,48.764224744302844,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parc Paysager des Gondoles</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4247607713163326,48.76287511781402,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CTM</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.419406190449079,48.755024229160675,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hugo-Mirabeau</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4186650017492215,48.767837373523705,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Choisy le Roi - Théophile Ducloux</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.419766489459163,48.76177165542708,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Choisy-le-Roi RER</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.409623405397191,48.76606614613054,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Prairie</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4192122657036275,48.754114865524365,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Choisy le Roi - Stade Jean Bouin</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.424160742959582,48.766703747018795,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Choisy le Roi - Collège Jules Valles</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.422006614023588,48.772017877063654,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gare de Choisy-le-Roi</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4101776726757036,48.76397323819522,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Choisy le Roi - Prairie</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.419158959377288,48.7540156693087,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

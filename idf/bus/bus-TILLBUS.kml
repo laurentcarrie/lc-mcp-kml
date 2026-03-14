@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus TILLBUS - TILLBUS</name>
+    <description>RATP</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ffCAA3C5</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ffCAA3C5</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>TILLBUS</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.415509,48.874958,0 2.415217,48.874847,0 2.414744,48.875179,0 2.41421,48.87553,0 2.414145,48.87558,0 2.41375,48.875992,0 2.413388,48.876324,0 2.413524,48.8764,0 2.413638,48.876438,0 2.414742,48.876186,0 2.414765,48.876259,0 2.414772,48.876301,0 2.414744,48.876343,0 2.414546,48.876583,0 2.414546,48.876583,0 2.413689,48.87759,0 2.413481,48.877865,0 2.413179,48.878532,0 2.413123,48.878696,0 2.413123,48.878696,0 2.41307,48.878857,0 2.413038,48.878979,0 2.412957,48.879078,0 2.412185,48.879551,0 2.412311,48.87965,0 2.412784,48.880058,0 2.41328,48.880531,0 2.413842,48.881126,0 2.414008,48.881321,0 2.415034,48.882339,0 2.415227,48.882496,0 2.415227,48.882496,0 2.416471,48.883507,0 2.416636,48.883617,0 2.417518,48.884148,0 2.417518,48.884148,0 2.417836,48.884342,0 2.418504,48.884712,0 2.418712,48.884872,0 2.418794,48.884975,0 2.42003,48.886456,0 2.420257,48.886749,0 2.420458,48.886662,0 2.420523,48.886646,0 2.420609,48.886639,0 2.420687,48.886646,0 2.420794,48.886677,0 2.420994,48.886768,0 2.421419,48.886978,0 2.421504,48.887054,0 2.421611,48.887215,0 2.421741,48.887314,0 2.42186,48.887383,0 2.421929,48.887405,0 2.422113,48.887402,0 2.422112,48.887291,0 2.422102,48.887253,0 2.422,48.887131,0 2.421901,48.886997,0 2.421732,48.886749,0 2.421454,48.886303,0 2.421271,48.886055,0 2.421016,48.88567,0 2.421016,48.88567,0 2.420782,48.885315,0 2.420266,48.884579,0 2.420233,48.884518,0 2.420226,48.884491,0 2.42023,48.884415,0 2.42024,48.884396,0 2.420646,48.884186,0 2.420646,48.884186,0 2.420736,48.884151,0 2.420728,48.883278,0 2.420749,48.88311,0 2.420809,48.882965,0 2.420888,48.882813,0 2.421001,48.882553,0 2.421,48.8825,0 2.421054,48.88242,0 2.421104,48.88232,0 2.421104,48.88232,0 2.4215,48.881523,0 2.421554,48.881447,0 2.421618,48.881332,0 2.421902,48.880623,0 2.421923,48.880482,0 2.419914,48.880199,0 2.419914,48.880199,0 2.419136,48.880089,0 2.418336,48.87999,0 2.417161,48.879807,0 2.41674,48.879753,0 2.41674,48.879753,0 2.416337,48.8797,0 2.416143,48.879753,0 2.416657,48.879925,0 2.419722,48.880875,0 2.419722,48.880875,0 2.423245,48.881973,0 2.423245,48.881973,0 2.424353,48.882313,0 2.42596,48.882874,0 2.42596,48.882874,0 2.426896,48.883202,0 2.428216,48.882832,0 2.428025,48.882149,0 2.427842,48.881413,0 2.428758,48.881542,0 2.428759,48.881466,0 2.428427,48.880222,0 2.427872,48.880074,0 2.427872,48.880074,0 2.426315,48.879654,0 2.42608,48.879585,0 2.425474,48.879356,0 2.423673,48.878647,0 2.423673,48.878647,0 2.423184,48.878452,0 2.423159,48.878498,0 2.42363,48.880676,0 2.42363,48.880676,0 2.423642,48.880733,0 2.421923,48.880482,0 2.422049,48.879475,0 2.422101,48.87933,0 2.42253,48.878296,0 2.422305,48.878304,0 2.421525,48.87825,0 2.421392,48.878258,0 2.420492,48.878193,0 2.420369,48.878162,0 2.419816,48.878086,0 2.419688,48.878086,0 2.419318,48.878029,0 2.419318,48.878029,0 2.419114,48.877991,0 2.418312,48.877865,0 2.418052,48.877834,0 2.417698,48.877773,0 2.416791,48.87756,0 2.416036,48.877296,0 2.415553,48.87714,0 2.415553,48.87714,0 2.414444,48.876705,0 2.414546,48.876583,0 2.414546,48.876583,0 2.414744,48.876343,0 2.414772,48.876301,0 2.414765,48.876259,0 2.414742,48.876186,0 2.414968,48.876137,0 2.414975,48.876087,0 2.414997,48.876038,0 2.41578,48.875122,0 2.415809,48.875076,0 2.415509,48.874958,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Place du Vel'd'Hiv</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4154788052350327,48.87496421877405,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rue du Président Schuman</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4209760535451252,48.885755864516426,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Paul de Kock</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4197081668273204,48.88083042695212,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Commissariat</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4152586751623932,48.88242756273459,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Passage Ronsard</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.415522348405778,48.877158795910056,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Les Bruyères</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4131872666094987,48.87868522396877,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mairie des Lilas</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.416815429746249,48.879791138949386,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Les Sablons</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4236761026061377,48.88206368222941,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hortensias</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4210147486723153,48.88227567253157,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Les Primevères</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4144796182509993,48.87652416994589,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rue Marcelle</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4174767482450013,48.88405715803013,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Centre de Santé B. Lafay</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4205849811241835,48.88413519298188,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Maréchal Juin</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4198512270765424,48.88022857205887,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gagarine</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.425999586682304,48.88281228981714,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Floréal</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.427978779965028,48.88015076927145,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Croix de l'Épinette</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4236178810512086,48.87869992450502,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sentes-Croix de l'Épinette</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4236643578526196,48.88066067913644,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rue du Centre</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4193027366610367,48.878058535055914,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

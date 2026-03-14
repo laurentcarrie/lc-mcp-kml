@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus 5427 - 5427</name>
+    <description>RD Mantois</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ff5B8B00</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ff5B8B00</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>5427</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>1.704154,48.989544,0 1.705941,48.988678,0 1.706426,48.988453,0 1.706972,48.988182,0 1.707409,48.987907,0 1.707634,48.987778,0 1.709859,48.989239,0 1.709859,48.989239,0 1.711042,48.990036,0 1.711127,48.990074,0 1.711221,48.990059,0 1.71129,48.990055,0 1.711357,48.990009,0 1.711493,48.98967,0 1.711497,48.989563,0 1.711509,48.989487,0 1.711533,48.98941,0 1.711592,48.989285,0 1.711762,48.989029,0 1.711762,48.989029,0 1.71186,48.988903,0 1.711979,48.988766,0 1.712121,48.988628,0 1.712537,48.988327,0 1.714633,48.986935,0 1.71485,48.986797,0 1.715441,48.986565,0 1.716174,48.986309,0 1.716174,48.986309,0 1.716881,48.986057,0 1.717082,48.986008,0 1.716825,48.984955,0 1.716711,48.984428,0 1.716711,48.984428,0 1.716639,48.984097,0 1.716494,48.983559,0 1.716491,48.98344,0 1.718054,48.982887,0 1.718479,48.982754,0 1.718832,48.982655,0 1.719834,48.98241,0 1.720125,48.982361,0 1.720282,48.982357,0 1.720472,48.98238,0 1.720505,48.982388,0 1.721034,48.98288,0 1.721414,48.983189,0 1.722354,48.98378,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>5427</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>1.722354,48.98378,0 1.722575,48.983917,0 1.723089,48.984386,0 1.722616,48.984791,0 1.7224,48.984985,0 1.722192,48.985146,0 1.722067,48.985062,0 1.722067,48.985062,0 1.7206,48.984116,0 1.719813,48.983585,0 1.719685,48.983528,0 1.719459,48.98365,0 1.718382,48.984173,0 1.716825,48.984955,0 1.716875,48.985161,0 1.716875,48.985161,0 1.71697,48.985531,0 1.717082,48.986008,0 1.716881,48.986057,0 1.716174,48.986309,0 1.716174,48.986309,0 1.715441,48.986565,0 1.71485,48.986797,0 1.714633,48.986935,0 1.712537,48.988327,0 1.712121,48.988628,0 1.711979,48.988766,0 1.71186,48.988903,0 1.711762,48.989029,0 1.711762,48.989029,0 1.711592,48.989285,0 1.711533,48.98941,0 1.711509,48.989487,0 1.711497,48.989563,0 1.711493,48.98967,0 1.711357,48.990009,0 1.711361,48.990063,0 1.711393,48.990143,0 1.711075,48.990231,0 1.710939,48.99017,0 1.71085,48.990143,0 1.707282,48.989971,0 1.707031,48.98996,0 1.706943,48.989941,0 1.704352,48.989803,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Duhamel</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>1.7162096834422471,48.986228516652595,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Normandie</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>1.711756510482529,48.988923742434004,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gare Routière Mantes-la-Jolie - Quai 9</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>1.7041036912264258,48.9894798499141,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mantes-la-Jolie Division Leclerc</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>1.7099724495908335,48.98922833154863,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Coteau</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>1.7224194957803407,48.983758691486784,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mantes-la-Jolie Victor Hugo</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>1.7169737967996528,48.9851664852702,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gare de Mantes-la-Jolie - Quai 13</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>1.7044221604790102,48.989861008711934,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Bonaventure</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>1.7235357990951332,48.985596219534564,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

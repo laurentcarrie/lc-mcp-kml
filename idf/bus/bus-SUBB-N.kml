@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus SUBB N - SUBB Boucle Nord</name>
+    <description>Origami / Mobicité</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ff38658E</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ff38658E</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>SUBB N</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.239727,48.835648,0 2.240636,48.835293,0 2.241284,48.835011,0 2.241987,48.834599,0 2.242883,48.834023,0 2.243117,48.833862,0 2.243353,48.833714,0 2.243328,48.833679,0 2.243317,48.833641,0 2.243319,48.833603,0 2.243335,48.833565,0 2.243365,48.83353,0 2.243406,48.833504,0 2.243487,48.833473,0 2.243558,48.833466,0 2.243663,48.833481,0 2.243716,48.8335,0 2.243759,48.833527,0 2.243787,48.833557,0 2.243804,48.833591,0 2.243811,48.83363,0 2.243804,48.833668,0 2.24378,48.833706,0 2.243743,48.83374,0 2.243656,48.833778,0 2.243886,48.834164,0 2.243886,48.834164,0 2.244489,48.835178,0 2.244595,48.835327,0 2.245011,48.836037,0 2.245152,48.836292,0 2.24551,48.836876,0 2.245605,48.837051,0 2.245926,48.837589,0 2.245926,48.837589,0 2.247123,48.839592,0 2.247123,48.839592,0 2.247664,48.840508,0 2.247541,48.840591,0 2.247403,48.840874,0 2.247403,48.840874,0 2.24727,48.841152,0 2.247204,48.841305,0 2.246235,48.843327,0 2.246294,48.843342,0 2.246336,48.843372,0 2.246325,48.843449,0 2.246291,48.843483,0 2.246248,48.843498,0 2.2462,48.843498,0 2.246139,48.843491,0 2.246048,48.843689,0 2.246048,48.843689,0 2.245496,48.844841,0 2.245449,48.844913,0 2.24463,48.845634,0 2.244006,48.846165,0 2.243616,48.846523,0 2.242782,48.847233,0 2.242782,48.847233,0 2.242556,48.847424,0 2.242659,48.847584,0 2.242479,48.847626,0 2.242373,48.847713,0 2.242248,48.847836,0 2.242341,48.847855,0 2.242454,48.847893,0 2.24261,48.847973,0 2.242713,48.848042,0 2.242753,48.848083,0 2.242793,48.848148,0 2.242805,48.848202,0 2.242795,48.848267,0 2.242765,48.848316,0 2.242733,48.848347,0 2.242667,48.848389,0 2.242619,48.848408,0 2.242486,48.848438,0 2.242369,48.848442,0 2.242276,48.848438,0 2.242167,48.848419,0 2.24206,48.848381,0 2.241907,48.848297,0 2.241722,48.848316,0 2.241655,48.848339,0 2.240864,48.849026,0 2.240231,48.84914,0 2.240231,48.84914,0 2.237686,48.849602,0 2.237585,48.849609,0 2.237476,48.849201,0 2.237476,48.849201,0 2.236861,48.846901,0 2.236861,48.846901,0 2.236835,48.84679,0 2.236845,48.846722,0 2.237023,48.845871,0 2.236418,48.845619,0 2.236418,48.845619,0 2.234433,48.844734,0 2.234344,48.844826,0 2.23433,48.84491,0 2.234324,48.846199,0 2.234681,48.84671,0 2.234699,48.846783,0 2.234709,48.846912,0 2.234464,48.846924,0 2.234176,48.846962,0 2.233793,48.847069,0 2.233449,48.847233,0 2.233262,48.847332,0 2.233187,48.847355,0 2.233187,48.847355,0 2.233031,48.847397,0 2.232877,48.847427,0 2.232662,48.846123,0 2.232598,48.846031,0 2.232598,48.846031,0 2.232058,48.845333,0 2.231778,48.84478,0 2.231669,48.844532,0 2.231669,48.844532,0 2.231202,48.843468,0 2.231113,48.843307,0 2.23098,48.843006,0 2.23098,48.843006,0 2.230867,48.842743,0 2.230835,48.842525,0 2.230857,48.842396,0 2.230892,48.842327,0 2.231408,48.841122,0 2.231408,48.841122,0 2.231589,48.840622,0 2.231617,48.84045,0 2.231615,48.84034,0 2.231849,48.839539,0 2.231849,48.839539,0 2.231926,48.839256,0 2.232025,48.839031,0 2.232101,48.838818,0 2.232154,48.838539,0 2.232194,48.838242,0 2.232318,48.836483,0 2.232358,48.836113,0 2.232358,48.836113,0 2.232404,48.835629,0 2.236625,48.836155,0 2.236821,48.836185,0 2.236821,48.836185,0 2.237971,48.83633,0 2.238139,48.8363,0 2.238247,48.836311,0 2.239778,48.836498,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Victor Hugo - Gallieni</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2460432023444765,48.83756578250815,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint-Denis - Anna Jacquin</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2315659542372797,48.844578724367985,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gambetta - Porte de Boulogne</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2428370147987753,48.84724977279077,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parchamp</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.23680474886761,48.846941632718796,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rue De Silly - Rue De Paris</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.231318728666614,48.8410156124104,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gallieni - Billancourt</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.237112344942298,48.836169081715845,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hôtel de ville de Boulogne-Billancourt</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.239736332670162,48.83561018606876,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rond-Point André Malraux</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2474810074709852,48.84083957073222,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hôpital Ambroise Paré</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2373846101417816,48.849220735809354,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dispensaire Saint-Denis</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.232525637343863,48.846032874615005,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Marcel Sembat</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.243940428251212,48.83412587629724,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Avenue Victor Hugo - Reine</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2471862276706815,48.83955160969626,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parc Edmond de Rothschild</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2332690808123803,48.84736871110753,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint-Denis - Jean-Baptiste Clément</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2309215502870967,48.843000679065845,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Square des Frères Farman</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.232262736456764,48.83612905861028,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place Denfert Rochereau</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2460909842081147,48.84368183229997,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alsace-Lorraine</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2402608068466927,48.84916708488396,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Eglise</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.236372890688027,48.84572472581672,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Silly - Morizet</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.2317226074326286,48.83949826042087,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hôtel De Ville - Les Passages</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.239316232918272,48.83638997506243,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus 3111 - 3111</name>
+    <description>Keolis Portes et Val de Brie</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ff3C6400</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ff3C6400</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>3111</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.727617,48.745155,0 2.727195,48.745468,0 2.72578,48.744648,0 2.725696,48.744568,0 2.725295,48.743816,0 2.725158,48.74353,0 2.724893,48.743023,0 2.724626,48.742134,0 2.724524,48.742004,0 2.723583,48.741096,0 2.723425,48.740871,0 2.723365,48.740654,0 2.723385,48.740421,0 2.723738,48.739769,0 2.72297,48.739601,0 2.72297,48.739601,0 2.716945,48.738274,0 2.716945,48.738274,0 2.714099,48.737644,0 2.714099,48.737644,0 2.712953,48.737385,0 2.717639,48.73632,0 2.717639,48.73632,0 2.71791,48.736256,0 2.718786,48.736797,0 2.719152,48.736042,0 2.72246,48.738182,0 2.72246,48.738182,0 2.723981,48.739166,0 2.726943,48.737495,0 2.726943,48.737495,0 2.7271,48.737408,0 2.729384,48.738827,0 2.729384,48.738827,0 2.729633,48.738976,0 2.728174,48.740025,0 2.727974,48.740181,0 2.72774,48.740643,0 2.728264,48.740761,0 2.728264,48.740761,0 2.731363,48.741447,0 2.731363,48.741447,0 2.731691,48.741524,0 2.731696,48.741581,0 2.731689,48.741638,0 2.731659,48.741718,0 2.731365,48.742302,0 2.73119,48.742588,0 2.731144,48.742645,0 2.731093,48.742691,0 2.730703,48.742908,0 2.729669,48.743935,0 2.729459,48.744064,0 2.729276,48.744156,0 2.728529,48.744453,0 2.727617,48.745155,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Gare de Gretz-Armainvilliers</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.7276232953149004,48.745161143982074,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alfred de Vigny</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.7288016889560986,48.74084662781492,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Avenue des Fresnes</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.722397797284927,48.73807968567945,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Victor Hugo</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.723327329289227,48.73972778175131,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stade Laumondé</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.7176213757110355,48.73621567516452,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pierre et Marie Curie</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.7269426744750946,48.73747856172913,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Singe Vert</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.7313689034485313,48.741419065057684,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place Clément Ader</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.717215414210702,48.73836433103428,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ombrages Parc</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.7141051854172535,48.73768235749176,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cité des Troènes</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.7295462117410048,48.73887858961023,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

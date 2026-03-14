@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus 4162 - 4162</name>
+    <description>Keolis Val d'Yerres Val de Seine</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ff6E00A0</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ff6E00A0</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>4162</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.406946,48.675838,0 2.407043,48.675735,0 2.407276,48.675465,0 2.407405,48.675301,0 2.407689,48.674858,0 2.407865,48.674652,0 2.408401,48.674171,0 2.409072,48.673546,0 2.40928,48.67337,0 2.409378,48.673313,0 2.409619,48.673138,0 2.409694,48.673054,0 2.410154,48.672733,0 2.410217,48.672676,0 2.411083,48.67308,0 2.411144,48.673119,0 2.41166,48.673717,0 2.412024,48.674122,0 2.412092,48.673935,0 2.4124,48.673306,0 2.41254,48.673103,0 2.413119,48.672367,0 2.413235,48.672203,0 2.413442,48.671841,0 2.413536,48.671612,0 2.413568,48.671551,0 2.413568,48.671551,0 2.413653,48.671387,0 2.413745,48.671265,0 2.414174,48.670456,0 2.415406,48.668617,0 2.415907,48.66819,0 2.416251,48.667816,0 2.416251,48.667816,0 2.416642,48.667389,0 2.416903,48.667202,0 2.417301,48.666939,0 2.41749,48.666805,0 2.418072,48.666325,0 2.418231,48.666161,0 2.418432,48.665897,0 2.418702,48.665474,0 2.418846,48.665287,0 2.419178,48.664959,0 2.419351,48.664837,0 2.41956,48.664715,0 2.41982,48.664604,0 2.420773,48.664349,0 2.4209,48.664299,0 2.422199,48.66367,0 2.422199,48.66367,0 2.423342,48.663109,0 2.423886,48.662968,0 2.424191,48.662849,0 2.424632,48.662617,0 2.425988,48.66193,0 2.426252,48.662148,0 2.426408,48.662254,0 2.426618,48.662327,0 2.426618,48.662327,0 2.427665,48.66272,0 2.428096,48.662865,0 2.428449,48.663055,0 2.429117,48.663525,0 2.429595,48.663845,0 2.429595,48.663845,0 2.431747,48.665329,0 2.431747,48.665329,0 2.432899,48.666107,0 2.434285,48.667019,0 2.43588,48.668106,0 2.435956,48.668171,0 2.436028,48.668125,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>HLM Pont de Ris</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.421980959348148,48.663750418238294,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parc de Champrosay</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4267221581027645,48.6623161309296,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hôtel de la Forêt</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.413667355771349,48.67131053701577,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Louis Camatte</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4300851148234726,48.66397833461455,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Centre Aéré</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4317681370849153,48.66529963127419,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Collège Delacroix</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4067838801836023,48.67591785162474,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>La Coulette</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.416274169244521,48.66772536104637,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ermitage</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.435948421244331,48.66801796239942,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

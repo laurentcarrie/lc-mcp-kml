@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus 2117 - 2117</name>
+    <description>Keolis Roissy Pays de France Est</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ffE6C882</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ffE6C882</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>2117</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.601333,48.95142,0 2.601167,48.951252,0 2.601092,48.951096,0 2.600737,48.950134,0 2.600442,48.949371,0 2.60181,48.949532,0 2.60181,48.949532,0 2.602088,48.949562,0 2.602266,48.94883,0 2.602521,48.947865,0 2.602521,48.947865,0 2.60336,48.944584,0 2.60336,48.944584,0 2.604088,48.941723,0 2.604021,48.941711,0 2.603962,48.941689,0 2.603917,48.94165,0 2.603887,48.941612,0 2.603877,48.941566,0 2.603884,48.941525,0 2.603907,48.941486,0 2.603944,48.941452,0 2.604007,48.941422,0 2.604081,48.941402,0 2.60416,48.941402,0 2.604203,48.941246,0 2.604203,48.941246,0 2.604602,48.939705,0 2.604831,48.938782,0 2.605625,48.938869,0 2.605625,48.938869,0 2.60651,48.938965,0 2.607202,48.93903,0 2.607576,48.939072,0 2.607721,48.939102,0 2.60917,48.939255,0 2.60917,48.939255,0 2.609491,48.93927,0 2.610362,48.939262,0 2.610891,48.939266,0 2.611041,48.939278,0 2.611775,48.939278,0 2.611979,48.939259,0 2.611979,48.939259,0 2.612664,48.939259,0 2.613958,48.939205,0 2.614158,48.939213,0 2.614322,48.939232,0 2.614824,48.939327,0 2.614824,48.939327,0 2.615074,48.939377,0 2.615479,48.939499,0 2.615436,48.939568,0 2.615204,48.94059,0 2.615204,48.94059,0 2.614954,48.941284,0 2.614754,48.94178,0 2.614721,48.941898,0 2.614775,48.941925,0 2.614791,48.941944,0 2.614799,48.941967,0 2.614796,48.941986,0 2.614784,48.942009,0 2.614763,48.942024,0 2.614705,48.942043,0 2.614674,48.942043,0 2.614617,48.942028,0 2.614302,48.942039,0 2.613431,48.942856,0 2.613431,48.942856,0 2.6133,48.942974,0 2.611816,48.944443,0 2.611064,48.945168,0 2.609581,48.94664,0 2.609581,48.94664,0 2.607568,48.948605,0 2.607091,48.949043,0 2.606901,48.949211,0 2.606695,48.94936,0 2.606695,48.94936,0 2.606052,48.949821,0 2.605107,48.950378,0 2.604669,48.950588,0 2.604669,48.950588,0 2.604264,48.950779,0 2.603919,48.950924,0 2.603293,48.951164,0 2.602552,48.951393,0 2.602231,48.951466,0 2.60233,48.951633,0 2.601802,48.951611,0 2.601538,48.951584,0 2.601474,48.951557,0 2.601333,48.95142,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Place Jacques Chirac - Gare</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.601922832285636,48.95165609197668,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Montesquieu</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6042018186494893,48.941052388605925,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Couronne</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.609130234130797,48.939189100553435,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kléber</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6046889238597433,48.95060412415174,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Centre Ville</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6151898494382153,48.93936158249784,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Buffon</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6134711432127817,48.942863175046625,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cèdres</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6056520609451086,48.93882699470217,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balzac</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6119822803722483,48.9393152713948,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Aristide Briand</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.606675139678294,48.94939216605055,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place Wathlingen</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.601816612020708,48.94947954221475,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Denis</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6024712261753993,48.94779111229043,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grillons</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6034100857483105,48.94462883183674,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Piétrasanta</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6152765897094086,48.94055338451215,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Anatole France</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.6095928617395905,48.94666346648047,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

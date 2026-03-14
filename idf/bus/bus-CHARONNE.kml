@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bus CHARONNE - La Traverse de Charonne</name>
+    <description>RATP</description>
+    <Style id="line_style">
+      <LineStyle>
+        <color>ffB46E21</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="stop_style">
+      <IconStyle>
+        <color>ffB46E21</color>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/bus.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Tracé</name>
+      <Placemark>
+        <name>CHARONNE</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.406742,48.847481,0 2.406401,48.847511,0 2.406455,48.847843,0 2.40642,48.847984,0 2.406575,48.848843,0 2.406571,48.848953,0 2.404321,48.848915,0 2.404321,48.848915,0 2.402769,48.848877,0 2.402333,48.849854,0 2.402266,48.849945,0 2.402165,48.85014,0 2.402165,48.85014,0 2.401798,48.850918,0 2.401373,48.851852,0 2.401057,48.852432,0 2.401057,48.852432,0 2.400749,48.853004,0 2.39992,48.854031,0 2.400307,48.854328,0 2.400307,48.854328,0 2.401467,48.855244,0 2.402,48.855656,0 2.402,48.855656,0 2.402399,48.855965,0 2.403018,48.856461,0 2.402249,48.856564,0 2.402484,48.85672,0 2.402484,48.85672,0 2.404171,48.857811,0 2.404171,48.857811,0 2.404552,48.858063,0 2.404626,48.85812,0 2.405701,48.858826,0 2.405701,48.858826,0 2.405875,48.85894,0 2.405948,48.858875,0 2.406116,48.858971,0 2.406721,48.859268,0 2.407283,48.85957,0 2.407201,48.859764,0 2.407201,48.859764,0 2.407035,48.860149,0 2.406941,48.860332,0 2.4068,48.860477,0 2.40642,48.861156,0 2.406375,48.861217,0 2.406375,48.861217,0 2.405964,48.861717,0 2.405915,48.861752,0 2.405807,48.86179,0 2.406135,48.862141,0 2.406135,48.862141,0 2.406271,48.862278,0 2.40633,48.86235,0 2.405956,48.862484,0 2.40538,48.862659,0 2.404976,48.862801,0 2.404541,48.863022,0 2.404214,48.863277,0 2.404113,48.863369,0 2.404113,48.863369,0 2.403997,48.863487,0 2.403982,48.863529,0 2.403989,48.863564,0 2.404136,48.863907,0 2.404287,48.864285,0 2.4043,48.864311,0 2.404346,48.864365,0 2.404333,48.864437,0 2.404289,48.864525,0 2.404234,48.864601,0 2.404158,48.864689,0 2.403701,48.865295,0 2.403701,48.865295,0 2.403193,48.865974,0 2.402253,48.867249,0 2.401676,48.868011,0 2.401498,48.868233,0 2.401421,48.868305,0 2.401162,48.868004,0 2.401162,48.868004,0 2.400437,48.867168,0 2.399963,48.866596,0 2.399885,48.86652,0 2.399955,48.866463,0 2.40011,48.866287,0 2.400441,48.865887,0 2.400441,48.865887,0 2.401304,48.864807,0 2.399859,48.864868,0 2.399854,48.864773,0 2.399884,48.864704,0 2.400014,48.864613,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>CHARONNE</name>
+        <styleUrl>#line_style</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>2.400014,48.864613,0 2.400452,48.864307,0 2.400452,48.864216,0 2.400525,48.863937,0 2.400526,48.863911,0 2.402142,48.863293,0 2.402277,48.863232,0 2.402647,48.863026,0 2.402707,48.862999,0 2.402825,48.862919,0 2.403212,48.862617,0 2.403255,48.862663,0 2.404035,48.863316,0 2.404113,48.863369,0 2.404113,48.863369,0 2.404214,48.863277,0 2.404541,48.863022,0 2.404976,48.862801,0 2.40538,48.862659,0 2.405956,48.862484,0 2.40633,48.86235,0 2.406271,48.862278,0 2.405953,48.861954,0 2.405953,48.861954,0 2.405726,48.861698,0 2.404863,48.860855,0 2.404219,48.86026,0 2.404163,48.860222,0 2.403937,48.8601,0 2.403475,48.859867,0 2.403475,48.859867,0 2.402761,48.859486,0 2.402265,48.859234,0 2.402124,48.859146,0 2.403375,48.858109,0 2.403893,48.857632,0 2.404552,48.858063,0 2.404626,48.85812,0 2.404639,48.858078,0 2.404763,48.857983,0 2.404763,48.857983,0 2.405274,48.857597,0 2.405482,48.856956,0 2.405774,48.856239,0 2.405887,48.856098,0 2.406195,48.85606,0 2.406195,48.85606,0 2.406761,48.855988,0 2.407367,48.8559,0 2.408128,48.855804,0 2.40824,48.855751,0 2.408398,48.855694,0 2.409393,48.85556,0 2.409393,48.85556,0 2.409715,48.855515,0 2.409887,48.85574,0 2.41008,48.855812,0 2.410223,48.855824,0 2.410249,48.855835,0 2.410299,48.855892,0 2.410234,48.856247,0 2.410368,48.856308,0 2.411184,48.856983,0 2.411251,48.857029,0 2.411326,48.857056,0 2.411376,48.857063,0 2.411466,48.857059,0 2.411484,48.856983,0 2.411578,48.856808,0 2.411578,48.856808,0 2.411871,48.856239,0 2.412111,48.855442,0 2.412118,48.855373,0 2.412116,48.855259,0 2.412073,48.854668,0 2.412001,48.85379,0 2.412038,48.853703,0 2.412086,48.853619,0 2.412236,48.853424,0 2.412231,48.853382,0 2.411815,48.852982,0 2.411815,48.852982,0 2.411622,48.852779,0 2.411639,48.852726,0 2.411802,48.851871,0 2.411853,48.851517,0 2.411853,48.851517,0 2.411884,48.851303,0 2.412662,48.851036,0 2.412863,48.849979,0 2.413034,48.849163,0 2.413062,48.849106,0 2.412949,48.849091,0 2.412601,48.849079,0 2.412601,48.849079,0 2.411512,48.849052,0 2.411445,48.848965,0 2.411403,48.848873,0 2.411423,48.848736,0 2.411305,48.847935,0 2.41128,48.847729,0 2.411281,48.847527,0 2.41124,48.847271,0 2.411103,48.847149,0 2.41108,48.847137,0 2.410796,48.847122,0 2.410297,48.847168,0 2.410297,48.847168,0 2.406742,48.847481,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Arrêts</name>
+      <Placemark>
+        <name>Orteaux - Vitruve</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4024908134138596,48.85667948234124,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Debrousse - Centre de Santé</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.406377398193455,48.86126749554318,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gambetta - Mairie du 20e</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.3999742225341105,48.86454513992131,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vignoles</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4003239526262536,48.854294364912384,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Orteaux - Maraichers</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.406178499856704,48.855996348902664,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stade Déjérine</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4114853160058405,48.85675103680704,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Schubert - Paganini</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.411776292096137,48.85150027601112,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pyrénées - Docteur Netter</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4067379083577136,48.84756321894933,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plaine</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4022117919697843,48.85011283912272,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Albert Marquet</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.404154570570318,48.8577849805069,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pelleport</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4037546619980206,48.86533746575371,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pelleport - Gambetta</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.401106026091062,48.86806722397118,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hôpital Tenon</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.400533562950848,48.86569010456885,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pelleport - Bagnolet</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4059189020420413,48.86202966128704,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Porte de Montreuil</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4118532085876727,48.8531374698762,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hilsz - Lagny</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4127435238247217,48.84911275390864,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Buzenval</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.401081150655927,48.85244549758593,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place de la Réunion</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.402052735544217,48.85566103193699,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Place des Grès</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4056157064228136,48.858736559269005,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Eglise Saint-Germain de Charonne</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4034215733028086,48.85990378208446,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Porte de Vincennes</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4103665238018355,48.84722141578465,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Square Sarah Bernhardt</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.404296528237655,48.848945085491216,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vitruve - Balkans</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4072943502533786,48.85974315721408,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Indre</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.404186212248783,48.86336106641748,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hôpital de la Croix Saint-Simon</name>
+        <styleUrl>#stop_style</styleUrl>
+        <Point>
+          <coordinates>2.4093460796368085,48.85549939856924,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

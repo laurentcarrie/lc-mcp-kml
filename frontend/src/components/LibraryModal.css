@@ -147,3 +147,35 @@
   flex-shrink: 0;
   margin-left: 12px;
 }
+
+.library-section-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 8px 8px 4px;
+}
+
+.library-tree-section {
+  margin-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+
+.library-file-used {
+  padding-left: 12px;
+}
+
+.library-file-used .file-name {
+  color: #5c6bc0;
+}
+
+.library-file-mappoint {
+  padding-left: 12px;
+}
+
+.library-file-mappoint .file-name {
+  color: #e65100;
+  font-weight: 500;
+}
