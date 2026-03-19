@@ -46,6 +46,8 @@ jobs:
           RT_ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           RT_GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           RT_ORS_API_KEY: ${{ secrets.ORS_API_KEY }}
+          RT_S3_BUCKET: ${{ secrets.S3_BUCKET }}
+          RT_S3_REGION: ${{ secrets.S3_REGION }}
         run: |
           SERVICE_ARN=$(aws apprunner list-services --query "ServiceSummaryList[?ServiceName=='${APP_RUNNER_SERVICE}'].ServiceArn" --output text)
           IMAGE_CONFIG=$(cat <<ENDJSON
@@ -64,7 +66,9 @@ jobs:
                   "AWS_DEFAULT_REGION": "eu-west-3",
                   "ANTHROPIC_API_KEY": "${RT_ANTHROPIC_API_KEY}",
                   "GOOGLE_API_KEY": "${RT_GOOGLE_API_KEY}",
-                  "ORS_API_KEY": "${RT_ORS_API_KEY}"
+                  "ORS_API_KEY": "${RT_ORS_API_KEY}",
+                  "S3_BUCKET": "${RT_S3_BUCKET}",
+                  "S3_REGION": "${RT_S3_REGION}"
                 }
               }
             },

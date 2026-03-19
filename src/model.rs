@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-#[derive(Deserialize, Serialize, Default)]
+#[derive(Deserialize, Serialize, Clone, Default)]
 pub struct PointDefinition {
     #[serde(default)]
     pub kml: String,
@@ -13,7 +13,7 @@ pub struct PointDefinition {
     pub lng: Option<f64>,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, Clone)]
 pub struct ConcentricCircles {
     pub center: PointDefinition,
     pub name: String,
@@ -23,7 +23,7 @@ pub struct ConcentricCircles {
     pub colors: Option<Vec<String>>,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, Clone)]
 pub struct UnionCircles {
     pub name: String,
     pub centers: Vec<PointDefinition>,
@@ -33,7 +33,7 @@ pub struct UnionCircles {
     pub color: Option<String>,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, Clone)]
 pub struct Segments {
     pub name: String,
     pub kml: String,
@@ -41,22 +41,29 @@ pub struct Segments {
     pub color: Option<String>,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, Clone)]
 pub struct TriangleBisect {
     pub point1: PointDefinition,
     pub point2: PointDefinition,
     pub radius_factor: f64,
 }
 
-#[derive(Deserialize, Serialize)]
+fn default_alpha() -> f64 { 1.0 }
+
+#[derive(Deserialize, Serialize, Clone)]
 pub struct RawKml {
     pub path: String,
     pub color: Option<String>,
-    #[serde(default)]
+    #[serde(default = "default_alpha", deserialize_with = "deserialize_alpha")]
     pub alpha: f64,
 }
 
-#[derive(Deserialize, Serialize)]
+fn deserialize_alpha<'de, D: serde::Deserializer<'de>>(deserializer: D) -> Result<f64, D::Error> {
+    let v: Option<f64> = Option::deserialize(deserializer)?;
+    Ok(v.unwrap_or(1.0))
+}
+
+#[derive(Deserialize, Serialize, Clone)]
 pub struct Route {
     pub name: String,
     pub from: PointDefinition,
@@ -68,7 +75,17 @@ pub struct Route {
 
 fn default_route_mode() -> String { "foot".to_string() }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, Clone)]
+pub struct BulkRawKml {
+    pub prefix: String,
+    pub color: Option<String>,
+    #[serde(default = "default_alpha", deserialize_with = "deserialize_alpha")]
+    pub alpha: f64,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub filter_commune: Option<String>,
+}
+
+#[derive(Deserialize, Serialize, Clone)]
 pub enum EChoice {
     ConcentricCircles(ConcentricCircles),
     Point(PointDefinition),
@@ -77,16 +94,17 @@ pub enum EChoice {
     Segments(Segments),
     TriangleBisect(TriangleBisect),
     RawKml(RawKml),
+    BulkRawKml(BulkRawKml),
     Route(Route),
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, Clone)]
 pub struct Folder {
     pub name: String,
     pub choices: Vec<EChoice>,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, Clone)]
 pub struct InputData {
     pub choices: Vec<EChoice>,
     #[serde(skip_serializing_if = "Option::is_none")]
