@@ -1,6 +1,7 @@
 use std::collections::{HashMap, HashSet};
 use std::io::BufWriter;
-use std::sync::Arc;
+use std::sync::{Arc, LazyLock};
+
 
 use axum::{Router, Json, extract::{Path, State}, response::IntoResponse, http::StatusCode};
 use tower_http::cors::CorsLayer;
@@ -12,8 +13,12 @@ use ::kml::{Kml, KmlReader, KmlWriter};
 use lc_kml_utils::model::{InputData, EChoice};
 use lc_kml_utils::processing::{process_choices_with_resolver, find_placemark_point};
 
-const S3_BUCKET: &str = "kml-laurent";
-const S3_REGION: &str = "eu-west-3";
+static S3_BUCKET: LazyLock<String> = LazyLock::new(|| {
+    std::env::var("S3_BUCKET").expect("S3_BUCKET environment variable must be set")
+});
+static S3_REGION: LazyLock<String> = LazyLock::new(|| {
+    std::env::var("S3_REGION").unwrap_or_else(|_| "eu-west-3".to_string())
+});
 const S3_PREFIX: &str = "library/";
 const GRID_CELL_SIZE: f64 = 0.001; // ~100m
 
@@ -29,7 +34,7 @@ struct AppState {
 async fn proxy_s3(Path(path): Path<String>) -> impl IntoResponse {
     let url = format!(
         "https://{}.s3.{}.amazonaws.com/{}{}",
-        S3_BUCKET, S3_REGION, S3_PREFIX, path
+        *S3_BUCKET, *S3_REGION, S3_PREFIX, path
     );
     match reqwest::get(&url).await {
         Ok(resp) if resp.status().is_success() => {
@@ -49,7 +54,7 @@ async fn list_s3(State(state): State<Arc<AppState>>) -> impl IntoResponse {
     let mut continuation_token: Option<String> = None;
 
     loop {
-        let mut req = state.s3_client.list_objects_v2().bucket(S3_BUCKET).prefix(S3_PREFIX);
+        let mut req = state.s3_client.list_objects_v2().bucket(S3_BUCKET.as_str()).prefix(S3_PREFIX);
         if let Some(token) = &continuation_token {
             req = req.continuation_token(token);
         }
@@ -90,6 +95,7 @@ fn collect_kml_paths(choices: &[EChoice], paths: &mut std::collections::HashSet<
             EChoice::Segments(seg) => { paths.insert(seg.kml.clone()); }
             EChoice::TriangleBisect(tb) => { paths.insert(tb.point1.kml.clone()); paths.insert(tb.point2.kml.clone()); }
             EChoice::RawKml(raw) => { paths.insert(raw.path.clone()); }
+            EChoice::BulkRawKml(_) => {}
             EChoice::Route(rt) => { if !rt.from.kml.is_empty() { paths.insert(rt.from.kml.clone()); } if !rt.to.kml.is_empty() { paths.insert(rt.to.kml.clone()); } }
             EChoice::Folder(f) => { collect_kml_paths(&f.choices, paths); }
         }
@@ -151,7 +157,7 @@ async fn compute_adjacency(s3_client: &aws_sdk_s3::Client) -> HashMap<String, Ve
     let mut commune_files = Vec::new();
     let mut continuation_token: Option<String> = None;
     loop {
-        let mut req = s3_client.list_objects_v2().bucket(S3_BUCKET).prefix(S3_PREFIX);
+        let mut req = s3_client.list_objects_v2().bucket(S3_BUCKET.as_str()).prefix(S3_PREFIX);
         if let Some(token) = &continuation_token {
             req = req.continuation_token(token);
         }
@@ -192,7 +198,7 @@ async fn compute_adjacency(s3_client: &aws_sdk_s3::Client) -> HashMap<String, Ve
         let file = file.clone();
         let url = format!(
             "https://{}.s3.{}.amazonaws.com/{}{}",
-            S3_BUCKET, S3_REGION, S3_PREFIX, file
+            *S3_BUCKET, *S3_REGION, S3_PREFIX, file
         );
         handles.push(tokio::spawn(async move {
             let _permit = sem.acquire().await.unwrap();
@@ -285,10 +291,103 @@ struct PromptRequest {
     prompt: String,
     #[serde(default = "default_model")]
     model: String,
+    #[serde(default)]
+    current_config: Option<serde_json::Value>,
 }
 
 fn default_model() -> String {
     "claude-sonnet".to_string()
+}
+
+fn summarize_config(config: &serde_json::Value) -> String {
+    fn summarize_choices(choices: &serde_json::Value, indent: usize) -> Vec<String> {
+        let mut lines = Vec::new();
+        let prefix = "  ".repeat(indent);
+        if let Some(arr) = choices.as_array() {
+            for choice in arr {
+                if let Some(obj) = choice.as_object() {
+                    for (typ, val) in obj {
+                        match typ.as_str() {
+                            "Folder" => {
+                                let name = val.get("name").and_then(|n| n.as_str()).unwrap_or("?");
+                                let sub = val.get("choices").map(|c| c.as_array().map_or(0, |a| a.len())).unwrap_or(0);
+                                lines.push(format!("{}Folder \"{}\" ({} items)", prefix, name, sub));
+                                if let Some(children) = val.get("choices") {
+                                    // Only show first few + count for large folders
+                                    if sub <= 5 {
+                                        lines.extend(summarize_choices(children, indent + 1));
+                                    } else {
+                                        // Show types summary
+                                        let mut type_counts: std::collections::HashMap<String, usize> = std::collections::HashMap::new();
+                                        if let Some(arr) = children.as_array() {
+                                            for c in arr {
+                                                if let Some(o) = c.as_object() {
+                                                    for k in o.keys() {
+                                                        *type_counts.entry(k.clone()).or_default() += 1;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        let summary: Vec<String> = type_counts.iter().map(|(k, v)| format!("{}x {}", v, k)).collect();
+                                        lines.push(format!("{}  contains: {}", prefix, summary.join(", ")));
+                                    }
+                                }
+                            }
+                            "RawKml" => {
+                                let path = val.get("path").and_then(|p| p.as_str()).unwrap_or("?");
+                                let alpha = val.get("alpha").and_then(|a| a.as_f64());
+                                let alpha_str = alpha.map_or("default".to_string(), |a| format!("{}", a));
+                                lines.push(format!("{}RawKml \"{}\" (alpha={})", prefix, path, alpha_str));
+                            }
+                            _ => {
+                                let name = val.get("name").and_then(|n| n.as_str()).unwrap_or("");
+                                lines.push(format!("{}{} {}", prefix, typ, name));
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        lines
+    }
+    if let Some(choices) = config.get("choices") {
+        summarize_choices(choices, 0).join("\n")
+    } else {
+        String::new()
+    }
+}
+
+async fn list_library_files(state: &AppState) -> Vec<String> {
+    let mut files = Vec::new();
+    let mut continuation_token: Option<String> = None;
+    loop {
+        let mut req = state.s3_client.list_objects_v2().bucket(S3_BUCKET.as_str()).prefix(S3_PREFIX);
+        if let Some(token) = &continuation_token {
+            req = req.continuation_token(token);
+        }
+        match req.send().await {
+            Ok(output) => {
+                for obj in output.contents() {
+                    if let Some(key) = obj.key() {
+                        if key.ends_with(".kml") || key.ends_with(".yml") {
+                            let display_key = key.strip_prefix(S3_PREFIX).unwrap_or(key);
+                            files.push(display_key.to_string());
+                        }
+                    }
+                }
+                if output.is_truncated() == Some(true) {
+                    continuation_token = output.next_continuation_token().map(|s| s.to_string());
+                } else {
+                    break;
+                }
+            }
+            Err(e) => {
+                eprintln!("S3 list error: {}", e);
+                break;
+            }
+        }
+    }
+    files
 }
 
 async fn prompt_to_config(
@@ -301,7 +400,7 @@ async fn prompt_to_config(
     let mut library_files = Vec::new();
     let mut continuation_token: Option<String> = None;
     loop {
-        let mut list_req = state.s3_client.list_objects_v2().bucket(S3_BUCKET).prefix(S3_PREFIX);
+        let mut list_req = state.s3_client.list_objects_v2().bucket(S3_BUCKET.as_str()).prefix(S3_PREFIX);
         if let Some(token) = &continuation_token {
             list_req = list_req.continuation_token(token);
         }
@@ -331,7 +430,7 @@ async fn prompt_to_config(
         if file.starts_with("rer/") || file.starts_with("bus/") {
             let url = format!(
                 "https://{}.s3.{}.amazonaws.com/{}{}",
-                S3_BUCKET, S3_REGION, S3_PREFIX, file
+                *S3_BUCKET, *S3_REGION, S3_PREFIX, file
             );
             if let Ok(resp) = reqwest::get(&url).await {
                 if resp.status().is_success() {
@@ -354,7 +453,7 @@ async fn prompt_to_config(
         if file.starts_with("rer/") && file.ends_with(".yml") {
             let url = format!(
                 "https://{}.s3.{}.amazonaws.com/{}{}",
-                S3_BUCKET, S3_REGION, S3_PREFIX, file
+                *S3_BUCKET, *S3_REGION, S3_PREFIX, file
             );
             if let Ok(resp) = reqwest::get(&url).await {
                 if resp.status().is_success() {
@@ -390,7 +489,7 @@ async fn prompt_to_config(
     }).await;
     let adjacency_text = format_adjacency_for_prompt(adjacency);
 
-    let system_prompt = format!(
+    let mut system_prompt = format!(
 r#"You generate InputData JSON configurations for a KML map visualization tool.
 
 The JSON schema is:
@@ -414,6 +513,9 @@ EChoice is one of (externally tagged):
   Draws a perpendicular bisector line between two points.
 - {{"RawKml": {{"path": string, "color": string or null, "alpha": float}}}}
   Imports a raw KML file. Use for commune boundaries or other polygon files.
+- {{"BulkRawKml": {{"prefix": string, "color": string or null, "alpha": float, "filter_commune": string or null}}}}
+  Imports ALL KML files matching a prefix (e.g. "idf/bus/" imports all bus KML files). The server expands this to individual RawKml entries. ALWAYS use this instead of listing many RawKml entries individually.
+  If filter_commune is set (e.g. "Champigny-sur-Marne"), only keeps files that have at least one Point inside that commune's polygon boundary.
 - {{"Route": {{"name": string, "from": PointDefinition, "to": PointDefinition, "color": string or null, "mode": string}}}}
   Draws a walking/cycling/driving route between two points using OpenStreetMap routing.
   mode is one of "foot" (default), "bike", "car".
@@ -466,6 +568,8 @@ LIMITATIONS: You can ONLY use the types listed above. You CANNOT:
 If any part of the request is impossible, you MUST include an "error" field in the JSON explaining what you could not do and suggesting alternatives.
 Example: {{"choices": [], "error": "Walking paths require a routing API which is not available. I can place Points at the start and end, or draw a Segments line between stations instead."}}
 
+When the user asks to modify existing elements, update the current configuration accordingly. You can change colors, alpha values, add/remove items, rename folders, etc.
+
 IMPORTANT: Return ONLY valid JSON, no markdown, no explanation. Just the InputData object."#,
         library_files.iter().map(|f| format!("  {}", f)).collect::<Vec<_>>().join("\n"),
         kml_placemarks.iter().map(|(file, names)| {
@@ -475,6 +579,36 @@ IMPORTANT: Return ONLY valid JSON, no markdown, no explanation. Just the InputDa
         adjacency_text
     );
 
+    // Append compact summary of current config if provided
+    if let Some(ref config) = req.current_config {
+        let summary = summarize_config(config);
+        if !summary.is_empty() {
+            system_prompt.push_str(&format!(
+                r#"
+
+CURRENT TREE (summary):
+{}
+
+CRITICAL: The user has an existing tree. When they ask to MODIFY existing items (change alpha, color, etc.), you MUST use the patch format below. Do NOT reproduce the full tree — it will exceed token limits and fail.
+
+PATCH FORMAT (for modifications):
+{{"patch": {{"folder": "folder name or null for root", "match": {{"type": "RawKml"}}, "set": {{"alpha": 0.3}}}}}}
+
+Example — set alpha 0.3 on all RawKml in folder "bus":
+{{"patch": {{"folder": "bus", "match": {{"type": "RawKml"}}, "set": {{"alpha": 0.3}}}}}}
+
+Multiple patches:
+{{"patches": [{{"folder": "bus", "match": {{"type": "RawKml"}}, "set": {{"alpha": 0.3}}}}]}}
+
+You may also add new items alongside patches:
+{{"choices": [...new items...], "patches": [...]}}
+
+NEVER output the full list of existing items. Use patches for modifications."#,
+                summary
+            ));
+        }
+    }
+
     let client = reqwest::Client::new();
 
     // Call the appropriate LLM API
@@ -483,17 +617,254 @@ IMPORTANT: Return ONLY valid JSON, no markdown, no explanation. Just the InputDa
         Err(e) => return (StatusCode::BAD_GATEWAY, e).into_response(),
     };
 
-    // Try to parse as InputData to validate
-    match serde_json::from_str::<InputData>(&text) {
-        Ok(input_data) => Json(input_data).into_response(),
-        Err(e) => {
-            // Try extracting JSON from markdown code block
-            let cleaned = text.trim().trim_start_matches("```json").trim_start_matches("```").trim_end_matches("```").trim();
-            match serde_json::from_str::<InputData>(cleaned) {
-                Ok(input_data) => Json(input_data).into_response(),
-                Err(_) => (StatusCode::BAD_REQUEST, format!("LLM returned invalid JSON: {}. Raw: {}", e, text)).into_response(),
+    // Strip markdown code fences if present
+    let cleaned = {
+        let t = text.trim();
+        if t.starts_with("```") {
+            // Remove opening fence (```json or ```) and closing fence
+            let after_open = if let Some(pos) = t.find('\n') { &t[pos + 1..] } else { t };
+            let before_close = after_open.trim_end().trim_end_matches("```").trim();
+            before_close.to_string()
+        } else {
+            t.to_string()
+        }
+    };
+
+    // Try to parse as valid JSON (could be InputData or patch response)
+    match serde_json::from_str::<serde_json::Value>(&cleaned) {
+        Ok(json) => {
+            // If it has "choices", validate as InputData
+            if json.get("choices").is_some() && json.get("patches").is_none() && json.get("patch").is_none() {
+                match serde_json::from_value::<InputData>(json) {
+                    Ok(mut input_data) => {
+                        expand_bulk_raw_kml(&mut input_data.choices, &library_files).await;
+                        Json(serde_json::to_value(input_data).unwrap()).into_response()
+                    }
+                    Err(e) => (StatusCode::BAD_REQUEST, format!("LLM returned invalid JSON: {}. Raw: {}", e, text)).into_response(),
+                }
+            } else {
+                // Pass through patch responses as-is
+                Json(json).into_response()
             }
         }
+        Err(e) => (StatusCode::BAD_REQUEST, format!("LLM returned invalid JSON: {}. Raw: {}", e, text)).into_response(),
+    }
+}
+
+async fn expand_bulk_raw_kml(choices: &mut Vec<EChoice>, library_files: &[String]) {
+    use lc_kml_utils::model::RawKml as RawKmlModel;
+    let mut i = 0;
+    while i < choices.len() {
+        match &choices[i] {
+            EChoice::BulkRawKml(bulk) => {
+                let prefix = bulk.prefix.clone();
+                let color = bulk.color.clone();
+                let alpha = bulk.alpha;
+                let filter_commune = bulk.filter_commune.clone();
+                let mut matching: Vec<EChoice> = library_files.iter()
+                    .filter(|f| f.starts_with(prefix.as_str()) && f.ends_with(".kml"))
+                    .map(|f| EChoice::RawKml(RawKmlModel { path: f.clone(), color: color.clone(), alpha }))
+                    .collect();
+
+                // Apply commune filter if specified
+                if let Some(commune_name) = &filter_commune {
+                    if let Some(polygon) = find_commune_polygon(commune_name, library_files).await {
+                        let polygon = std::sync::Arc::new(polygon);
+                        let total = matching.len();
+                        eprintln!("Commune filter '{}': checking {} files...", commune_name, total);
+                        // Check all files concurrently (batched to avoid overwhelming S3)
+                        let mut filtered = Vec::new();
+                        for chunk in matching.chunks(50) {
+                            let mut handles = Vec::new();
+                            for choice in chunk {
+                                let polygon = polygon.clone();
+                                let path = if let EChoice::RawKml(raw) = choice {
+                                    raw.path.clone()
+                                } else {
+                                    continue;
+                                };
+                                handles.push(tokio::spawn(async move {
+                                    kml_has_point_in_polygon(&path, &polygon).await
+                                }));
+                            }
+                            for (handle, choice) in handles.into_iter().zip(chunk.iter()) {
+                                if let Ok(true) = handle.await {
+                                    filtered.push(choice.clone());
+                                }
+                            }
+                        }
+                        eprintln!("Commune filter '{}': {} / {} files match", commune_name, filtered.len(), total);
+                        matching = filtered;
+                    } else {
+                        eprintln!("Warning: commune '{}' not found in library", commune_name);
+                    }
+                }
+
+                let count = matching.len();
+                choices.splice(i..=i, matching.into_iter());
+                i += count.max(1); // skip past all inserted items
+            }
+            EChoice::Folder(_) => {
+                let folder_mut = match &mut choices[i] {
+                    EChoice::Folder(f) => f,
+                    _ => unreachable!(),
+                };
+                Box::pin(expand_bulk_raw_kml(&mut folder_mut.choices, library_files)).await;
+                i += 1;
+            }
+            _ => { i += 1; }
+        }
+    }
+}
+
+/// Find a commune polygon by name from the library files.
+/// Searches for KML files in communes/ directories matching the commune name (case-insensitive).
+async fn find_commune_polygon(commune_name: &str, library_files: &[String]) -> Option<geo::Polygon<f64>> {
+    let needle = commune_name.to_lowercase();
+    // Also strip code prefix from the needle if present (e.g. "94017_Champigny..." -> "champigny...")
+    let needle_stripped = if let Some(pos) = needle.find('_') {
+        if needle[..pos].chars().all(|c| c.is_ascii_digit()) {
+            &needle[pos + 1..]
+        } else {
+            needle.as_str()
+        }
+    } else {
+        needle.as_str()
+    };
+    // Find commune file: e.g. "idf/communes/94/94017_Champigny-sur-Marne.kml"
+    let commune_file = library_files.iter().find(|f| {
+        if !f.ends_with(".kml") { return false; }
+        // Match commune files in directories like idf/communes/94/ or idf/94/
+        let filename = f.rsplit('/').next().unwrap_or(f);
+        let name_part = filename.strip_suffix(".kml").unwrap_or(filename);
+        // Strip leading code like "94017_"
+        let display_name = if let Some(pos) = name_part.find('_') {
+            &name_part[pos + 1..]
+        } else {
+            name_part
+        };
+        let dn = display_name.to_lowercase();
+        dn == needle_stripped || name_part.to_lowercase() == needle
+    })?;
+
+    let url = format!(
+        "https://{}.s3.{}.amazonaws.com/{}{}",
+        *S3_BUCKET, *S3_REGION, S3_PREFIX, commune_file
+    );
+    let resp = reqwest::get(&url).await.ok()?;
+    let bytes = resp.bytes().await.ok()?;
+    let kml = KmlReader::from_reader(std::io::Cursor::new(bytes)).read().ok()?;
+    extract_polygon_from_kml(&kml)
+}
+
+/// Extract the first polygon from a KML document as a geo::Polygon.
+fn extract_polygon_from_kml(kml: &Kml) -> Option<geo::Polygon<f64>> {
+    match kml {
+        Kml::KmlDocument(doc) => {
+            for elem in &doc.elements {
+                if let Some(p) = extract_polygon_from_kml(elem) { return Some(p); }
+            }
+            None
+        }
+        Kml::Document { elements, .. } => {
+            for elem in elements {
+                if let Some(p) = extract_polygon_from_kml(elem) { return Some(p); }
+            }
+            None
+        }
+        Kml::Folder(folder) => {
+            for elem in &folder.elements {
+                if let Some(p) = extract_polygon_from_kml(elem) { return Some(p); }
+            }
+            None
+        }
+        Kml::Placemark(pm) => {
+            if let Some(ref geom) = pm.geometry {
+                extract_polygon_from_geometry(geom)
+            } else {
+                None
+            }
+        }
+        _ => None,
+    }
+}
+
+fn extract_polygon_from_geometry(geom: &::kml::types::Geometry) -> Option<geo::Polygon<f64>> {
+    match geom {
+        ::kml::types::Geometry::Polygon(poly) => {
+            let coords: Vec<geo::Coord<f64>> = poly.outer.coords.iter()
+                .map(|c| geo::Coord { x: c.x, y: c.y })
+                .collect();
+            if coords.len() >= 3 {
+                Some(geo::Polygon::new(geo::LineString(coords), vec![]))
+            } else {
+                None
+            }
+        }
+        ::kml::types::Geometry::MultiGeometry(mg) => {
+            for g in &mg.geometries {
+                if let Some(p) = extract_polygon_from_geometry(g) { return Some(p); }
+            }
+            None
+        }
+        _ => None,
+    }
+}
+
+/// Check if a KML file (fetched from S3) has at least one Point inside the given polygon.
+async fn kml_has_point_in_polygon(path: &str, polygon: &geo::Polygon<f64>) -> bool {
+    use geo::Contains;
+    let url = format!(
+        "https://{}.s3.{}.amazonaws.com/{}{}",
+        *S3_BUCKET, *S3_REGION, S3_PREFIX, path
+    );
+    let resp = match reqwest::get(&url).await {
+        Ok(r) if r.status().is_success() => r,
+        _ => return false,
+    };
+    let bytes = match resp.bytes().await {
+        Ok(b) => b,
+        Err(_) => return false,
+    };
+    let kml = match KmlReader::from_reader(std::io::Cursor::new(bytes)).read() {
+        Ok(k) => k,
+        Err(_) => return false,
+    };
+    kml_contains_point_in_polygon(&kml, polygon)
+}
+
+fn kml_contains_point_in_polygon(kml: &Kml, polygon: &geo::Polygon<f64>) -> bool {
+    use geo::Contains;
+    match kml {
+        Kml::KmlDocument(doc) => doc.elements.iter().any(|e| kml_contains_point_in_polygon(e, polygon)),
+        Kml::Document { elements, .. } => {
+            elements.iter().any(|e| kml_contains_point_in_polygon(e, polygon))
+        }
+        Kml::Folder(folder) => {
+            folder.elements.iter().any(|e| kml_contains_point_in_polygon(e, polygon))
+        }
+        Kml::Placemark(pm) => {
+            if let Some(ref geom) = pm.geometry {
+                geometry_has_point_in_polygon(geom, polygon)
+            } else {
+                false
+            }
+        }
+        _ => false,
+    }
+}
+
+fn geometry_has_point_in_polygon(geom: &::kml::types::Geometry, polygon: &geo::Polygon<f64>) -> bool {
+    use geo::Contains;
+    match geom {
+        ::kml::types::Geometry::Point(p) => {
+            let point = geo::Point::new(p.coord.x, p.coord.y);
+            polygon.contains(&point)
+        }
+        ::kml::types::Geometry::MultiGeometry(mg) => {
+            mg.geometries.iter().any(|g| geometry_has_point_in_polygon(g, polygon))
+        }
+        _ => false,
     }
 }
 
@@ -730,8 +1101,13 @@ async fn resolve_routes(choices: &[EChoice], kml_cache: &mut HashMap<String, Kml
     }
 }
 
-async fn generate_kml(State(state): State<Arc<AppState>>, Json(input_data): Json<InputData>) -> impl IntoResponse {
-    eprintln!("generate_kml: {} choices, body: {}", input_data.choices.len(), serde_json::to_string(&input_data).unwrap_or_default());
+async fn generate_kml(State(state): State<Arc<AppState>>, Json(mut input_data): Json<InputData>) -> impl IntoResponse {
+    eprintln!("generate_kml: {} choices", input_data.choices.len());
+
+    // Expand BulkRawKml entries (requires S3 listing)
+    let library_files = list_library_files(&state).await;
+    expand_bulk_raw_kml(&mut input_data.choices, &library_files).await;
+
     // Collect all referenced KML paths and fetch them from S3
     let mut paths = std::collections::HashSet::new();
     collect_kml_paths(&input_data.choices, &mut paths);
@@ -740,7 +1116,7 @@ async fn generate_kml(State(state): State<Arc<AppState>>, Json(input_data): Json
     for path in &paths {
         let url = format!(
             "https://{}.s3.{}.amazonaws.com/{}{}",
-            S3_BUCKET, S3_REGION, S3_PREFIX, path
+            *S3_BUCKET, *S3_REGION, S3_PREFIX, path
         );
         match reqwest::get(&url).await {
             Ok(resp) if resp.status().is_success() => {
@@ -809,7 +1185,7 @@ async fn main() {
     let frontend_dir = std::env::var("FRONTEND_DIR").unwrap_or_else(|_| "frontend/dist".to_string());
 
     let config = aws_config::defaults(aws_config::BehaviorVersion::latest())
-        .region(aws_config::Region::new(S3_REGION))
+        .region(aws_config::Region::new(S3_REGION.clone()))
         .load()
         .await;
     let s3_client = aws_sdk_s3::Client::new(&config);

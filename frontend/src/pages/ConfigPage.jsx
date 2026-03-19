@@ -804,8 +804,10 @@ export default function ConfigPage() {
         const iconColor = s.querySelector('IconStyle > color')
         if (id) {
           const polyColorRaw = polyEl ? polyEl.textContent.trim() : null
+          const lineColorRaw = lineEl ? lineEl.textContent.trim() : null
           styles[id] = {
-            lineColor: lineEl ? kmlColorToHex(lineEl.textContent.trim()) : null,
+            lineColor: lineColorRaw ? kmlColorToHex(lineColorRaw) : null,
+            lineAlpha: lineColorRaw ? parseInt(lineColorRaw.substring(0, 2), 16) / 255 : null,
             polyColor: polyColorRaw ? kmlColorToHex(polyColorRaw) : null,
             polyAlpha: polyColorRaw ? parseInt(polyColorRaw.substring(0, 2), 16) / 255 : null,
             iconHref: iconHref ? iconHref.textContent.trim() : null,
@@ -848,13 +850,16 @@ export default function ConfigPage() {
                 if (style.lineColor) {
                   styleObj.color = style.lineColor
                   styleObj.weight = 3
+                  styleObj.opacity = style.lineAlpha ?? 1
                 }
                 if (style.polyColor) {
                   styleObj.fillColor = style.polyColor
                   styleObj.fillOpacity = style.polyAlpha ?? 0.3
+                  styleObj.fill = true
                   if (!style.lineColor) {
                     styleObj.color = style.polyColor
                     styleObj.weight = 2
+                    styleObj.opacity = style.polyAlpha ?? 0.3
                   }
                 }
                 if (Object.keys(styleObj).length) l.setStyle(styleObj)
@@ -926,7 +931,7 @@ export default function ConfigPage() {
       const resp = await fetch(API_BASE + '/prompt', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ prompt: prompt.trim(), model }),
+        body: JSON.stringify({ prompt: prompt.trim(), model, current_config: choices.length > 0 ? { choices } : undefined }),
       })
       if (!resp.ok) {
         const msg = await resp.text()
@@ -936,7 +941,38 @@ export default function ConfigPage() {
       if (data.error) {
         setError(data.error)
       }
-      if (data.choices && data.choices.length > 0) {
+      // Handle patch responses (modifications to existing tree)
+      const patches = data.patches ? data.patches : data.patch ? [data.patch] : []
+      let updated = [...choices]
+      if (patches.length > 0) {
+        for (const p of patches) {
+          const folder = p.folder
+          const matchType = p.match?.type
+          const setFields = p.set || {}
+          const applyPatch = (items) => items.map(item => {
+            const keys = Object.keys(item)
+            const type = keys[0]
+            if (type === 'Folder') {
+              const f = item.Folder
+              if (folder && f.name === folder) {
+                return { Folder: { ...f, choices: applyPatch(f.choices || []) } }
+              } else if (!folder) {
+                return { Folder: { ...f, choices: applyPatch(f.choices || []) } }
+              }
+              return item
+            }
+            if (!matchType || type === matchType) {
+              return { [type]: { ...item[type], ...setFields } }
+            }
+            return item
+          })
+          updated = folder
+            ? applyPatch(updated)
+            : applyPatch(updated)
+        }
+        setChoices(updated)
+        setTimeout(() => visualize(updated), 100)
+      } else if (data.choices && data.choices.length > 0) {
         const merged = [...choices, ...data.choices]
         setChoices(merged)
         setTimeout(() => visualize(merged), 100)

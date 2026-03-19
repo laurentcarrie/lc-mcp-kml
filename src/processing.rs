@@ -565,6 +565,10 @@ pub fn process_choices_with_resolver(
                     elements.extend(extract_elements(kml));
                 }
             }
+            EChoice::BulkRawKml(_) => {
+                // BulkRawKml should be expanded to RawKml entries before processing
+                eprintln!("Warning: BulkRawKml should have been expanded before processing");
+            }
         }
     }
 

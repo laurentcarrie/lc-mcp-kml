@@ -75,8 +75,10 @@ export default function MapPage() {
           const iconColor = s.querySelector('IconStyle > color')
           if (id) {
             const polyColorRaw = polyEl ? polyEl.textContent.trim() : null
+            const lineColorRaw = lineEl ? lineEl.textContent.trim() : null
             styles[id] = {
-              lineColor: lineEl ? kmlColorToHex(lineEl.textContent.trim()) : null,
+              lineColor: lineColorRaw ? kmlColorToHex(lineColorRaw) : null,
+              lineAlpha: lineColorRaw ? parseInt(lineColorRaw.substring(0, 2), 16) / 255 : null,
               polyColor: polyColorRaw ? kmlColorToHex(polyColorRaw) : null,
               polyAlpha: polyColorRaw ? parseInt(polyColorRaw.substring(0, 2), 16) / 255 : null,
               iconHref: iconHref ? iconHref.textContent.trim() : null,
@@ -117,13 +119,16 @@ export default function MapPage() {
                   if (style.lineColor) {
                     styleObj.color = style.lineColor
                     styleObj.weight = 3
+                    styleObj.opacity = style.lineAlpha ?? 1
                   }
                   if (style.polyColor) {
                     styleObj.fillColor = style.polyColor
                     styleObj.fillOpacity = style.polyAlpha ?? 0.3
+                    styleObj.fill = true
                     if (!style.lineColor) {
                       styleObj.color = style.polyColor
                       styleObj.weight = 2
+                      styleObj.opacity = style.polyAlpha ?? 0.3
                     }
                   }
                   if (Object.keys(styleObj).length) l.setStyle(styleObj)
